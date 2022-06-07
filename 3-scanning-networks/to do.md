@@ -5,7 +5,9 @@ Describe how are protocols used in scans (new file)
 
 Test hping scans dynamics with home made GNS3 network (especially packet crafting)
 
-By issuing the --packet-trace command, Nmap sends some packets to the intended machine and receives packets in response to the sent packets. It prints a summary of every packet it sends and receives.
--> I want to analyse/do sth like this
 
-Divide and describe scans based on: tool (tool.md), protocol (scan-types.md), type with info about detection evasion, firewall bypasiing and such (scan-sneakyness.md)
+Divide and describe scans based on: tool (tool.md), protocol (scan-types.md), type with info about detection evasion, firewall bypasiing and such usnig i.a. IP spoofing, pck fragmentation (sneakyness.md) - in scenario of scanning from taken over machine is is good to know which scans doesn't require root.
+
+
+GNS3 fun:
+https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/4-Nmap.md
