@@ -18,29 +18,49 @@ To skip host discovery & port scanning BUT use NSE `-Pn -sn`
 `--traceroute` typical traceroute using ICMP Time Exceeded  
 #### hping3
 lower level & stealthier than nmap BUT can be used on 1 host and doesn't support IPv6  
-rather for port scanning and bypassing firewall rules  
+Probably won't be of much usage, but I'm going to run some test with it  
   `ping -1 10.0.0.x --rand-dest -I eth0`  
         `-1` ICMP mode  
         `--rand-dest` random destionation address mode  
         `-I <interface>` network interface name  
-**If ICMP return of type 3 with a code of 13 indicates a poorly configured firewall**  
+**ICMP return of type 3 with a code of 13 indicates a poorly configured firewall**  
 #### ping - rather useless
 ICMP broadcast `ping -b 192.168.129.255` (last address of a network is broadcast ID)  
 This will populate arp table. To show `arp -a`  
 
+### Port scanning
+#### nmap
+`-Pn` no host discovery. Straight to scanning ports  
+`-sS/sT/sU/sY` TCP SYN/connect, UDP, SCTP (Stream Control Transmission Protocol) - rare but stealthy and accurate  
+`-sN/sF/sX` TCP NULL, FIN, and Xmas scans  
+`-sW` TCP Window scan  
+`-sM` TCP Maimon scan  
+`--scanflags` custom TCP flags. You specify how nmap is understanding responses (e.g. `-sF`) and what packets are sent 
+(mash flags together e.g. `--scanflags URGACKPSHRSTSYNFIN`). Default is SYN scan understanding of replys  
+`-sO` IP scan  
+nmap from default scans only firs 1000 most common ports  
+Common ports for scanning:  
+21 tcp FTP  
+22 tcp SSH  
+23 tcp telnet  
+25 tcp SMTP  
+53 tcp/udp DNS  
+80 tcp HTTP/1.0 HTTP/1.1 HTTP 1.2  
+80 udp HTTP/3 (use QUIC)  
+123 tcp NTP Network Time Protocol  
+443 tcp/udp HTTPS  
+500 tcp/udp IKE/IPSec Internet Key Exchange/IPSec  
+631 tcp/udp IPP InternetPrinting Protocol  
+3389 tcp/udp RDP Remote Desktop Protocol  
+9100 tcp/udp AppSocket/JetDirect (HP JetDirect, Printer PDL (page description language) Data Stream)  
+
+`-p <port ranges>`port number or range. `-p-` mean all 2^16 ports  
+`--exclude-ports <port ranges>`  
+
+### Service and version detection
+`-sV` service&version detection. By default skips TCP 9100 bcos some printers print everything sent there. `--allports` will overwrite this behavior  
+``
 
 
-Common ports for scanning:
-21 tcp FTP
-22 tcp SSH
-23 tcp telnet
-25 tcp SMTP
-53 tcp/udp DNS
-80 tcp HTTP/1.0 HTTP/1.1 HTTP 1.2
-80 udp HTTP/3 (use QUIC)
-123 tcp NTP Network Time Protocol
-443 tcp/udp HTTPS
-500 tcp/udp IKE/IPSec Internet Key Exchange/IPSec
-631 tcp/udp IPP InternetPrinting Protocol
-3389 tcp/udp RDP Remote Desktop Protocol
-9100 tcp/udp AppSocket/JetDirect (HP JetDirect, Printer PDL (page description language) Data Stream)
+
+
