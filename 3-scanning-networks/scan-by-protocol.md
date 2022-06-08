@@ -7,7 +7,7 @@ often blocked by firewalls - no response. Type 3 code 13 (destination unreachabl
 send ICMP type 8 (echo request) to broadcast address (that is to every address on a subnet). E.g. `ping -b 192.168.129.255`  
 Populate arp table. `arp -a` to display  
 Useless.  
-Blocked e.g. bcos of smurf attack (flooding a IP broadcast with ICMP echo request packets with victim IP address as source.
+Blocked e.g. bcos of smurf attack (flooding an IP broadcast with ICMP echo request packets with victim IP address as source.
 Causes hosts in the network respond to received requests targeting the victim -> DoS)
 ##### ICMP type 8 (echo request) aka ping sweep
 Rather blocked on firewalls. Might work in internal network
