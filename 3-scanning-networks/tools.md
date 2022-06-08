@@ -1,9 +1,9 @@
 ### nmap
 ### netcat
+### hping
 ### ping
+### unicornscan (own implementation of the TCP/IP stack and not operating system's - faster, but is that all?)
 
-### unicornscan? (? - why that program and not other one?)
-### hping?
 
 ### Crafting custom packets:
 hping
