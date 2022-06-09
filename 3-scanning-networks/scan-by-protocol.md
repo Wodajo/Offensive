@@ -5,7 +5,6 @@ part of the IP protocol (3rd layer) - doesn't have port abstraction like 4th lay
 often blocked by firewalls - no response. Type 3 code 13 (destination unreachable: communication administratively prohibited) in poorly configured firewalls  
 ##### Broadcast ICMP type 8
 send ICMP type 8 (echo request) to broadcast address (that is to every address on a subnet). E.g. `ping -b 192.168.129.255`  
-Populates arp table. `arp -a` to display  
 Useless.  
 Blocked e.g. bcos of smurf attack (flooding an IP broadcast with ICMP echo request packets with victim IP address as source.
 Causes hosts in the network respond to received requests targeting the victim -> DoS)
@@ -103,8 +102,8 @@ Bypass many firewalls BUT pretty fking long (Linux kernel limits ICMP responses 
 ### ARP scan
 send regular ARP requests looking for MAC addresses  
 usefull on LAN  
-`sudo nmap -sn -PR '192.168.0.*'` `-PR` ARP discovery    
-`ping -b <broadcast ID>` probably won't work. Should populate arp table  
+`sudo nmap -sn -PR '192.168.0.*'` -PR ARP discovery  
+`sudo arp-scan -I wlan0 <addressIP/24>` -I interface
 `ip neigh` or `ip neigh show` show ARP table of current host  
 
 
