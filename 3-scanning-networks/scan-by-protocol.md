@@ -103,7 +103,7 @@ Bypass many firewalls BUT pretty fking long (Linux kernel limits ICMP responses 
 send regular ARP requests looking for MAC addresses  
 usefull on LAN  
 `sudo nmap -sn -PR '192.168.0.*'` -PR ARP discovery  
-`sudo arp-scan -I wlan0 <addressIP/24>` -I interface
+`sudo arp-scan -I wlan0 <addressIP/24>` -I interface  
 `ip neigh` or `ip neigh show` show ARP table of current host  
 
 
