@@ -2,7 +2,7 @@
 ### netcat
 ### hping
 ### ping
-### unicornscan (own implementation of the TCP/IP stack and not operating system's - faster, but is that all?)
+### unicornscan (own implementation of the TCP/IP stack and not operating system's - faster, but... why?)
 
 
 ### Crafting custom packets:
