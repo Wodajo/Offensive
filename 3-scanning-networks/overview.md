@@ -26,7 +26,7 @@ Probably won't be of much usage, but I'm going to run some test with it
 **ICMP return of type 3 with a code of 13 indicates a poorly configured firewall**  
 #### ping - rather useless
 ICMP broadcast `ping -b 192.168.129.255` (last address of a network is broadcast ID)  
-This will populate arp table. To show `arp -a`  
+This will populate arp table. To show `ip neigh` (from neighbour)  
 
 ### Port scanning
 #### nmap
