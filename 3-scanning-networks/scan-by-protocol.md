@@ -74,7 +74,7 @@ basic facts used for scan:
 - `SYN` result in `SYN/ACK` (open port) or `RST` (closed port)
 - unsolicited `SYN/ACK` result in `RST`. Unsolicited `RST` is ignored
 - every IP packet has IP ID (fragment identification number). Most OS increase this number with each **sent** packet - it's possible to estimate how many packets was sent from last one.  
-But this step doesn't have to be true - zombie host might might not have predictable IP ID:/  
+But this doesn't have to be true - zombie host might not have predictable IP ID:/  
   
 `SYN/ACK` to zombie -> zombie respond with `RST` with it's IP ID (probing) -> Forge a SYN packet "from the zombie" (spoof IP) and send it to the desired port on the target.  
 IF port is open&not filtered -> target responds to zombie with `SYN/ACK`-> zombie responds with `RST` (IP ID increase by 1)  
@@ -82,15 +82,29 @@ IF port is closed -> target responds to zombie with `RST` -> zombie ignore `RST`
 IF port is filtered -> target doesn't respond to zombie -> IP ID not changed  
 -> Probe the zombie's IP ID again.  
 IF IP ID increased by 2 - port is open and not filtered.  
-IF IP ID increased by 1 (increased only by probe `RST`) - port is closed or filtered
+IF IP ID increased by 1 (increased only by probe `RST`) - port is closed or filtered (both by firewall before target and between target and zombie)
 IF IP ID increased by >2 - bad zombie. Doesn't use predictable IP ID or was sending other packets during scan.
 
-Super sneaky. Can mislead IDS  
+Super sneaky. Can mislead IDS and IP-trust based firewalls  
 Very long (bcos timeouts)  
-Many ISP's block spoofing attempts with egress firewalls (that is firewalls monitoring traffic going out of ISP infrastructure)  
-`sudo nmap -Pn -sI <zombie IP/hostname> <target IP/hostname>`  
-`-Pn` used to avoid host detection - for sneakyness sake
-### UDP
+Many ISP's block spoofing attempts with egress firewalls (that is firewalls monitoring traffic going out of ISP infrastructure). Sometimes they block spoofing of only IPs from outside range of IPs used by their customers (resonable).  
+Fist you have to find an idle host fitting to be your zombie. It is best to choose hosts with low latency with in relation to target. (faster scan and therefore eith lower chances that there will be some unwanted sending on a side)  
+for zombie search it might be good to use `ipidseq.nse`  
+`sudo nmap -Pn -sI -p- <zombie IP/hostname:sendingport> <target IP/hostname>` We can check if the zombie "sending" port is open with SYN ping.
+`-Pn` used to avoid host detection - for sneakyness sake  
+https://nmap.org/book/idlescan.html
+### UDP ping
+connectionless stream protocol.  
+i.a. DNS 53, SNMP 161/162 (Simple Network Management Protocol), DHCP 67/68  
+Bypass many firewalls BUT pretty fking long (Linux kernel limits ICMP responses to 1/s and timeouts) and open&filtered ports rarely send any response.
+`sudo nmap -PU <port list>` host discovery. Send UDP datagram on probably empty port (processes would most likely drop empty datagram and we want response. Default port is 40125. You can change it in `DEFAULT_UDP_PROBE_PORT_SPEC` in `nmap.h`). If ICMP port unreachable - host seems up. If other ICMP error, TTL exceed or timeout - host is dead or unreachable (firewall?)  
+`sudo nmap -sU` port scanning. If an ICMP port unreachable error (type 3, code 3) is returned - closed. Other ICMP unreachable errors (type 3, codes 0, 1, 2, 9, 10, or 13) - filtered. If no reponse - open/filtered (we're assuming firewall eaten responses) -> sV might provide more info.  
+`sudo hpingh -2 <ip address> -p <port number>` for one port.
+### ARP scan
+send regular ARP requests looking for MAC addresses  
+usefull on LAN  
+`sudo nmap -sn -PR '192.168.0.*'` `-PR` ARP discovery  
+`ping -b <broadcast ID>` probably won't work
 
 
 
