@@ -57,7 +57,7 @@ Common ports for scanning:
 `-p <port ranges>`port number or range. `-p-` mean all 2^16 ports  
 `--exclude-ports <port ranges>`  
 
-### Service and version detection
+### Service and version detection (banner grabbing)
 `-sV` service&version detection. By default skips TCP 9100 bcos some printers print everything sent there. `--allports` will overwrite this behavior  
 ``
 
