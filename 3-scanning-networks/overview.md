@@ -19,7 +19,7 @@ To skip host discovery & port scanning BUT use NSE `-Pn -sn`
 #### hping3
 lower level & stealthier than nmap BUT can be used on 1 host and doesn't support IPv6  
 Probably won't be of much usage, but I'm going to run some test with it  
-  `ping -1 10.0.0.x --rand-dest -I eth0`  
+  `hping -1 10.0.0.x --rand-dest -I eth0`  
         `-1` ICMP mode  
         `--rand-dest` random destionation address mode  
         `-I <interface>` network interface name  
