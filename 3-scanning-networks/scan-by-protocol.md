@@ -60,7 +60,7 @@ If response `RST` - closed
 if ICMP unreachable - open/**filtered**  
 if timeout - filtered  
 `sudo nmap -sX`  
-`sudo hping -F -P -U <ip address> -p <port number>` -F for FIN, -P for PUSH), -U for URG  
+`sudo hping -8 <ports> -F -U -P <ip address> -V` -F for FIN, -P for PUSH, -U for URG  
 ###### Null scan
 send segment with TCP header flag 0 (no bits set)  
 `sudo nmap -sN`  
