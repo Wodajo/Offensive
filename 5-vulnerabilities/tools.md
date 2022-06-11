@@ -4,7 +4,7 @@ Paid version has also: OWASP Top 10 tools, dynamic payloads for anti-virus evasi
 [Armitage](https://github.com/rsmudge/armitage) is an open source graphical cyber attack management tool for Metasploit. I've seen infos that it has comparable functionality to paid MSF  
 
 `msfconsole` metasploit shell wrapper. Most features and most stable from MSF interfaces  
-tools are categorised into:  
+tools are categorised into modules:  
 `**aux**iliary` i.a. scanners. e.g. `search aux ftp`  
 `**exp**loit` e.g. `search exp ftp`  
 `**post**` e.g. `search post ftp`  
