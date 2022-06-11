@@ -31,6 +31,10 @@ Fast, reliable, stealthy (TCP connection is not established - may bypass logging
 `sudo nmap -PS` only host discovery. Default port is 80. `-PS22-25,80,113,1050,35000` you can pass arguments like with `-p`  
 `sudo nmap -sS` ports scanning. Port `filtered` if timeout or ICMP type 3(destination unreachable) code 0, 1, 2, 3, 9, 10, or 13  
 `sudo hping -8 <port list> -S <ip address> -V` `-8` scan mode, `-S` SYN flag, `V` verbose  
+##### TCP connect
+Use *connect* syscall to create full TCP connection. Doesn't need root  
+Longer, very likely logged.  
+`nmap -sT`
 ##### ACK scan
 send segment with `ACK` flag  
 used for mapping out firewall rulesets  
@@ -92,18 +96,27 @@ for zombie search it might be good to use `ipidseq.nse`
 `sudo nmap -Pn -sI -p- <zombie IP/hostname:sendingport> <target IP/hostname>` We can check if the zombie "sending" port is open with SYN ping.
 `-Pn` used to avoid host detection - for sneakyness sake  
 https://nmap.org/book/idlescan.html
+### SCTP scan
+SCTP is an UDP and TCP alternative. Scan seems alike TCP SYN  
+send an `INIT chunk`, as if you are going to open a real association and then wait for a response.  
+`INIT-ACK chunk` - open  
+`ABORT chunk` - close  
+ICMP unreachable error (type 3, code 0, 1, 2, 3, 9, 10, or 13) or timeout - filtered.  
+`sudo nmap -sY`
 ### UDP ping
 connectionless stream protocol.  
 i.a. DNS 53, SNMP 161/162 (Simple Network Management Protocol), DHCP 67/68  
 Bypass many firewalls BUT pretty fking long (Linux kernel limits ICMP responses to 1/s and timeouts) and open&filtered ports rarely send any response.
 `sudo nmap -PU <port list>` host discovery. Send UDP datagram on probably empty port (processes would most likely drop empty datagram and we want response. Default port is 40125. You can change it in `DEFAULT_UDP_PROBE_PORT_SPEC` in `nmap.h`). If ICMP port unreachable - host seems up. If other ICMP error, TTL exceed or timeout - host is dead or unreachable (firewall?)  
 `sudo nmap -sU` port scanning. If an ICMP port unreachable error (type 3, code 3) is returned - closed. Other ICMP unreachable errors (type 3, codes 0, 1, 2, 9, 10, or 13) - filtered. If no reponse - open/filtered (we're assuming firewall eaten responses) -> sV might provide more info.  
-`sudo hpingh -2 <ip address> -p <port number>` for one port.
+`sudo unicornscan -mU <address>` -mU mode UDP. Somehow much faster. Wierd  
+`sudo hpingh -2 <ip address> -p <port number>` for one port. Not that cool:/
 ### ARP scan
 send regular ARP requests looking for MAC addresses  
 usefull on LAN  
 `sudo nmap -sn -PR '192.168.0.*'` -PR ARP discovery  
 `sudo arp-scan -I wlan0 <addressIP/24>` -I interface  
+`sudo netdiscover -r 10.0.2.1/24` -r range (not autoscan)  
 `ip neigh` or `ip neigh show` show ARP table of current host  
 
 
