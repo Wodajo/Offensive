@@ -55,7 +55,9 @@ Common ports for scanning:
 9100 tcp/udp AppSocket/JetDirect (HP JetDirect, Printer PDL (page description language) Data Stream)  
 
 `-p <port ranges>`port number or range. `-p-` mean all 2^16 ports  
+`-p U:53,111,137,T:21-25,80,139,8080` for specifying sake  
 `--exclude-ports <port ranges>`  
+`-r` scan ports consecutively (without randomisation)  
 
 ### Service and version detection (banner grabbing)
 `-sV` service&version detection. By default skips TCP 9100 bcos some printers print everything sent there. `--allports` will overwrite this behavior  
