@@ -1,4 +1,5 @@
 ### nmap
+Use with -v verbose - gives some more intresting info like IP ID in case of `-O`
 ### netcat
 ### hping
 ### ping
