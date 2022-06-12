@@ -47,9 +47,11 @@ Categories: *auth*, *broadcast*, *brute*, *default*. *discovery*, *dos*, *exploi
 `-sC` aka `--script=default`. Some of them are intrtusive.  
 `--script-help <filename>|<category>|<directory>|<expression>|all[,...]` help about a scripts. For individual scripts e.g. `nmap --script-help ftp-anon` or for categories `nmap --script-help default`  
 `--script <filename>|<category>|<directory>/|<expression>[,...]` Each element is interpreted first as an expression, then as a category, and finally as a file or directory name. E.g. `nmap --script "http-*"`, `nmap --script "not intrusive"` - every script except from *intrusive* category, `nmap --script "default or safe"` - in *default*, *safe* or both, `nmap --script "default and safe"`, `nmap --script "(default or safe or intrusive) and not http-*"`  
+
 `-A` OS detection • version detection • script scanning • traceroute  
 
 ### netcat
+
 ### hping
 ### ping
 ### unicornscan (own implementation of the TCP/IP stack and not operating system's - faster, but... why?)
