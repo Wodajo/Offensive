@@ -47,11 +47,11 @@ Common ports for scanning:
 53 tcp/udp DNS  
 80 tcp HTTP/1.0 HTTP/1.1 HTTP 1.2  
 80 udp HTTP/3 (use QUIC)  
-123 tcp NTP Network Time Protocol  
+123 tcp NTP (Network Time Protocol)  
 443 tcp/udp HTTPS  
-500 tcp/udp IKE/IPSec Internet Key Exchange/IPSec  
-631 tcp/udp IPP InternetPrinting Protocol  
-3389 tcp/udp RDP Remote Desktop Protocol  
+500 tcp/udp IKE/IPSec (Internet Key Exchange/IPSec)  
+631 tcp/udp IPP (InternetPrinting Protocol)  
+3389 tcp/udp RDP (Remote Desktop Protocol)  
 9100 tcp/udp AppSocket/JetDirect (HP JetDirect, Printer PDL (page description language) Data Stream)  
 
 `-p <port ranges>`port number or range. `-p-` mean all 2^16 ports  
