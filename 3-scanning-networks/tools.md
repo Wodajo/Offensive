@@ -14,7 +14,7 @@ include:
 - **OS detection** `-O` to enable  
 - **traceroute** `--traceroute` to enable. Find network routes. Usually involves another round of reverse-DNS resolution for the intermediate hosts.
 - IF `-sC` or `--script` -> **script scanning** - NSE scripts, generally run once per each target host and port number they interact with. Commonly used for detecting service vulnerabilities, malware discovery, collecting more information from databases and other network services, and advanced version detection.  
-- **output** screen on file. It's rather advantageous to use `-v` verbose. It gives more intresting info (like IP ID in case of `-O` - maybe it's a good host for idle scan?).  
+- **output** screen or file. It's rather advantageous to use `-v` verbose. It gives more intresting info (like IP ID in case of `-O` - maybe it's a good host for idle scan?).  
 `-oN/-oX/-oS/-oG <filename>` output scan in normal, XML, s|<rIpt kIddi3, and Grepable format  
 #### host discovery
 `-PS/PA/PU/PY <portlist>` TCP SYN/ACK, UDP or SCTP discovery to given ports
