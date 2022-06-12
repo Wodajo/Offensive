@@ -8,9 +8,9 @@ Host discovery -> Port scanning & Banner grabbing -> Searching for vulnerabiliti
 In local ethernet network ARP requests are always used. Unless `--send-ip` or `--disable-arp-ping`
 
 `-sn` no port scans after host discovery. Use ICMP echo request, TCP SYN to port 443, TCP ACK to port 80, and an ICMP timestamp request for host discovery  
-`-Pn` no host discovery, pass given IPs like with `-sL` (list scan)  
+`-Pn` no host discovery, pass given IPs like with `-sL` would print out  
 To skip host discovery & port scanning BUT use NSE `-Pn -sn`  
-`-P*` use all probe scans. (Loong, especially UDP)  
+`-P*` ping scans.  
   `-PS/PA/PU/PY <portlist>` TCP SYN/ACK, UDP or SCTP discovery to given ports  
   `-PE/PP/PM` ICMP type 8 expecting type 0 (blocked by most firewalls but might work in internal networks), ICMP code 13 (timestamp request), ICMP code 17 (network mask)  
   `-PO <protocol list>` "IP protocol ping"  
@@ -38,7 +38,7 @@ This will populate arp table. To show `ip neigh` (from neighbour)
 `--scanflags` custom TCP flags. You specify how nmap is understanding responses (e.g. `-sF`) and what packets are sent 
 (mash flags together e.g. `--scanflags URGACKPSHRSTSYNFIN`). Default is SYN scan understanding of replys  
 `-sO` IP scan  
-nmap from default scans only firs 1000 most common ports  
+nmap by default scans only firs 1000 most common ports  
 Common ports for scanning:  
 21 tcp FTP  
 22 tcp SSH  
