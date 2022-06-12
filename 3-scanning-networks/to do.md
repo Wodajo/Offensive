@@ -10,7 +10,7 @@ Describe bypassing of firewalls, IDE (intrusion detection systems) and suck. Sta
 
 
 GNS3 fun ideas:
-https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/4-Nmap.md
-Test hping scans dynamics with home made GNS3 network (especially packet crafting)
-Please, experiment with IDLE scan. This is so cool*_*
+https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/4-Nmap.md  
+Test hping scans dynamics with home made GNS3 network (especially packet crafting)  
+Please, experiment with IDLE scan. This is so cool*_*  
 
