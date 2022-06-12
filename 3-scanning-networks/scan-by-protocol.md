@@ -96,13 +96,20 @@ for zombie search it might be good to use `ipidseq.nse`
 `sudo nmap -Pn -sI -p- <zombie IP/hostname:sendingport> <target IP/hostname>` We can check if the zombie "sending" port is open with SYN ping.
 `-Pn` used to avoid host detection - for sneakyness sake  
 https://nmap.org/book/idlescan.html
-### SCTP scan
-SCTP is an UDP and TCP alternative. Scan seems alike TCP SYN  
+### SCTP
+SCTP is an UDP and TCP alternative. Scan seems alike TCP SYN 
+##### INIT can
 send an `INIT chunk`, as if you are going to open a real association and then wait for a response.  
 `INIT-ACK chunk` - open  
 `ABORT chunk` - close  
 ICMP unreachable error (type 3, code 0, 1, 2, 3, 9, 10, or 13) or timeout - filtered.  
-`sudo nmap -sY`
+`sudo nmap -sY`  
+##### COOKIE ECHO scan
+send chunks with `COOKIE ECHO`  
+if timeout (chunk is dropped or filtered) - open/filtered  
+if `ABORT` - closed  
+There may be non-stateful firewall blocking INIT chunks but not COOKIE ECHO
+`sudo nmap -sZ`
 ### UDP ping
 connectionless stream protocol.  
 i.a. DNS 53, SNMP 161/162 (Simple Network Management Protocol), DHCP 67/68  
