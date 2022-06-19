@@ -32,7 +32,7 @@ by default nmap scans only firs 1000 most common ports
 `-sO` IP scan for figuring out used protocols (by ports)
 #### port selection
 `-p <port ranges>`port number or range. `-p-` mean all 2^16 ports  
-`-p U:53,111,137,T:21-25,80,139,8080` for specifying sake  
+`-p U:53,111,137,T:21-25,80,139,8080` for specifying sake. e.g. `sudo nmap -sU -sS -pT:53,U:53 -sV -sC 10.0.2.9`  
 `--exclude-ports <port ranges>`  
 `-r` scan ports consecutively (without randomisation)  
 #### Banner grabbing
