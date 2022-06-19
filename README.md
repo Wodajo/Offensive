@@ -10,7 +10,13 @@ https://github.com/undergroundwires/CEH-in-bullet-points
 General networking:
 Computer Networking James F. Kurose and Keith Ross, 8th Edition  
 https://nmap.org/book/toc.html  
-RFC [populate me](https://www.google.com)
+RFC:  
+[TLS](https://www.rfc-editor.org/rfc/rfc5246.html)  
+[HTTP/1.0](https://www.rfc-editor.org/rfc/rfc1945)  
+[HTTP/1.1 - Message Syntax and Routing](https://www.rfc-editor.org/rfc/rfc7230)  
+HTTP/2
+This is important babe https://www.rfc-editor.org/rfc/rfc8740  
+
 
 How to markdown:  
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links  
