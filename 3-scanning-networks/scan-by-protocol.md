@@ -125,7 +125,7 @@ usefull on LAN
 `sudo arp-scan -I wlan0 <addressIP/24>` -I interface  
 `sudo netdiscover -r 10.0.2.1/24` -r range (not autoscan)  
 `ip neigh` or `ip neigh show` show ARP table of current host  
-
+ 
 
 
 
