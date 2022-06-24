@@ -4,7 +4,7 @@ Banner = name + version
 OS have different TCP/IP stack implementations (i.a. TTL, TCP Window size in the IP header of the first packet)  
 aka TCP/IP stack fingerprinting
 ##### ping
-TTL - 64 (linux), 128 (Windows), 256 (Network, Solaris)
+TTL - 64 (Linux), 128 (Windows), 256 (Network, Solaris)
 ##### nmap
 `sudo nmap -O` i.a. TCP ISN sampling, TCP options support and ordering, IP ID sampling, and the initial window size check.  
 far more effective if at least one `open` and `closed` port. If that criteria are not satisfied `--osscan-limit` will omit OS detection for the host  
