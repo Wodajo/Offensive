@@ -50,8 +50,8 @@ Categories: *auth*, *broadcast*, *brute*, *default*. *discovery*, *dos*, *exploi
 
 `-A` OS detection • version detection • script scanning • traceroute  
 
-### netcat
-
+### netcat (and maybe ncat?)
+### nping
 ### hping
 ### ping
 ### unicornscan (own implementation of the TCP/IP stack and not operating system's - faster, but... why?)
