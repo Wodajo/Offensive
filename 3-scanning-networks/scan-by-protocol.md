@@ -116,7 +116,7 @@ i.a. DNS 53, SNMP 161/162 (Simple Network Management Protocol), DHCP 67/68
 Bypass many firewalls BUT pretty fking long (Linux kernel limits ICMP responses to 1/s and timeouts) and open&filtered ports rarely send any response.
 `sudo nmap -PU <port list>` host discovery. Send UDP datagram on probably empty port (processes would most likely drop empty datagram and we want response. Default port is 40125. You can change it in `DEFAULT_UDP_PROBE_PORT_SPEC` in `nmap.h`). If ICMP port unreachable - host seems up. If other ICMP error, TTL exceed or timeout - host is dead or unreachable (firewall?)  
 `sudo nmap -sU` port scanning. If an ICMP port unreachable error (type 3, code 3) is returned - closed. Other ICMP unreachable errors (type 3, codes 0, 1, 2, 9, 10, or 13) - filtered. If no reponse - open/filtered (we're assuming firewall eaten responses) -> sV might provide more info.  
-`sudo unicornscan -mU <address>` -mU mode UDP. Somehow much faster. Wierd  
+`sudo unicornscan -mU <addresses>` -mU mode UDP. Somehow much faster. Wierd  
 `sudo hpingh -2 <ip address> -p <port number>` for one port. Not that cool:/
 ### ARP scan
 send regular ARP requests looking for MAC addresses  
