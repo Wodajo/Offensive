@@ -17,3 +17,4 @@ e.g. connect to port 80 and type `GET /index.html HTTP 1.0` or `HEAD / HTTP/1.1`
 ##### netcat (nc symlink)
 `nc -nv <ip address> <port>` -n no DNS resolution, -v verbose  
 use like telnet
+##### enum4linux
