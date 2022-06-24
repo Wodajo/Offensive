@@ -61,7 +61,8 @@ Common ports for scanning:
 
 ### Service and version detection (banner grabbing)
 `-sV` service&version detection. By default skips TCP 9100 bcos some printers print everything sent there. `--allports` will overwrite this behavior  
-``
+
+Rest is explained in banner-grabbing.md
 
 
 
