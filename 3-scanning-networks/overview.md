@@ -2,6 +2,9 @@ Host discovery -> Port scanning & Banner grabbing -> Searching for vulnerabiliti
 
 "ping sweep" -  using ICMP echo request to look for active hosts by quering IP addresses one by one (queries of broadcast addresses often blocked)
 
+In IPv6 there are massive amounts of possible IP addresses - "bruteforce" scanning would take a lot of time.  
+It would be best to first look for proven IPv6 addresses in e.g. traffic, emails, logs...
+
 ### Host discovery
 #### nmap
 `-n/R` no/always DNS resolution (default sometimes:p)  
@@ -62,8 +65,4 @@ Common ports for scanning:
 ### Service and version detection (banner grabbing)
 `-sV` service&version detection. By default skips TCP 9100 bcos some printers print everything sent there. `--allports` will overwrite this behavior  
 
-Rest is explained in banner-grabbing.md
-
-
-
-
+Continuation in banner-grabbing.md
