@@ -18,7 +18,7 @@ If `-sL -n` nmap will JUST print out IP addresses. `-sL` is NOT meant for direct
 - **output** screen or file. It's rather advantageous to use `-v` verbose. It gives more intresting info (like IP ID in case of `-O` - maybe it's a good host for idle scan?).  
 `-oN/-oX/-oS/-oG <filename>` output scan in normal, XML, s|<rIpt kIddi3, and Grepable format  
 #### host discovery
-`-PS/PA/PU/PY <portlist>` TCP SYN/ACK, UDP or SCTP discovery to given ports
+`-PS/PA/PU/PY <portlist>` TCP SYN/ACK, UDP or SCTP discovery to given ports  
 `-PE/PP/PM` ICMP type 8 expecting type 0 (blocked by most firewalls but might work in internal networks), ICMP code 13 (timestamp request), ICMP code 17 (network mask)
 `-PO <protocol list>` "IP protocol ping"  
 `-Pn` no host discovery  
