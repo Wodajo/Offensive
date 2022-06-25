@@ -9,7 +9,7 @@ What I want?:
 - try to discover every host on a subnet
 - try to scan ports on active hosts
 - try banner grabbing of active hosts and their open ports
-- prepare a raport (For now - markdown on github. Later think about exporting joplin/cherrytree or sth like this)
+- prepare a raport (markdown in Obsidian -> git push)
 - sniff whole traffic in wireshark on attacking machine for later analysis
 
 # Project 2
