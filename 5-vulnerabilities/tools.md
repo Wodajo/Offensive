@@ -9,11 +9,11 @@ tools are categorised into modules:
 `**exp**loit` e.g. `search exp ftp`  
 `**post**` e.g. `search post ftp`  
 
-`info 0  
-info <name>` info about tools listed by cmd above  
+`info 0`  
+`info <name>` info about tools listed by cmd above  
 
-`use 0  
-use <name>` take a tool to a workshop  
+`use 0`  
+`use <name>` take a tool to a workshop  
 `options`  
 `set RHOSTS 10.0.2.5` set variables to desired values  
 `unset RHOSTS`  
