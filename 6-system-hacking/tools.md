@@ -9,4 +9,6 @@
 
 `crunch <min-length> <max-length> <character-pool> -o <file-name>` generates passswords  
 
+`ncrack -U /usr/share/wordlists/seclists/Usernames/cirt-default-usernames.txt -P /usr/share/wordlists/seclists/Usernames/cirt-default-usernames.txt ftp://10.0.2.15:21 -v`  
+
 for encodings [cybershef](https://cyberchef.org/)  
