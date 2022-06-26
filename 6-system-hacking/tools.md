@@ -11,4 +11,4 @@
 
 `ncrack -U /usr/share/wordlists/seclists/Usernames/cirt-default-usernames.txt -P /usr/share/wordlists/seclists/Usernames/cirt-default-usernames.txt ftp://10.0.2.15:21 -v`  
 
-for encodings [cybershef](https://cyberchef.org/)  
+for encodings [cyberchef](https://cyberchef.org/)  
