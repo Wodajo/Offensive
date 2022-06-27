@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "e1cd6a2b6ba5658a",
+    "type": "split",
+    "children": [
+      {
+        "id": "6f383e455bd0a5dd",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "General.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d99492fee43fa841",
+    "type": "split",
+    "children": [
+      {
+        "id": "e620dbd7beff9c71",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b4841167d55c12b3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "b11f3b321fc832b8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 213
+  },
+  "right": {
+    "id": "6d63ab5a9a43c40a",
+    "type": "split",
+    "children": [
+      {
+        "id": "f836cd91019dd498",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "51f3f08421a3b8a6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "General.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "6f383e455bd0a5dd",
+  "lastOpenFiles": [
+    "General.md",
+    "zad 3 atak na wifi.md",
+    "do DoS'a.md",
+    "zad1 - 1.md",
+    "zad 5 ssh.md",
+    "zad1 - 2.md",
+    "zad2 - 2.md",
+    "zad2 - 1.md",
+    "zad1 - 3.md",
+    "zad4 analiza HTTP.md"
+  ]
+}

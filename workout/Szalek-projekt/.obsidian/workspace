@@ -1,0 +1,124 @@
+{
+  "main": {
+    "id": "a03f48a5ccd2dcfc",
+    "type": "split",
+    "children": [
+      {
+        "id": "47a7cb0b24bc7052",
+        "type": "split",
+        "children": [
+          {
+            "id": "789cffb3dccfd870",
+            "type": "leaf",
+            "dimension": 79.87927565392354,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tasks/log-arp-scans.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b39e2614b7dabebb",
+            "type": "leaf",
+            "dimension": 20.12072434607646,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tasks/task1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ab3930cf0860742a",
+    "type": "split",
+    "children": [
+      {
+        "id": "4ef2d145aed2a08a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e4da61f2a5a23cdf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c90d81a3c54435f6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 172
+  },
+  "right": {
+    "id": "b6ef0fc3ae5a1057",
+    "type": "split",
+    "children": [
+      {
+        "id": "179f0c384f698af5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dee72cdab9a0065c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "tasks/log-arp-scans.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "789cffb3dccfd870",
+  "lastOpenFiles": [
+    "tasks/log-arp-scans.md",
+    "tasks/21-tcp.md",
+    "tasks/log-21ftp-ncrack.md",
+    "tasks/log-ip-a.md",
+    "tasks/3. target.md",
+    "tasks/log-nmap-21tcp-sV.md",
+    "tasks/1. index.md",
+    "tasks/2. network.md",
+    "tasks/standelon tasks (reverse shell).md",
+    "tasks/passwords to crack.md"
+  ]
+}
