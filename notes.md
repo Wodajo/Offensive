@@ -11,4 +11,4 @@
 
 Wierd:
 - `sudo nmap -Pn -sS -p- 10.0.2.14 | grep ^[0-9] | awk -F"/" '{print $1}' | sed 's/\n/,/g'` doesn't substitute newline with a comma. I don't understand why
-- 
+- I can't force `nmap` to not use ARP on LAN, and to try host discovery when ARP fails >.<
