@@ -1,4 +1,4 @@
-Hash cracking:
+Hash cracking:  
 identify hash type with `hash identifier` (with a small [CrackStation](https://crackstation.net/) peekaboo)  
 	bruteforce cracking with `hashcat`  [zad. 1](./zad1)
 	dictionary cracking with `john`  [zad. 2](./zad2)
