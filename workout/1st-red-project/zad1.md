@@ -21,7 +21,7 @@ b021d0862bc76b0995927902ec697d97b5080341a53cd90b780f50fd5886f4160bbb9d4a573b76c2
 
 7aaa0f57
 ADLER-32 lub CRC-32B  
-### Whats up with the zeros? How many should I append?  
+**Whats up with the zeros? How many should I append?**  
 1. `hashcat -a 3 -m 11500 7aaa0f57:00000000 --increment --increment-min 1 --increment-max 5 ?d?d?d?d?d`
 2. `hashcat -a 3 -m 11500 7aaa0f57:00000000 --increment --increment-min 1 --increment-max 5 ?d?d?d?d?d --show`
 ```
