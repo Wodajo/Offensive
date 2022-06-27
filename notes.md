@@ -7,3 +7,8 @@
 - Network scanning practice&polishing (time for GNS3 labs!)
 
 - DNS - i.a. for sake of footprinting and enumeration chapters. Configure your own DNS server
+
+
+Wierd:
+- `sudo nmap -Pn -sS -p- 10.0.2.14 | grep ^[0-9] | awk -F"/" '{print $1}' | sed 's/\n/,/g'` doesn't substitute newline with a comma. I don't understand why
+- 
