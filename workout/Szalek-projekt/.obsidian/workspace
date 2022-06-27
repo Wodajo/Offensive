@@ -10,11 +10,11 @@
           {
             "id": "789cffb3dccfd870",
             "type": "leaf",
-            "dimension": 79.87927565392354,
+            "dimension": 62.57545271629779,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "trash/8180 http.md",
+                "file": "tasks/3. target.md",
                 "mode": "source",
                 "source": false
               }
@@ -23,7 +23,7 @@
           {
             "id": "b39e2614b7dabebb",
             "type": "leaf",
-            "dimension": 20.12072434607646,
+            "dimension": 37.42454728370221,
             "state": {
               "type": "markdown",
               "state": {
@@ -69,12 +69,20 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "afb078e7b1b8a034",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 172
+    "width": 153
   },
   "right": {
     "id": "b6ef0fc3ae5a1057",
@@ -90,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "trash/8180 http.md",
+                "file": "tasks/3. target.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +106,17 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "5d7e3987b6be01af",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
               }
             }
           }
@@ -110,15 +129,15 @@
   },
   "active": "789cffb3dccfd870",
   "lastOpenFiles": [
-    "trash/8180 http.md",
-    "trash/80 http.md",
-    "trash/21 ftp.md",
-    "tasks/passwords to crack.md",
-    "tasks/log-udp-ports-scan.md",
-    "tasks/log-tcp-ports-scans.md",
-    "tasks/log-route.md",
-    "tasks/log-ping.md",
-    "tasks/log-nmap-host-discovery.md",
-    "tasks/log-nmap-21tcp-sV.md"
+    "tasks/3. target.md",
+    "tasks/21-tcp.md",
+    "tasks/23-tcp.md",
+    "tasks/log-23telnet-telnet.md",
+    "tasks/log-21ftp-ncrack.md",
+    "tasks/log-23telnet-nmap-sV.md",
+    "tasks/2. network.md",
+    "tasks/log-nmap-21tcp-sV.md",
+    "tasks/log-arp-scans.md",
+    "tasks/0. general.md"
   ]
 }

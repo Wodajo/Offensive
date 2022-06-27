@@ -14,8 +14,8 @@ Ending arp-scan 1.9.7: 256 hosts scanned in 2.232 seconds (114.70 hosts/sec). 4 
 
 
 
-`sudo nmap -PR -sn 10.0.2.15`  to samo co wyzej
-tylko w nmapie (brzydszy output)
+`sudo nmap -PR -sn 10.0.2.15`   
+to samo co wyzej tylko w nmapie (brzydszy output ALE jest timestamp)  
 
 ```
 Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-25 20:14 EDT
@@ -34,4 +34,12 @@ MAC Address: 08:00:27:02:41:95 (Oracle VirtualBox virtual NIC)
 Nmap scan report for 10.0.2.4
 Host is up.
 Nmap done: 256 IP addresses (5 hosts up) scanned in 2.22 seconds
+```
+
+`sudo arp-scan -l`  2022-06-27 22:44
+```
+10.0.2.1        52:54:00:12:35:00       QEMU
+10.0.2.2        52:54:00:12:35:00       QEMU
+10.0.2.3        08:00:27:07:dc:51       PCS Systemtechnik GmbH
+10.0.2.13       08:00:27:02:41:95       PCS Systemtechnik GmbH
 ```
