@@ -14,7 +14,7 @@ b021d0862bc76b0995927902ec697d97b5080341a53cd90b780f50fd5886f4160bbb9d4a573b76c2
 SHA256 or Whirlpool
 1. `hashcat -m 1700 -a 3 hash2.hash --increment --increment-min 1 --increment-max 5 ?d?d?d?d?d -o craked2.txt`
 Using `-u` seems not reliable. `--show` after cracking works better for me  
-Mask is known bcos of CrackStation lookup
+Mask is known bcos of CrackStation(https://crackstation.net/) lookup
 ```
 b021d0862bc76b0995927902ec697d97b5080341a53cd90b780f50fd5886f4160bbb9d4a573b76c23004c9b3a44ac95cfde45399e3357d1f651b556dfbd0d58f:6969
 ```
