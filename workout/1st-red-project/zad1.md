@@ -20,8 +20,8 @@ b021d0862bc76b0995927902ec697d97b5080341a53cd90b780f50fd5886f4160bbb9d4a573b76c2
 ```
 
 7aaa0f57
-ADLER-32 lub CRC-32B
-**WHAT'S UP WITH ZEROS?**  
+ADLER-32 lub CRC-32B  
+### Whats up with the zeros? How many should I append?  
 1. `hashcat -a 3 -m 11500 7aaa0f57:00000000 --increment --increment-min 1 --increment-max 5 ?d?d?d?d?d`
 2. `hashcat -a 3 -m 11500 7aaa0f57:00000000 --increment --increment-min 1 --increment-max 5 ?d?d?d?d?d --show`
 ```
@@ -58,4 +58,4 @@ SHA-512 or Whirpool
 `-1` custom charset. Password should have had 6 alphanumeric characters. That was not true.
 2. `hashcat -a 3 -m 1700 44d9886c0a57ddbfdb31aa936bd498bf2ab70f741ee47047851e768db953fc4e43f92be953e205a3d1b3ab752ed90379444b651b582b0bc209a739a624e109da --increment --increment-min 6 --increment-max 6 ?a?a?a?a?a?a`
 3. `hashcat -a 3 -m 1700 44d9886c0a57ddbfdb31aa936bd498bf2ab70f741ee47047851e768db953fc4e43f92be953e205a3d1b3ab752ed90379444b651b582b0bc209a739a624e109da --increment --increment-min 6 --increment-max 6 ?a?a?a?a?a?a --show`
-## PLACE FOR CRACKED HASH LOG
+### PLACE FOR CRACKED HASH LOG
