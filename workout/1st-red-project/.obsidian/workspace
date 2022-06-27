@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "General.md",
+            "file": "zad1.md",
             "mode": "source",
             "source": false
           }
@@ -69,13 +69,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "General.md",
+                "file": "zad1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
+                "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
@@ -89,15 +89,15 @@
   },
   "active": "6f383e455bd0a5dd",
   "lastOpenFiles": [
-    "General.md",
-    "zad 3 atak na wifi.md",
-    "do DoS'a.md",
-    "zad1 - 1.md",
-    "zad 5 ssh.md",
-    "zad1 - 2.md",
-    "zad2 - 2.md",
-    "zad2 - 1.md",
-    "zad1 - 3.md",
-    "zad4 analiza HTTP.md"
+    "zad1.md",
+    "tools.md",
+    "zad9.md",
+    "zad8.md",
+    "zad7.md",
+    "Menu.md",
+    "zad6.md",
+    "zad5.md",
+    "zad3-2.md",
+    "zad4.md"
   ]
 }
