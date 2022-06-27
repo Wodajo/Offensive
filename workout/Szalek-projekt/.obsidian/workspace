@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tasks/log-arp-scans.md",
+                "file": "trash/8180 http.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tasks/log-arp-scans.md",
+                "file": "trash/8180 http.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,15 +110,15 @@
   },
   "active": "789cffb3dccfd870",
   "lastOpenFiles": [
-    "tasks/log-arp-scans.md",
-    "tasks/21-tcp.md",
-    "tasks/log-21ftp-ncrack.md",
-    "tasks/log-ip-a.md",
-    "tasks/3. target.md",
-    "tasks/log-nmap-21tcp-sV.md",
-    "tasks/1. index.md",
-    "tasks/2. network.md",
-    "tasks/standelon tasks (reverse shell).md",
-    "tasks/passwords to crack.md"
+    "trash/8180 http.md",
+    "trash/80 http.md",
+    "trash/21 ftp.md",
+    "tasks/passwords to crack.md",
+    "tasks/log-udp-ports-scan.md",
+    "tasks/log-tcp-ports-scans.md",
+    "tasks/log-route.md",
+    "tasks/log-ping.md",
+    "tasks/log-nmap-host-discovery.md",
+    "tasks/log-nmap-21tcp-sV.md"
   ]
 }
