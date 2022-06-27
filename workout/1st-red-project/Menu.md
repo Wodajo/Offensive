@@ -3,7 +3,7 @@ identify hash type with `hash identifier` (with a small [CrackStation](https://c
 	bruteforce cracking with `hashcat`  [zad. 1](./zad1)  
 	dictionary cracking with `john`  [zad. 2](./zad2)  
 
-Wifi attack:
+Wifi attack:  
 with `wifite`  
 	[zad. 3 - 1](./zad3-1)  
 with `aircrack-ng`  
