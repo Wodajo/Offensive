@@ -14,7 +14,7 @@ b021d0862bc76b0995927902ec697d97b5080341a53cd90b780f50fd5886f4160bbb9d4a573b76c2
 SHA256 or Whirlpool
 1. `hashcat -m 1700 -a 3 hash2.hash --increment --increment-min 1 --increment-max 5 ?d?d?d?d?d -o craked2.txt`
 Using `-u` seems not reliable. `--show` after cracking works better for me  
-Mask is known bcos of CrackStation(https://crackstation.net/) lookup
+Mask is known bcos of [CrackStation](https://crackstation.net/) lookup
 ```
 b021d0862bc76b0995927902ec697d97b5080341a53cd90b780f50fd5886f4160bbb9d4a573b76c23004c9b3a44ac95cfde45399e3357d1f651b556dfbd0d58f:6969
 ```
@@ -54,7 +54,8 @@ SHA-512 or Whirpool
 
 44d9886c0a57ddbfdb31aa936bd498bf2ab70f741ee47047851e768db953fc4e43f92be953e205a3d1b3ab752ed90379444b651b582b0bc209a739a624e109da
 SHA-512 or Whirpool
-1. `hashcat -a 3 -m 1700 44d9886c0a57ddbfdb31aa936bd498bf2ab70f741ee47047851e768db953fc4e43f92be953e205a3d1b3ab752ed90379444b651b582b0bc209a739a624e109da --increment --increment-min 6 --increment-max 6 -1 ?l?u?d ?1?1?1?1?1?1`
+1. `hashcat -a 3 -m 1700 44d9886c0a57ddbfdb31aa936bd498bf2ab70f741ee47047851e768db953fc4e43f92be953e205a3d1b3ab752ed90379444b651b582b0bc209a739a624e109da --increment --increment-min 6 --increment-max 6 -1 ?l?u?d ?1?1?1?1?1?1`  
 `-1` custom charset. Password should have had 6 alphanumeric characters. That was not true.
 2. `hashcat -a 3 -m 1700 44d9886c0a57ddbfdb31aa936bd498bf2ab70f741ee47047851e768db953fc4e43f92be953e205a3d1b3ab752ed90379444b651b582b0bc209a739a624e109da --increment --increment-min 6 --increment-max 6 ?a?a?a?a?a?a`
 3. `hashcat -a 3 -m 1700 44d9886c0a57ddbfdb31aa936bd498bf2ab70f741ee47047851e768db953fc4e43f92be953e205a3d1b3ab752ed90379444b651b582b0bc209a739a624e109da --increment --increment-min 6 --increment-max 6 ?a?a?a?a?a?a --show`
+## PLACE FOR CRACKED HASH LOG
