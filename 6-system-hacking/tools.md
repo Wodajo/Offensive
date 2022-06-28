@@ -36,8 +36,9 @@ Target:
 [other reverse shells](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
 
 Python tty (teletypewriter) wrapper:  
-```python -c 'import pty; pty.spawn("/bin/bash")'  
+```bash
+python-c 'import pty; pty.spawn("/bin/bash")'  
 export TERM=xterm  
 CTRL+Z  
-stty raw -echo; fg
+stty raw -echo; fg  
 ```
