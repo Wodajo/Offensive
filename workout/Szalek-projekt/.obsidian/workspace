@@ -10,7 +10,7 @@
           {
             "id": "789cffb3dccfd870",
             "type": "leaf",
-            "dimension": 62.57545271629779,
+            "dimension": 62.17303822937625,
             "state": {
               "type": "markdown",
               "state": {
@@ -23,7 +23,7 @@
           {
             "id": "b39e2614b7dabebb",
             "type": "leaf",
-            "dimension": 37.42454728370221,
+            "dimension": 37.82696177062374,
             "state": {
               "type": "markdown",
               "state": {
@@ -130,14 +130,14 @@
   "active": "789cffb3dccfd870",
   "lastOpenFiles": [
     "tasks/3. target.md",
-    "tasks/21-tcp.md",
+    "tasks/log-23telnet-ncrack-root.md",
     "tasks/23-tcp.md",
-    "tasks/log-23telnet-telnet.md",
-    "tasks/log-21ftp-ncrack.md",
-    "tasks/log-23telnet-nmap-sV.md",
-    "tasks/2. network.md",
-    "tasks/log-nmap-21tcp-sV.md",
-    "tasks/log-arp-scans.md",
-    "tasks/0. general.md"
+    "tasks/log-ncrack-80tcp.md",
+    "tasks/task1.md",
+    "tasks/80-tcp.md",
+    "tasks/8180-tcp.md",
+    "templates/time.md",
+    "trash/21 ftp.md",
+    "trash/80 http.md"
   ]
 }

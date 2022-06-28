@@ -13,6 +13,7 @@ use `-o results.txt` flag OR after cracking type the same command with appended 
 
 `ftp` You should learn more
 
+`msfconsole`
 `wireshark`
 `ssh`
 `scp`

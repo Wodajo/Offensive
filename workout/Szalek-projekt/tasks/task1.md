@@ -64,7 +64,7 @@
 
 
 ## Web (80-http page)
-- [ ] Crete page for **80-http**
+- [x] Crete page for **80-http**
 	- Copy nmap result for port 80
 	- clean nots
 	- create screenshot
