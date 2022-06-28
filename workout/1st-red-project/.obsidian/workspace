@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "zad8.md",
+            "file": "zad7.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zad8.md",
+                "file": "zad7.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "6f383e455bd0a5dd",
   "lastOpenFiles": [
-    "zad8.md",
-    "Menu.md",
-    "tools.md",
     "zad7.md",
-    "zad3-1.md",
-    "zad1.md",
-    "zad9.md",
+    "Menu.md",
     "zad6.md",
     "zad5.md",
-    "zad3-2.md"
+    "zad4.md",
+    "zad3-2.md",
+    "zad3-1.md",
+    "zad2.md",
+    "zad1.md",
+    "zad8.md"
   ]
 }

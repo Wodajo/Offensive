@@ -1,6 +1,6 @@
-Sniff `eth0` interface on kali VM with `wireshark`-> open `ssh` connection with other VM -> send passwords in plain text file using `scp` -> try to find passwords in `wireshark` logs
+Sniff `eth0` interface on kali VM with `wireshark`-> open `ssh` connection with other VM -> send passwords in plain text file using `scp` -> try to find passwords in `wireshark` logs  
 
-`ssh root@192.168.1.104`   
-`scp plik.txt kali@192.168.1.105:/home/kali`
+`ssh root@192.168.1.106`   
+`scp plik.txt root@192.168.1.106:/home/root`  
 
-Post screenshots here
+![Comunicatiopn over ssh is encrypted](./img/ssh-1.png)
