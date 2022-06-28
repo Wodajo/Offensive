@@ -15,3 +15,5 @@ Wierd:
 
 - I can't force `nmap` to not use ARP on LAN
 - How can I perform smb evalutaion? Using NSE scripts blindly doesn't seem precise
+or maybe could I list CVE's of current service and enumerate by them? That would be cool
+- 
