@@ -18,3 +18,4 @@ Wierd:
 or maybe could I list CVE's of current service and enumerate by them? That would be cool
 - some problem with executing ncrack dict attack on telnet.  
 `sudo ncrack -U /usr/share/wordlists/seclists/Usernames/cirt-default-usernames.txt -P /usr/share/wordlists/seclists/Usernames/cirt-default-usernames.txt 10.0.2.13 -p 23`
+- why `iwctl` has problems with connecting to home router, but doesn't with hot spot?
