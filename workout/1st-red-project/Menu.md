@@ -26,4 +26,4 @@ SSL stripping
 	[zad. 9](./zad9.md)  **not done**
 
 [tools overview](./tools.md)  
-[[Questions.md|questions]]  
+[questions](./Questions.md)  
