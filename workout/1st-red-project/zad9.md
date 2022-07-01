@@ -28,4 +28,4 @@ if conf file edited - `reload` via `systemctl`
 
 ARP poisoning like in [zad8](./zad8.md)  
 
-`sslstrip -l 9999`  
+`sslstrip -l 9999`     
