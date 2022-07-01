@@ -10,7 +10,7 @@ Sending from Kali (`put`):
 Downloading (`get`):
 ![get](./img/ftp-get.png)
 
-`wireshark`
+`wireshark` analysis
 
 ![Unencrypted af](./img/ftp-wire1.png)
 

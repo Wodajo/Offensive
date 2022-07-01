@@ -5,7 +5,7 @@ identify hash type with `hash identifier` (with a small [CrackStation](https://c
 
 Wifi attack:  
 with `wifite`  
-	[zad. 3 - 1](./zad3-1.md)  
+	[zad. 3 - 1](./zad3-1.md)   **not done**  
 with `aircrack-ng`  
 	[zad. 3 - 2](./zad3-2.md)  
 
@@ -16,12 +16,14 @@ with `wireshark`
 	[FTP](./zad6.md)  
 
 Windows 7 hacking - Eternal Blue  
+with `metasploit`  
 	[zad. 7](./zad7.md)  
 
 ARP poisoning MITM  
 	[zad. 8](./zad8.md)  
 
 SSL stripping  
-	[zad. 9](./zad9.md)  
+	[zad. 9](./zad9.md)  **not done**
 
 [tools overview](./tools.md)  
+[[Questions.md|questions]]  
