@@ -4,35 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3f420732255a8ee5",
-        "type": "split",
-        "children": [
-          {
-            "id": "b39e2614b7dabebb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "tasks/3. target.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cd5410ff8b72dfb9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "tasks/task1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
+        "id": "b39e2614b7dabebb",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "tasks/23-tcp.md",
+            "mode": "source",
+            "source": false
           }
-        ],
-        "direction": "horizontal"
+        }
       }
     ],
     "direction": "vertical"
@@ -96,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tasks/3. target.md",
+                "file": "tasks/23-tcp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,14 +108,14 @@
   },
   "active": "b39e2614b7dabebb",
   "lastOpenFiles": [
+    "tasks/23-tcp.md",
+    "tasks/log-23telnet-ncrack-root.md",
     "tasks/3. target.md",
     "tasks/2. network.md",
     "tasks/1. index.md",
     "tasks/0. general.md",
     "tasks/task1.md",
     "tasks/standelon tasks (reverse shell).md",
-    "tasks/log-23telnet-ncrack-root.md",
-    "tasks/23-tcp.md",
     "tasks/log-ncrack-80tcp.md",
     "tasks/80-tcp.md"
   ]

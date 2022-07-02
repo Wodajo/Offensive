@@ -27,5 +27,8 @@ to save rules passed via cli to conf file: `iptables-save -f` `/etc/iptables/ipt
 if conf file edited - `reload` via `systemctl`   
 
 ARP poisoning like in [zad8](./zad8.md)  
+OR  
+`sudo apt install dsniff` dsniff contains i.a. `arpspoof`  
+`sudo arpspoof -i eth0 -t <targetIP> <IP I'm supposed to be (gateway)>`
 
 `sslstrip -l 9999`     
