@@ -29,3 +29,8 @@ chk_poison: Poisoning process successful!
 open and sniff `wireshark` on `eth0` ->  open [HTTP site](http://testphp.vulnweb.com/login.php) -> pass some credentials on that site -> find credentials in `wireshark` logs  
 
 ![arp-spoof](./img/arp-spoof.png)
+
+
+
+try:
+`http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html`

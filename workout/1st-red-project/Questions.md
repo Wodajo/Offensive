@@ -12,3 +12,12 @@ Offtop:
 - can we try step by step scanning stealthier than flooding with requests?  
 - for `smb` evaluation I blindly used `NSE` scripts against `smb`. Some other ways (more precise and/or more broad ones?  
 - any ideas why `iwctl` has troubles with connecting to home router, but no with hot spot?  
+- what does 
+```
+`XDG_DATA_HOME`
+
+-   Where user-specific data files should be written (analogous to `/usr/share`).
+-   Should default to `$HOME/.local/share`
+```
+store?
+- 
