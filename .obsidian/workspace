@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "e6340dd5896adda2",
+        "id": "65227985deade534",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "9-wireless-networks/tools.md",
+            "file": "supplementary to CEH.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "9-wireless-networks/tools.md",
+                "file": "supplementary to CEH.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e6340dd5896adda2",
+  "active": "65227985deade534",
   "lastOpenFiles": [
-    "9-wireless-networks/tools.md",
-    "not sorted yet.md",
-    "9-wireless-networks/airodu.md",
-    "note to self.md",
     "supplementary to CEH.md",
+    "not sorted yet.md",
+    "note to self.md",
     "README.md",
+    "3-scanning-networks/to do.md",
     "6-system-hacking/tools.md",
+    "9-wireless-networks/tools.md",
+    "9-wireless-networks/airodu.md",
     "5-vulnerabilities/tools.md",
-    "3-scanning-networks/workflow.md",
-    "3-scanning-networks/ports/0.index.md"
+    "3-scanning-networks/workflow.md"
   ]
 }

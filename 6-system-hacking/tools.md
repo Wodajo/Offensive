@@ -5,7 +5,10 @@
 `-a` attack mode (here `3` - bruteforce), `-m` mode i.e. type of cracked hash (`1700` - SHA512), `-1` create new charset  
  use `-o results.txt` flag OR after cracking - type the same command with appended `--show` 
 
-`john --format=RAW-MD5 --wordlist=/usr/share/wordlists/seclists/Passwords/Leaked-Databases/rockyou-50.txt hashestocrack.txt`  
+john hash cracking
+`john --format=RAW-MD5 --wordlist=/usr/share/wordlists/seclists/Passwords/Leaked-Databases/rockyou-50.txt hashestocrack.txt`
+##### john users enumeration (telnet)
+
 
 `crunch <min-length> <max-length> <character-pool> -o <file-name>` generates passswords  
 

@@ -1,10 +1,9 @@
-- Update chapters with new tools (mainly wifi hacking and try `john` against telnet)  
 - Some more of Computer Networking 8th (one more chapter)  
 - Network scanning practice&polishing (GNS3 labs!)  
 It would be good to re-write "workflow" (step-by-step minimal-footprint oriented scanning) - for now it won't be as stealthy as I would like to (it would be best to configure `fw` and only leave a crevice for `p0f`), but it will help to better understand  
 After re-writing "workflow" - updates other notes  
-- Finish DNS notes & configure your own DNS (on arch)
-
+- Finish DNS notes & configure your own DNS (on arch)  
+- Update chapters with new tools (mainly wifi hacking and try `john` against telnet)  
 
 
 
