@@ -16,3 +16,7 @@ if we've got `RST` we can predict if port is closed or open using it's `Window` 
 if `Window` field != 0 -> open. Most likely won't work, might work in opposite way.  
 if `TTL` < 64 while other packets have higher TTL. As I understand TTL can be governed by Application Control > Custom Service > Policy > System configuration.  
 Higher level instances override lower, thus if a port is open packet might have other TTL than the default kernel-configurated ones.  
+
+`sudo hping3 192.168.1.128 --rand-source --flood`  
+flood with packets with no flag set.
+`--rand-source` source randomised

@@ -41,9 +41,9 @@ Send UDP datagram on probably empty port (processes would most likely drop empty
 `sudo nmap -Pn -sS -sY -sO -sU -p U:53,67,68,161,162,T:1-65535 -iL list_of_targets_IP`
 `-Pn` assume passed targets online, `-sS` SYN scan, `-sY` SCTP scan, `-sO` IP scan, `-sU` UDP scan, `-iL` to pass list of targets  
 
-IDLE scan:
+**IDLE scan**:
 for zombie search it might be good to use `ipidseq.nse`  (to check how IP ID increments)  
-`sudo nmap -Pn -sI -p- <zombie IP/hostname:sendingport> <target IP/hostname>`  
+`sudo nmap -Pn -p- -sI <zombie IP/hostname:sendingport> <target IP/hostname>`  
 We can check if the zombie "sending" port is open with SYN ping.  
 `-Pn` for sneakyness sake (to avoid host detection)  
 
@@ -63,3 +63,8 @@ Categories: *auth*, *broadcast*, *brute*, *default*. *discovery*, *dos*, *exploi
  `nmap --script-help ftp-anon` or for categories `nmap --script-help default`  
 
 `sudo nmap -A 192.168.1.128` OS detection • version detection • script scanning • traceroute  
+
+
+### packet tracing
+`sudo nmap -sS -p- --packet-trace 192.168.1.128`  
+show all sent and received packets (and standard output)

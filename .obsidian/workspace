@@ -4,16 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "65227985deade534",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "labs/scanning/project-1/1-hping3.md",
-            "mode": "source",
-            "source": false
+        "id": "266d97e3075dcbe8",
+        "type": "split",
+        "children": [
+          {
+            "id": "65227985deade534",
+            "type": "leaf",
+            "dimension": 64.38631790744466,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "labs/scanning/project-1/2-IDLE-scan.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fbd0b2bf9cb079ab",
+            "type": "leaf",
+            "dimension": 35.61368209255533,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3-scanning-networks/scan-by-protocol.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -69,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labs/scanning/project-1/1-hping3.md",
+                "file": "3-scanning-networks/scan-by-protocol.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +108,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "65227985deade534",
+  "active": "fbd0b2bf9cb079ab",
   "lastOpenFiles": [
-    "labs/scanning/project-1/1-hping3.md",
+    "3-scanning-networks/scan-by-protocol.md",
+    "3-scanning-networks/banner-grabbing.md",
+    "3-scanning-networks/dump/overview -scanning.md",
+    "3-scanning-networks/dump/tools-scanning.md",
+    "tools/nmap.md",
+    "labs/scanning/project-1/2-IDLE-scan.md",
     "tools/hping3.md",
-    "labs/scanning/project-1/0.index.md",
-    "not sorted yet.md",
-    "note to self.md",
-    "README.md",
-    "supplementary to CEH.md",
-    "4-enumeration/overview.md",
-    "3-scanning-networks/workflow.md",
-    "3-scanning-networks/to do.md"
+    "9-wireless-networks/tools.md",
+    "6-system-hacking/tools.md",
+    "5-vulnerabilities/tools.md"
   ]
 }

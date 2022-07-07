@@ -14,7 +14,7 @@ If `-sL -n` nmap will JUST print out IP addresses. `-sL` is NOT meant for direct
 - **version detection** `-sV` to enable. Used if any ports are open  
 - **OS detection** `-O` to enable  
 - **traceroute** `--traceroute` to enable. Find niate hosts.
-- IF `-sC` or `--script` -> **script scanning** - NSE scripts, generally run once per each target host and port number they interact with. Coetwork routes. Usually involves another round of reverse-DNS resolution for the intermedmmonly used for detecting service vulnerabilities, malware discovery, collecting more information from databases and other network services, and advanced version detection.  
+- IF `-sC` or `--script` -> **script scanning** - NSE scripts, generally run once per each target host and port number they interact with. Network routes. Usually involves another round of reverse-DNS resolution for the intermedmmonly used for detecting service vulnerabilities, malware discovery, collecting more information from databases and other network services, and advanced version detection.  
 - **output** screen or file. It's rather advantageous to use `-v` verbose. It gives more intresting info (like IP ID in case of `-O` - maybe it's a good host for idle scan?).  
 `-oN/-oX/-oS/-oG <filename>` output scan in normal, XML, s|<rIpt kIddi3, and Grepable format  
 #### host discovery
