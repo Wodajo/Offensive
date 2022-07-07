@@ -6,6 +6,7 @@ General framework:
 https://cert.eccouncil.org/images/doc/CEH-Exam-Blueprint-v4.0.pdf  
 https://github.com/imrk51/CEH-v11-Study-Guide/tree/main/modules  
 https://github.com/undergroundwires/CEH-in-bullet-points  
+https://github.com/Samsar4/Ethical-Hacking-Labs/tree/master/2-Scanning-Networks
 
 General networking:  
 Computer Networking James F. Kurose and Keith Ross, 8th Edition  
@@ -18,6 +19,7 @@ HTTP/2 - this is important babe https://www.rfc-editor.org/rfc/rfc8740
 
 
 How to markdown:  
-https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links  
+[gen. rules](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)  
+[markdown tables](https://tableconvert.com/excel-to-markdown)
 
 More exhaustive sources added wtih topic-specific note  

@@ -1,18 +1,19 @@
 `ip a` to know your IP  
-`route`  for routing table (based on routing protocols which you don't know yet)  
-`sudo apr-scan 10.0.2.0/24` rather stealthy host discovery on LAN  
-UPDATE AFER LABS WITH NOT-LAN SCANNING
+`ip r`  for routing table (based on routing protocols which you don't know yet)  
+`sudo arp-scan 10.0.2.0/24` ARP broadcast -> host discovery on LAN  
+**On LAN ARP is needed to send ethernet frames - ARP brodcast will happen anyway**  
+
 `sudo nmap --disable-arp-ping -PM -PO -PY -sn 10.0.2.0/24` disables ARP and IPv6 Neighbor Discovery.  
-Some networks using proxy ARP, in which a router replies to all ARP requests making every target appear to be up according to ARP scan. On LAN ARP is needed to send ethernet frames (?) - ARP brodcast will happen anyway  
+Some networks using proxy ARP, in which a router replies to all ARP requests making every target appear to be up according to ARP scan. (Don't work on LAN)
 `-sn` use ICMP echo request, TCP SYN to port 443, TCP ACK to port 80, and an ICMP timestamp, omits further ports scanning.  
 `-PM` ICMP netmask, `-PO` IP scan, `-PY` SCTP scan  
-That's all default host discovery nmap scans except UDP (slow)  
-UPDATE AFTER FW RESEARCH
-If you're desperate - use blind port scanning for host discovery:  
-**It would be good to test if/how the fw is working here** - update later  
 
-`sudo nmap -PU -sn 10.0.2.0/24` or `sudo unicornscan -mU 10.0.2.0/24`  
-unicornscan is faster - mostly ARP, investigate further with wireshark  
+That's all of default host discovery nmap scans except UDP (slow)  
+`sudo nmap -PU -sn 10.0.2.0/24` is not working on LAN - only ARP (bcos UDP frame wouldn't pass to host either way)
+
+If you're desperate - use blind port scanning for host discovery:  
+
+`sudo unicornscan -mU 192.168.1.0/24` (seems like `unicornscan` is not UDP scanning anything else than gateway and broadcast. `wireshark` filter `(udp) && (ip.src == 192.168.1.180)`
 
 "Bruteforce" checking if ports other than 80 and 443 (`-sn` port discovery)  
 `sudo nmap --resolve-all --disable-arp-ping -Pn -p- -sS -sY hostname`  

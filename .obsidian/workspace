@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "supplementary to CEH.md",
+            "file": "labs/scanning/project-1/1-hping3.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "supplementary to CEH.md",
+                "file": "labs/scanning/project-1/1-hping3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "65227985deade534",
   "lastOpenFiles": [
-    "supplementary to CEH.md",
+    "labs/scanning/project-1/1-hping3.md",
+    "tools/hping3.md",
+    "labs/scanning/project-1/0.index.md",
     "not sorted yet.md",
     "note to self.md",
     "README.md",
-    "3-scanning-networks/to do.md",
-    "6-system-hacking/tools.md",
-    "9-wireless-networks/tools.md",
-    "9-wireless-networks/airodu.md",
-    "5-vulnerabilities/tools.md",
-    "3-scanning-networks/workflow.md"
+    "supplementary to CEH.md",
+    "4-enumeration/overview.md",
+    "3-scanning-networks/workflow.md",
+    "3-scanning-networks/to do.md"
   ]
 }

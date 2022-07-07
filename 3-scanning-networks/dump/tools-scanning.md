@@ -13,8 +13,8 @@ If `-sL -n` nmap will JUST print out IP addresses. `-sL` is NOT meant for direct
 - **port scanning** by default performed `-sS`. To skip `-sn`  
 - **version detection** `-sV` to enable. Used if any ports are open  
 - **OS detection** `-O` to enable  
-- **traceroute** `--traceroute` to enable. Find network routes. Usually involves another round of reverse-DNS resolution for the intermediate hosts.
-- IF `-sC` or `--script` -> **script scanning** - NSE scripts, generally run once per each target host and port number they interact with. Commonly used for detecting service vulnerabilities, malware discovery, collecting more information from databases and other network services, and advanced version detection.  
+- **traceroute** `--traceroute` to enable. Find niate hosts.
+- IF `-sC` or `--script` -> **script scanning** - NSE scripts, generally run once per each target host and port number they interact with. Coetwork routes. Usually involves another round of reverse-DNS resolution for the intermedmmonly used for detecting service vulnerabilities, malware discovery, collecting more information from databases and other network services, and advanced version detection.  
 - **output** screen or file. It's rather advantageous to use `-v` verbose. It gives more intresting info (like IP ID in case of `-O` - maybe it's a good host for idle scan?).  
 `-oN/-oX/-oS/-oG <filename>` output scan in normal, XML, s|<rIpt kIddi3, and Grepable format  
 #### host discovery
@@ -55,9 +55,7 @@ Categories: *auth*, *broadcast*, *brute*, *default*. *discovery*, *dos*, *exploi
 ### nping
 ### hping
 ### ping
-### unicornscan (own implementation of the TCP/IP stack and not operating system's - faster, but... why?)
-Seems like this unicorn can somehow flood linux 2.x AND STILL GET RESULTS. Check if thats just a M2 thing, or if thats a standard o.o
-
+### unicornscan
 
 ### Crafting custom packets:
 hping
@@ -67,5 +65,3 @@ Colasoft Packet Builder - seems cool and easy
 Packeth - seems 
 
 ### python >:)
-
-### enum4linux

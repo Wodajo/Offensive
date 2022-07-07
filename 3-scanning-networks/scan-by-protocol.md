@@ -50,7 +50,7 @@ Some stateful firewalls drop everything that looks out of place (like `ACK` with
 if we've got `RST` we can predict if port is closed or open using it's `Window` and `TTL` fields  
 if `Window` field != 0 - open. Most likely won't work, might work in opposite way.  
 `sudo nmap -sW`
-if `TTL` < 64 while other packets have higher TTL. A I understand TTL can be governed by Application Control > Custom Service > Policy > System configuration. Higher level instances override lower, thus if a port is open packet might have other TTL than the default kernel-cofigurated ones.  
+if `TTL` < 64 while other packets have higher TTL. As I understand TTL can be governed by Application Control > Custom Service > Policy > System configuration. Higher level instances override lower, thus if a port is open packet might have other TTL than the default kernel-cofigurated ones.  
 `sudo hping -8 <ports list> -A <ip address> -V` ttl&win included in responses
 ##### according to RFC 793...
 segment not containing `SYN`, `RST`, or `ACK` bits will result in `RST` (if the port is closed) or no reponse (if port open)  
@@ -98,7 +98,7 @@ for zombie search it might be good to use `ipidseq.nse`
 https://nmap.org/book/idlescan.html
 ### SCTP
 SCTP is an UDP and TCP alternative. Scan seems alike TCP SYN 
-##### INIT can
+##### INIT scan
 send an `INIT chunk`, as if you are going to open a real association and then wait for a response.  
 `INIT-ACK chunk` - open  
 `ABORT chunk` - close  
@@ -113,6 +113,7 @@ There may be non-stateful firewall blocking INIT chunks but not COOKIE ECHO
 ### UDP ping
 connectionless stream protocol.  
 i.a. DNS 53, SNMP 161/162 (Simple Network Management Protocol), DHCP 67/68  
+
 Bypass many firewalls BUT pretty fking long (Linux kernel limits ICMP responses to 1/s and timeouts) and open&filtered ports rarely send any response.
 `sudo nmap -PU <port list>` host discovery. Send UDP datagram on probably empty port (processes would most likely drop empty datagram and we want response. Default port is 40125. You can change it in `DEFAULT_UDP_PROBE_PORT_SPEC` in `nmap.h`). If ICMP port unreachable - host seems up. If other ICMP error, TTL exceed or timeout - host is dead or unreachable (firewall?)  
 `sudo nmap -sU` port scanning. If an ICMP port unreachable error (type 3, code 3) is returned - closed. Other ICMP unreachable errors (type 3, codes 0, 1, 2, 9, 10, or 13) - filtered. If no reponse - open/filtered (we're assuming firewall eaten responses) -> sV might provide more info.  
@@ -124,7 +125,7 @@ usefull on LAN
 `sudo nmap -PR -sn '192.168.0.*'` -PR ARP discovery  
 `sudo arp-scan -I wlan0 <addressIP/24>` -I interface  
 `sudo netdiscover -r 10.0.2.1/24` -r range (not autoscan)  
-`ip neigh` or `ip neigh show` show ARP table of current host  
+`ip n` or `ip neigh` show ARP table of current host  
  
 
 

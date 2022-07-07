@@ -20,7 +20,7 @@ To skip host discovery & port scanning BUT use NSE `-Pn -sn`
 `--disable-arp-ping` No ARP or IPv6 Neighbor Discovery. Useful on networks using proxy ARP, in which a router replies to all ARP requests making every target appear to be up according to ARP scan  
 `--traceroute` typical traceroute using ICMP Time Exceeded  
 #### hping3
-lower level & stealthier than nmap BUT can be used on 1 host and doesn't support IPv6  
+lower level & stealthier than nmap BUT can be used on 1 target and doesn't support IPv6  
 Probably won't be of much usage, but I'm going to run some test with it  
   `hping -1 10.0.0.x --rand-dest -I eth0`  
         `-1` ICMP mode  
