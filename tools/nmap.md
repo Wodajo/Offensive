@@ -68,3 +68,12 @@ Categories: *auth*, *broadcast*, *brute*, *default*. *discovery*, *dos*, *exploi
 ### packet tracing
 `sudo nmap -sS -p- --packet-trace 192.168.1.128`  
 show all sent and received packets (and standard output)
+
+### packet fragmentation
+`--mtu SizeInBytes`
+works for raw packet features (TCP&UDP scans [except FTP bounce and sT], OS detection)  
+NOT for NSE (like `-sV`, `-sC`) - depend on TCP stack
+
+`sudo nmap --mtu 8 -sS 192.168.1.124`
+
+carefull - check with `wireshark` if your OS is truly fragmenting them (might be problems with kernel)

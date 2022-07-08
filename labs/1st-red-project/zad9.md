@@ -26,7 +26,7 @@ rules to be loaded are located in `/etc/iptables/iptables.rules` for `iptables.s
 to save rules passed via cli to conf file: `iptables-save -f` `/etc/iptables/iptables.rules`   
 if conf file edited - `reload` via `systemctl`   
 
-ARP poisoning like in [zad8](./zad8.md)  
+ARP poisoning like in [zad8](zad8.md)  
 OR  
 `sudo apt install dsniff` dsniff contains i.a. `arpspoof`  
 `sudo arpspoof -i eth0 -t <targetIP> <IP I'm supposed to be (gateway)>`

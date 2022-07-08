@@ -5,7 +5,7 @@ identify hash type with `hash identifier` (with a small [CrackStation](https://c
 
 Wifi attack:  
 with `wifite`  
-	[zad. 3 - 1](./zad3-1.md)   **not done**  
+	[zad. 3 - 1](./zad3-1.md)    
 with `aircrack-ng`  
 	[zad. 3 - 2](./zad3-2.md)  
 
@@ -23,7 +23,7 @@ ARP poisoning MITM
 	[zad. 8](./zad8.md)  
 
 SSL stripping  
-	[zad. 9](./zad9.md)  **not done**
+	[zad. 9](./zad9.md)  
 
 [tools overview](./tools.md)  
-[questions](./Questions.md)  
+[tasks](./Tasks.md)  

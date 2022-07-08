@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labs/scanning/project-1/2-IDLE-scan.md",
+                "file": "labs/scanning/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labs/scanning/project-1/2-IDLE-scan.md",
+                "file": "labs/scanning/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,15 +110,15 @@
   },
   "active": "65227985deade534",
   "lastOpenFiles": [
+    "labs/scanning/README.md",
+    "labs/scanning/project-1/0-index.md",
+    "labs/scanning/project-1/3-packet-frag.md",
     "labs/scanning/project-1/2-IDLE-scan.md",
-    "labs/scanning/project-1/0.index.md",
-    "note to self.md",
-    "tools/nmap.md",
-    "3-scanning-networks/scan-by-protocol.md",
-    "3-scanning-networks/banner-grabbing.md",
-    "3-scanning-networks/dump/overview -scanning.md",
-    "3-scanning-networks/dump/tools-scanning.md",
-    "tools/hping3.md",
-    "9-wireless-networks/tools.md"
+    "labs/scanning/project-1/1-hping3.md",
+    "labs/1st-red-project/Menu.md",
+    "labs/1st-red-project/Tasks.md",
+    "not-classified-yet/Szalek-projekt/tasks/0. general.md",
+    "not-classified-yet/Szalek-projekt/tasks/1. index.md",
+    "not-classified-yet/Szalek-projekt/tasks/task1.md"
   ]
 }

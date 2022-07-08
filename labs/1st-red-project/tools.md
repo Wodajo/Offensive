@@ -9,7 +9,7 @@ use `-o results.txt` flag OR after cracking type the same command with appended 
 
 `sudo wifite -mac --dict /home/kali/Desktop/Pentest/rockyou.txt --kil`
 
-`aircrack-ng`  Don't know yet (there were some other programs in the process of wifi hacking)
+`aircrack-ng`  UPDATE
 
 `ftp` You should learn more
 
