@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3-scanning-networks/scan-by-protocol.md",
+                "file": "note to self.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3-scanning-networks/scan-by-protocol.md",
+                "file": "labs/scanning/project-1/2-IDLE-scan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,17 +108,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "fbd0b2bf9cb079ab",
+  "active": "65227985deade534",
   "lastOpenFiles": [
+    "labs/scanning/project-1/2-IDLE-scan.md",
+    "labs/scanning/project-1/0.index.md",
+    "note to self.md",
+    "tools/nmap.md",
     "3-scanning-networks/scan-by-protocol.md",
     "3-scanning-networks/banner-grabbing.md",
     "3-scanning-networks/dump/overview -scanning.md",
     "3-scanning-networks/dump/tools-scanning.md",
-    "tools/nmap.md",
-    "labs/scanning/project-1/2-IDLE-scan.md",
     "tools/hping3.md",
-    "9-wireless-networks/tools.md",
-    "6-system-hacking/tools.md",
-    "5-vulnerabilities/tools.md"
+    "9-wireless-networks/tools.md"
   ]
 }

@@ -92,7 +92,7 @@ Super sneaky. Can mislead IDS and IP-trust based firewalls
 Very long (bcos timeouts)  
 Many ISP's block spoofing attempts with egress firewalls (that is firewalls monitoring traffic going out of ISP infrastructure). Sometimes they block spoofing of only IPs from outside range of IPs used by their customers (resonable).  
 Fist you have to find an idle host fitting to be your zombie. It is best to choose hosts with low latency with in relation to target. (faster scan and therefore eith lower chances that there will be some unwanted sending on a side)  
-for zombie search it might be good to use `ipidseq.nse`  
+for zombie search it might be good to use `sudo hping3 -S -A <zombie IP>` to check if it gives `RST` response & see how IP ID is incremented  
 `sudo nmap -Pn -sI -p- <zombie IP/hostname:sendingport> <target IP/hostname>` We can check if the zombie "sending" port is open with SYN ping.
 `-Pn` used to avoid host detection - for sneakyness sake  
 https://nmap.org/book/idlescan.html
