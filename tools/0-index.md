@@ -1,2 +1,8 @@
 [nmap](./nmap.md)
 [hping3](./hping3.md)
+[hashcat](./hashcat.md)
+[john the ripper](./john.md)
+[crunch](./crunch.md)
+[ncrack](./ncrack.md)
+[Internet-tools](./1-Internet-tools.md)
+[netcat](./netcat.md)

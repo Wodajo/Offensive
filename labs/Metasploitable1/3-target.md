@@ -52,7 +52,7 @@ Users:
 [[8180-tcp]] Apache Tomcat/Coyote JSP engine 1.1
 
 
-[[2. network]]
+[[2-network]]
 [[log-ping]]
 [[log-tcp-ports-scans]]
 [[log-udp-ports-scan]]

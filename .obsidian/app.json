@@ -3,5 +3,6 @@
   "livePreview": true,
   "promptDelete": false,
   "newFileLocation": "current",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "fileSortOrder": "alphabetical"
 }
