@@ -13,3 +13,4 @@
 
 `sed -z 's/\n/,/g'` needs `-z` flag to change line separators from \n to \0 (null). That way you can substitute newlines.    
 
+- for sneakyness sake - it would be best to configure `fw` and only leave a crevice for `p0f`

@@ -14,7 +14,9 @@ Starting arp-scan 1.9.7 with 256 hosts (https://github.com/royhills/arp-scan)
 #### looking for zombies:  
 ##### 192.168.1.124 - good zombie
 `sudo hping3 -S -A 192.168.1.124 -V`  
-sending `SYN` on `port 0`  
+defaultly sending `SYN` on `port 0`  
+(might be better to scan other port - it is not used apart from Unix and may be surveiled)  
+If nothing - you might want to target some other probably not used port  
 ```
 using eth0, addr: 192.168.1.180, MTU: 1500
 HPING 192.168.1.124 (eth0 192.168.1.124): SA set, 40 headers + 0 data bytes

@@ -16,8 +16,8 @@ Because of this we'll be able to capture handshake (and password hash for later 
 
 `sudo aircrack-ng WPAcrack-01.cap -w rockyou_50.txt`  password hash cracking
 ![wcinaj](aircrack-ng-1.png)
-
 Password: 123456qwerty  
+- might be faster to use `hashcat` instead o`aircrack-ng` wrapper
 
 
 `dhcpclient eth0`  after wifi hacking NIC might have some problems. This command might help

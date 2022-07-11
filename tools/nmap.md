@@ -71,7 +71,7 @@ show all sent and received packets (and standard output)
 
 ### packet fragmentation
 `--mtu SizeInBytes`
-works for raw packet features (TCP&UDP scans [except FTP bounce and sT], OS detection)  
+works for raw packet features (TCP&UDP scans [except FTP bounce and -sT], OS detection)  
 NOT for NSE (like `-sV`, `-sC`) - depend on TCP stack
 
 `sudo nmap --mtu 8 -sS 192.168.1.124`

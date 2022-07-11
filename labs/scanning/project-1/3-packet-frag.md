@@ -1,6 +1,9 @@
 We want to split TCP header over several packets.  
 Ofc all splited TCP are encapsulated in IP headers  
 
+Roughly `MTU` (link-layer) = `MSS` + TCP&IP headers  
+Here we're rather sending TCP segments with empty data field and no options (TCP header = 20 bytes). We assume that all TCP data is header  
+
 `--mtu SizeInBytesMUSTBeAMultipleOfEight`  
 works for raw packet features (TCP&UDP port scans [except FTP bounce & sT], OS detection)  
 NOT for NSE (like `-sV`, `-sV`) - depends on TCP stack  
