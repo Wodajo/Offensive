@@ -6,3 +6,6 @@
 [ncrack](./ncrack.md)
 [Internet-tools](./1-Internet-tools.md)
 [netcat](./netcat.md)
+[tcpdump](./tcpdump.md)
+[p0f](./p0f.md)
+[cronjob?](./cronjob.md)

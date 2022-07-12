@@ -1,0 +1,1 @@
+Place for notes for later, ideas,  chosen info

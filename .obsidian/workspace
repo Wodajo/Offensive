@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3-scanning-networks/to do.md",
+            "file": "labs/Metasploitable2/log-T1-21-ncrack.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 215
+    "width": 221
   },
   "right": {
     "id": "253bdd6aab6e9a8e",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3-scanning-networks/to do.md",
+                "file": "labs/Metasploitable2/log-T1-21-ncrack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "65227985deade534",
   "lastOpenFiles": [
-    "3-scanning-networks/to do.md",
-    "3-scanning-networks/scan-by-protocol.md",
-    "3-scanning-networks/banner-grabbing.md",
-    "labs/Metasploitable2/standelon tasks (reverse shell).md",
-    "tools/john.md",
-    "tools/hping3.md",
-    "tools/hashcat.md",
-    "tools/crunch.md",
-    "not sorted yet.md",
-    "note to self.md"
+    "labs/Metasploitable2/log-T1-21-ncrack.md",
+    "labs/Metasploitable2/T1-21-tcp.md",
+    "labs/Metasploitable2/3-T1-10.0.2.5.md",
+    "9-wireless-networks/tools-wireless.md",
+    "labs/Metasploitable2/log-T1-23-ncrack.md",
+    "labs/Metasploitable2/T1-23-tcp.md",
+    "tools/ncrack.md",
+    "tools/nmap.md",
+    "labs/Metasploitable2/log-T1-23-nmap-sV.md",
+    "labs/Metasploitable2/T1-22-tcp.md"
   ]
 }

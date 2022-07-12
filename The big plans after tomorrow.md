@@ -9,7 +9,7 @@
 - playing around with fw (pfsense as first) and IPS (snort)
 
 
-2. I'm looking forward OSCP and CISSP
+2. I'm looking forward CCNP, OSCP and CISSP
 2. more Sec. Engineering knowledge and skills  
    rather low-level. Try to get a hold of as specific understanding as you can
 

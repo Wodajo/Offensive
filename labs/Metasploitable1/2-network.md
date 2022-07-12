@@ -5,7 +5,7 @@ Gateway: 10.0.2.1
 Other IPs: 10.0.2.2, 10.0.2.3 (looks like DHCP < wireshark)
 
 
-[[log-ip-a]]
-[[log-arp-scans]]
+[[labs/Metasploitable1/log-ip-a]]
+[[labs/Metasploitable1/log-arp-scans]]
 [[log-route]]
 [[log-nmap-host-discovery]]

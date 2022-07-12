@@ -1,1 +1,1 @@
-- Try network scanning with neighbour network (not LAN). Otherwise everything is ARP replay
+- try to use trello. It might be better than bunch of spreaded "todo's"
