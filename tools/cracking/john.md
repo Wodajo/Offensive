@@ -6,7 +6,7 @@ If no mode specified - single -> wordlist -> incremental
 
 finded passwd -> `~/.john/john.pot` - on restart john reads it, so it doesn't try to crack already done passwd  
 
-`john -show passwd`  **same  directory where the password was cracked**  
+`john -show passwd`  **same directory where the password was cracked**  
 (if cronjob -`/var/lib/john`)  
 
 If `ctr+c` - save point into `~/.john/john.rec` (saves also every 10 min)  

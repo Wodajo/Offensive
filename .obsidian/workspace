@@ -89,15 +89,15 @@
   },
   "active": "65227985deade534",
   "lastOpenFiles": [
-    "tools/enumeration/ncrack.md",
+    "labs/Metasploitable2/log-T1-21-nc-ftp.md",
     "tools/enumeration/hydra.md",
-    "3-scanning-networks/ports/23-tcp.md",
-    "tools/scanning/nmap.md",
-    "3-scanning-networks/ports/0.index.md",
-    "tools/connection/netcat.md",
-    "The big plans after tomorrow.md",
-    "note to self.md",
+    "labs/Metasploitable2/T1-21-tcp.md",
+    "labs/Metasploitable2/log-T1-21-hydra.md",
     "labs/Metasploitable2/3-T1-10.0.2.5.md",
-    "labs/Metasploitable2/2-network.md"
+    "tools/enumeration/ncrack.md",
+    "tools/cracking/hashcat.md",
+    "tools/cracking/john.md",
+    "tools/enumeration/dirbuster.md",
+    "tools/enumeration/crunch.md"
   ]
 }

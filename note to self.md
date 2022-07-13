@@ -1,13 +1,12 @@
-- Gods of Perseverance, Systematicness and Conscientiousness have me in your keep
+Gods of Perseverance, Systematicness and Conscientiousness have me in your keep
 
-- Update chapters with further tools (`ncrack`, `john`, `hashcat`, `netcat`)  
+- Update chapters with further tools ( `hashcat`, `netcat`)  
 - It seems like kernel is reassembling my fragmented segments - bypass this
 - continue to enumerate M1 and M2
 - Finish DNS notes & configure your own DNS (on arch)  
 
 
 - remeber to uniq your dictionaries
-
 
 
 Wierd:
