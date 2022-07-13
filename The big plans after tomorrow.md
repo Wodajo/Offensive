@@ -18,4 +18,4 @@
 
 
 4. Threat Modeling env/sys + quantitative risk approach (e.g. FAIR factor analysis of information risk), architectural frameworks (SABSA sherwood applied management, TOGAF the open group architecture framework) -> needed capabilities (e.g. authentication, authorisation, endpoint security, network security etc.) -> required tools  (IDM identity management, PAM privileged access management, NGFW next generation firewall, IPS etc.)  
-aka became Sec. Architect.
+aka became Sec. Architect. 

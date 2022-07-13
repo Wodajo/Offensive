@@ -4,5 +4,7 @@
   "promptDelete": false,
   "newFileLocation": "current",
   "alwaysUpdateLinks": true,
-  "fileSortOrder": "alphabetical"
+  "fileSortOrder": "alphabetical",
+  "newLinkFormat": "relative",
+  "attachmentFolderPath": "./"
 }

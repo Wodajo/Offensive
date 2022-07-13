@@ -27,3 +27,6 @@ CTRL+Z
 stty raw -echo; fg  
 ```
 
+### banner grabbing
+
+`nc -vn 192.168.1.103 21`

@@ -8,7 +8,7 @@ vsftpd 2.3.4 - Backdoor Command Execution (Metasploit)                          
 ```
 /usr/share/exploitdb/exploits/unix/remote/49757.py
 ```
-see with `pass` what is this script doing
+see with `less` what is this script doing
 
 `stat /usr/share/exploitdb/exploits/unix/remote/49757.py`
 ```
@@ -34,4 +34,4 @@ Send `exit` to quit shell
 uid=0(root) gid=0(root)
 root
 ```
-quite easly done
+qed
