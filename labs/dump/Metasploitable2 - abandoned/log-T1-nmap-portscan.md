@@ -73,4 +73,4 @@ T1-44563-tcp unknown
 T1-58817-tcp unknown
 T1-60132-tcp unknown
 ```
-for easy port management on [T1 main page](./3-T1-10.0.2.5.md)
+for easy port management on [T1 main page](3-T1-10.0.2.5.md)

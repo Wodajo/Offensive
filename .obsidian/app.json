@@ -6,5 +6,8 @@
   "alwaysUpdateLinks": true,
   "fileSortOrder": "alphabetical",
   "newLinkFormat": "relative",
-  "attachmentFolderPath": "./"
+  "attachmentFolderPath": "./",
+  "spellcheckLanguages": [
+    "en-US"
+  ]
 }

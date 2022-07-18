@@ -6,3 +6,7 @@
 - [Linux](https://github.com/Wodajo/Linux-projects)  
 	- If it ain't broke - brake it  
 	- Beauty of linux "learning" is overdoing sth, making it crash and regreting it later 
+
+- CTF
+	- THM (why not. I won't get much poorer)
+	- Vulnhub

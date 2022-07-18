@@ -1,5 +1,4 @@
-### Passwords
-
+Passwords:
 - [ ] 791981079ca8084570af9dd57dc7638d
 - [ ] 1578155ca0c3e67949de6ee5a5815082
 - [ ] bd0dd922a08a458115e29fbc3c54bbb4
@@ -32,3 +31,26 @@
 - [ ] 9b1c7e2874978f0398570de746d7ade873791f48715bfef50aa53959764782d8
 - [ ] 2c009a2fc0bc332df19b6a495485cac1e14e436678adb29f0cdd9b06bb79fdb7
 - [ ] 84ca9773e6a2ce46845b956bb2b71f1a00614c977a6504afa98bedf440390652
+
+
+#### Preparing:
+copy everything above to file CRACKEM
+`sed -i 's/- \[ \] //g' ~/CRACKEM` to get rid of this brackets
+
+#### hash identification:
+`hashid -j -m -o type_of_CRACKEM CRACKEM`
+`-j` include john format, `-m` include hashcat mode
+
+You might want to use `hash-identifier` for most likely type suggestion
+
+`less type_of_CRACKEM`
+hashes are mixed (at least with their lenght)
+
+#### sort them by length to other files:
+MD5 (128 bits  4 = 32 hex digits) represented with 32 hex digits [0-9a-f]
+SHA-256 (256 bits => 64 hex digits)
+SHA-512 (512 bits => 128 hex digits)
+
+First let's separate hexadecimal notated hashes:
+`egrep '^[0-9a-f]{32}$' CRACKEM > 32_hex_digit_hashes`
+`egrep '^[0-9a-f]{64}$' CRACKEM > 64_hex_digit_hashes`

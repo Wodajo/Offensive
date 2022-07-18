@@ -69,8 +69,8 @@ min length, max length,
 charset: `1` - numbers, `a` lowercase letters, `A` uppercase letters  
 `-y` use symbols in `-x` bruteforce  
 
+`-u` -> passwd checked on all logins -> next passwd  **THIS!!!**  
 by default `hydra` checks all passwd for one login -> next login  
-`-u` -> passwd checked on all logins -> next passwd  **THIS!!!**
 
 `-f` exit after first found login/passwd pair (if `-M` - per host)
 `-F` exit after first found login/passwd pair on ANY host (for usage with `-M`)

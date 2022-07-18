@@ -1,6 +1,7 @@
 {
   "editor:toggle-italics": [],
-  "app:toggle-left-sidebar": [
+  "app:toggle-left-sidebar": [],
+  "insert-template": [
     {
       "modifiers": [
         "Mod"

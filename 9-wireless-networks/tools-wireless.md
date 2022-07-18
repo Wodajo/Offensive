@@ -1,4 +1,5 @@
-set up kernel modules for [rtl8812au](https://github.com/Wodajo/Linux-projects/blob/main/installation/rtl%20kernel%20module%20installation.md)
+set up kernel modules for [rtl8812au](https://github.com/Wodajo/Linux-projects/blob/main/installation/rtl%20kernel%20module%20installation.md) on arch-linux (with blackarch repo)  
+
 [set up NIC](https://github.com/Wodajo/Linux-projects/blob/main/installation/rtl%20NIC%20setting%20up.md)
 
 ##### airodump - aireplay

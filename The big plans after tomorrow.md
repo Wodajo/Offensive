@@ -7,9 +7,9 @@
 1. Use this knowledge in context of security (both offensive and deffensive):
 - CEH preparations
 - playing around with fw (pfsense as first) and IPS (snort)
+- THM?
 
-
-2. I'm looking forward CCNP, OSCP and CISSP
+2. I'm looking forward PNPT, OSCP and CISSP
 2. more Sec. Engineering knowledge and skills  
    rather low-level. Try to get a hold of as specific understanding as you can
 

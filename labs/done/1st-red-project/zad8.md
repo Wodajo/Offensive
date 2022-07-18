@@ -19,7 +19,7 @@ Target: 192.168.1.107
 `sudo ettercap -G`  
 open GUI ettercap  
  
-Hosts - `scan for hosts` -> Hosts - `host list` -> Found hosts are only `192.168.1.1` and `192.168.1.100` (is [ettercap using other ARP scan techniques than arp-scan?](./arp-ettercap.md)) -> Targets - select targets - add `192.168.1.107   c4:85:08:d3:4a:00` as Target1 and  `192.168.1.1     f0:51:36:1f:17:96` as Target2 -> MITM -ARP spoof - `sniff remote connection` -> Plugins - manage plugins - `chk_poison`:  
+Hosts - `scan for hosts` -> Hosts - `host list` -> Found hosts are only `192.168.1.1` and `192.168.1.100` (is [ettercap using other ARP scan techniques than arp-scan?](arp-ettercap.md)) -> Targets - select targets - add `192.168.1.107   c4:85:08:d3:4a:00` as Target1 and  `192.168.1.1     f0:51:36:1f:17:96` as Target2 -> MITM -ARP spoof - `sniff remote connection` -> Plugins - manage plugins - `chk_poison`:  
 ```
 Activating chk_poison plugin...
 chk_poison: Checking poisoning status...
@@ -28,4 +28,4 @@ chk_poison: Poisoning process successful!
 
 open and sniff `wireshark` on `eth0` ->  open [HTTP site](http://testphp.vulnweb.com/login.php) -> pass some credentials on that site -> find credentials in `wireshark` logs  
 
-![arp-spoof](arp-spoof.png)
+![arp-spoof](img/arp-spoof.png)

@@ -1,6 +1,8 @@
 hash cracker (dictionary, bruteforce, role-based)  
 ftons of supported hash types and great word generator  
 
+strip hashes of surrounding witespaces
+
 ### usage
 If no mode specified - single -> wordlist -> incremental  
 

@@ -2,6 +2,8 @@
 [hping3](hping3.md)
 [hashcat](cracking/hashcat.md)
 [john the ripper](cracking/john.md)
+[hash-identifier](./cracking/hash-identifier.md)
+[hashid](./cracking/hashid.md)
 [crunch](enumeration/crunch.md)
 [ncrack](enumeration/ncrack.md)
 [Internet-tools](./1-Internet-tools.md)

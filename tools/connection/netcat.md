@@ -1,3 +1,4 @@
+
 ### sending files
 Listener:
 `nc -lvp 4444 > incomig.txt` nc is a symlink of netcat  
@@ -26,6 +27,7 @@ export TERM=xterm
 CTRL+Z  
 stty raw -echo; fg  
 ```
+
 
 ### banner grabbing
 

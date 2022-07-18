@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "tools/enumeration/hydra.md",
+            "file": "note to self.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tools/enumeration/hydra.md",
+                "file": "note to self.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "65227985deade534",
   "lastOpenFiles": [
-    "labs/Metasploitable2/log-T1-21-nc-ftp.md",
-    "tools/enumeration/hydra.md",
-    "labs/Metasploitable2/T1-21-tcp.md",
-    "labs/Metasploitable2/log-T1-21-hydra.md",
-    "labs/Metasploitable2/3-T1-10.0.2.5.md",
-    "tools/enumeration/ncrack.md",
+    "tools/connection/netcat.md",
     "tools/cracking/hashcat.md",
+    "tools/cracking/hashid.md",
     "tools/cracking/john.md",
-    "tools/enumeration/dirbuster.md",
-    "tools/enumeration/crunch.md"
+    "note to self.md",
+    "templates/time.md",
+    "not sorted yet.md",
+    "README.md",
+    "The big plans after tomorrow.md",
+    "supplementary to CEH.md"
   ]
 }

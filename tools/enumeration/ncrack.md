@@ -1,6 +1,8 @@
-**There are wierd problems with it - maybe it's target VMs fault?**
+Great timing options, many restoration points  
+BUT  
+interactive mode not working:<  
 
-network authentication cracking tool, built for speed
+network authentication cracking tool  
 support:
 ```
 SSH, RDP, FTP, Telnet, HTTP(S), Wordpress, POP3(S), IMAP, CVS, SMB, VNC, SIP, Redis, PostgreSQL, MQTT, MySQL, MSSQL, MongoDB, Cassandra, WinRM, OWA, DICOM
