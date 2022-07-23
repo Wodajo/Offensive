@@ -7,6 +7,7 @@
 	- If it ain't broke - brake it  
 	- Beauty of linux "learning" is overdoing sth, making it crash and regreting it later 
 
-- CTF
+- CTFs
 	- THM (why not. I won't get much poorer)
 	- Vulnhub
+	- HTB

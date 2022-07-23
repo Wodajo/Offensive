@@ -70,10 +70,13 @@ Categories: *auth*, *broadcast*, *brute*, *default*. *discovery*, *dos*, *exploi
 show all sent and received packets (and standard output)
 
 ### packet fragmentation
-`--mtu SizeInBytes`
+**Why data must be a multiple of 8 bytes??**
+`--mtu SizeInBytes-MultiplicationOf8`
 works for raw packet features (TCP&UDP scans [except FTP bounce and -sT], OS detection)  
 NOT for NSE (like `-sV`, `-sC`) - depend on TCP stack
 
 `sudo nmap --mtu 8 -sS 192.168.1.124`
 
-carefull - check with `wireshark` if your OS is truly fragmenting them (might be problems with kernel)
+carefull - check with `wireshark` if your OS is truly fragmenting them (might be problems with kernel)  
+
+ `--send-eth` if kernel cause problems (bypass IP layer and directly send ethernet frames)

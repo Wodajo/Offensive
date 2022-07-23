@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "note to self.md",
+            "file": "labs/dump/loose bandit.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note to self.md",
+                "file": "labs/dump/loose bandit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "65227985deade534",
   "lastOpenFiles": [
-    "tools/connection/netcat.md",
-    "tools/cracking/hashcat.md",
-    "tools/cracking/hashid.md",
-    "tools/cracking/john.md",
-    "note to self.md",
-    "templates/time.md",
-    "not sorted yet.md",
-    "README.md",
-    "The big plans after tomorrow.md",
-    "supplementary to CEH.md"
+    "tools/basic b17(h/find.md",
+    "labs/done/1st-red-project/zad3-2.md",
+    "labs/done/1st-red-project/Menu.md",
+    "labs/done/1st-red-project/zad3-1.md",
+    "tools/Untitled.md",
+    "tools/tcpdump.md",
+    "tools/scanning/p0f.md",
+    "tools/scanning/hping3.md",
+    "tools/scanning/nmap.md",
+    "tools/0-index.md"
   ]
 }

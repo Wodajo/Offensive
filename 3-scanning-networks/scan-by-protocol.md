@@ -2,7 +2,8 @@ RTT round trip time
 
 ### ICMP
 part of the IP protocol (3rd layer) - doesn't have port abstraction like 4th layer  
-often blocked by firewalls - no response. Type 3 code 13 (destination unreachable: communication administratively prohibited) in poorly configured firewalls  
+often blocked by firewalls - no response.
+Type 3 code 13 (destination unreachable: communication administratively prohibited) in poorly configured firewalls  
 ##### Broadcast ICMP type 8
 send ICMP type 8 (echo request) to broadcast address (that is to every address on a subnet). E.g. `ping -b 192.168.129.255`  
 Useless.  

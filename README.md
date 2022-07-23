@@ -1,5 +1,6 @@
 # CEH-preparation-notes
-Notes for CEH preparation  
+Notes using CEH prep materials as framework for ethical hacking  
+I'm not really going to get CEH cert
 
 ## Sources
 General framework:  
