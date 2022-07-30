@@ -35,3 +35,52 @@ therefore:
 
 #### bandit5
 `find . \( -type f -size 1033c \) ! \( -perm /111 \) -print0 2> /dev/null | xargs -0 file | grep ASCII`
+#### bandit 12
+
+`xxd -r data.txt > data2`
+`-r` reverse from (?????converse or patch?????) hexdump to binary
+
+`file data2`
+```
+data.txt2: gzip compressed data, was "data2.bin", last modified: Thu May  7 18:14:30 2020, max compression, from Unix
+```
+
+`gzip` needs suffix to work properly! -> `mv data2 data2.gz`
+
+`gzip -d data2.gz`
+
+`file data2`
+```
+data2: bzip2 compressed data, block size = 900k
+```
+
+`bzip2 -d data2`
+
+`file data2.out` - `.out` bcos `bzip2` append it if it can't guess original name
+```
+data2.out: gzip compressed data, was "data4.bin", last modified: Thu May  7 18:14:30 2020, max compression, from Unix
+```
+
+`mv data2 data2.gz`
+`gzip -d data2.gz`
+
+`file data2`
+```
+data2: POSIX tar archive (GNU)
+```
+
+`tar -xf data2`
+`-x` extract archive
+`-f` file/device archive name (here - `data2`)
+
+`ls`
+```
+data2
+data5.bin
+data.txt
+```
+`data5.bin` - new file
+
+...
+
+#### bandit

@@ -1,3 +1,5 @@
+for recon ~~ichi~~, ~~ni~~, ~~san~~... [Shodan](https://www.shodan.io/about/products)
+
 for encodings [cyberchef](https://cyberchef.org/)  
 for hashes [CrackStation](https://crackstation.net/)
 for proxy [spys.one](https://spys.one/en/)

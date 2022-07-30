@@ -5,8 +5,8 @@
 - Configuring your own OSes and Network Devices
 
 1. Use this knowledge in context of security (both offensive and deffensive):
-- CEH preparations
-- playing around with fw (pfsense as first) and IPS (snort)
+- CEH preparations (as a framework)
+- playing around with fw (`pfsense` as first), IPS (`snort`), SIEM (`splunk`/`elasticsearch`& `kaibana`)
 - THM?
 
 2. I'm looking forward PNPT, OSCP and CISSP
