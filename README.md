@@ -1,7 +1,6 @@
-Notes using CEH prep materials as framework for ethical hacking  
-I'm not really going to get CEH cert  
-
 This repo will slowly transform into personal penetration testing notes
+
+For now I'm mostly using CEH prep materials as framework for ethical hacking
 
 ## Sources
 inter alia  
