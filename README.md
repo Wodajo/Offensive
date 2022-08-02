@@ -4,6 +4,8 @@ I'm not really going to get CEH cert
 This repo will slowly transform into personal penetration testing notes
 
 ## Sources
+inter alia  
+
 General framework:  
 https://cert.eccouncil.org/images/doc/CEH-Exam-Blueprint-v4.0.pdf  
 https://github.com/imrk51/CEH-v11-Study-Guide/tree/main/modules  
