@@ -89,15 +89,15 @@
   },
   "active": "65227985deade534",
   "lastOpenFiles": [
-    "6-system-hacking/tools.md",
-    "link'o'nado.md",
-    "tools/tcpdump.md",
-    "note to self.md",
+    "tools/connection/Openssh.md",
+    "tools/connection/ngrok.md",
+    "tools/connection/netcat.md",
     "README.md",
-    "supplementary to CEH.md",
-    "The big plans after tomorrow.md",
+    "note to self.md",
     "not sorted yet.md",
-    "tools/1-Internet-tools.md",
-    "tools/0-index.md"
+    "link'o'nado.md",
+    "The big plans after tomorrow.md",
+    "supplementary to CEH.md",
+    "labs/dump/loose bandit.md"
   ]
 }

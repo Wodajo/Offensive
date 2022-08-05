@@ -33,6 +33,24 @@
 therefore:
 `bandit4@bandit:~/inhere$ ls | awk '{print "./"$1}' | xargs file`
 
+OR
+
+`ls -d $PWD/*` - display absolute path (for later)
+```
+/home/bandit4/inhere/-file00  /home/bandit4/inhere/-file04  /home/bandit4/inhere/-file08
+/home/bandit4/inhere/-file01  /home/bandit4/inhere/-file05  /home/bandit4/inhere/-file09
+/home/bandit4/inhere/-file02  /home/bandit4/inhere/-file06
+/home/bandit4/inhere/-file03  /home/bandit4/inhere/-file07
+```
+
+`ls ./*` (or simply `find .`)
+```
+./-file00  ./-file01  ./-file02  ./-file03  ./-file04  ./-file05  ./-file06  ./-file07  ./-file08  ./-file09
+```
+
+therefore:
+`ls ./* | xargs file | grep ASCII | awk -F":" '{print $1}' | xargs cat`
+
 #### bandit5
 `find . \( -type f -size 1033c \) ! \( -perm /111 \) -print0 2> /dev/null | xargs -0 file | grep ASCII`
 #### bandit 12
