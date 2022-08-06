@@ -6,6 +6,7 @@ AD:
 [Game Of Active Directory](https://github.com/Orange-Cyberdefense/GOAD)
 [Kerberos attack cheat sheet](https://gist.github.com/TarlogicSecurity/2f221924fef8c14a1d8e29f3cb5c5c4a)
 [16 AD vulnerabilities + payloads](https://www.infosecmatter.com/top-16-active-directory-vulnerabilities/)
+Mimikatz, Rubeus, Impacket, Empire
 
 General:
 [Read Team methods](https://www.ired.team/offensive-security/privilege-escalation/t1134-access-token-manipulation)

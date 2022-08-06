@@ -13,5 +13,8 @@ Wierd:
 - `iwctl` has problems with connecting to home router, but doesn't with hot spot (arch installation)  
 
 
+What if I have many NIC? I can have many 192.168.1.0/24 networks. How does ssh know which one I'm mentioning?
+Does 0.0.0.0 make every network accessable, or only networks on a specified NIC?
+
 How to reverse shell while using vpn?
-How to neatly copy a file NOT using ctl+shift+c?
+(resources can be made accessable with ngrok server)

@@ -89,15 +89,15 @@
   },
   "active": "65227985deade534",
   "lastOpenFiles": [
+    "note to self.md",
     "tools/connection/Openssh.md",
     "tools/connection/ngrok.md",
-    "tools/connection/netcat.md",
     "README.md",
-    "note to self.md",
+    "supplementary.md",
     "not sorted yet.md",
     "link'o'nado.md",
+    "tools/connection/netcat.md",
     "The big plans after tomorrow.md",
-    "supplementary to CEH.md",
     "labs/dump/loose bandit.md"
   ]
 }
