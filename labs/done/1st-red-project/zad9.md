@@ -5,7 +5,7 @@ enable IP forwarding by kernel:
 `sudo sysctl net.ipv4.ip_forward=1`   
 `sysctl` is a tool for examining and changing kernel parameters at runtime  
 OR  
-`sudo su` (sudoers don't have such priviledges :O)  
+`sudo su` (has to use `su` bcos redirection)  
 `echo "1" > /proc/sys/net/ipv4/ip_forward`  
 
 for change persistent after reboot edit `/etc/sysctl.d/30-ipforward.conf`  

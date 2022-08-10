@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "link'o'nado.md",
+            "file": "labs/done/1st-red-project/zad9.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ip_",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "link'o'nado.md",
+                "file": "labs/done/1st-red-project/zad9.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +90,15 @@
   },
   "active": "65227985deade534",
   "lastOpenFiles": [
-    "note to self.md",
-    "tools/connection/Openssh.md",
-    "tools/connection/ngrok.md",
-    "README.md",
-    "supplementary.md",
-    "not sorted yet.md",
+    "tools/tcpdump.md",
+    "tools/cronjob.md",
+    "tools/1-Internet-tools.md",
+    "tools/0-index.md",
     "link'o'nado.md",
-    "tools/connection/netcat.md",
+    "not sorted yet.md",
+    "supplementary.md",
     "The big plans after tomorrow.md",
-    "labs/dump/loose bandit.md"
+    "README.md",
+    "note to self.md"
   ]
 }
