@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "link'o'nado.md",
+            "file": "4-enumeration/escalation.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 221
+    "width": 227.5
   },
   "right": {
     "id": "253bdd6aab6e9a8e",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "link'o'nado.md",
+                "file": "4-enumeration/escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "65227985deade534",
   "lastOpenFiles": [
+    "4-enumeration/overview.md",
+    "tools/basic b17(h/xclip.md",
+    "link'o'nado.md",
+    "not sorted yet.md",
     "note to self.md",
-    "tools/connection/Openssh.md",
-    "tools/connection/ngrok.md",
     "README.md",
     "supplementary.md",
-    "not sorted yet.md",
-    "link'o'nado.md",
-    "tools/connection/netcat.md",
     "The big plans after tomorrow.md",
-    "labs/dump/loose bandit.md"
+    "labs/dump/loose bandit.md",
+    "tools/connection/Openssh.md"
   ]
 }
