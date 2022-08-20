@@ -9,7 +9,11 @@
         "state": {
           "type": "markdown",
           "state": {
+<<<<<<< HEAD
             "file": "4-enumeration/escalation.md",
+=======
+            "file": "labs/done/1st-red-project/zad9.md",
+>>>>>>> 52ba9ad9d996b5e7533e444c005ca72393780e91
             "mode": "source",
             "source": false
           }
@@ -40,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ip_",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +53,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +74,11 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "4-enumeration/escalation.md",
+=======
+                "file": "labs/done/1st-red-project/zad9.md",
+>>>>>>> 52ba9ad9d996b5e7533e444c005ca72393780e91
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +98,7 @@
   },
   "active": "65227985deade534",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "4-enumeration/overview.md",
     "tools/basic b17(h/xclip.md",
     "link'o'nado.md",
@@ -99,5 +109,17 @@
     "The big plans after tomorrow.md",
     "labs/dump/loose bandit.md",
     "tools/connection/Openssh.md"
+=======
+    "tools/tcpdump.md",
+    "tools/cronjob.md",
+    "tools/1-Internet-tools.md",
+    "tools/0-index.md",
+    "link'o'nado.md",
+    "not sorted yet.md",
+    "supplementary.md",
+    "The big plans after tomorrow.md",
+    "README.md",
+    "note to self.md"
+>>>>>>> 52ba9ad9d996b5e7533e444c005ca72393780e91
   ]
 }
