@@ -1,12 +1,20 @@
 This repo will slowly transform into personal penetration testing notes
 
-For now I'm mostly using CEH prep materials as framework for ethical hacking
+Current vision of how things should be arranged here:
+
+- `commands dir` is meant for thematic notes containing dumps of usefull commands.  
+e.g. `escalation` note will include commans like `id`, `whoami`, `groups` and so on - in probable order of use
+
+- `labs dir` is meant for labs ofc
+
+- `ports` is similar to `commands`, but focused on what one can do with port x
+
+- `tools` is for tools manuals re-written in my way
 
 ## Sources
 inter alia  
 
 General framework:  
-https://cert.eccouncil.org/images/doc/CEH-Exam-Blueprint-v4.0.pdf  
 https://github.com/imrk51/CEH-v11-Study-Guide/tree/main/modules  
 https://github.com/undergroundwires/CEH-in-bullet-points  
 https://github.com/Samsar4/Ethical-Hacking-Labs/tree/master/2-Scanning-Networks

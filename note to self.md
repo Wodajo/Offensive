@@ -1,8 +1,8 @@
 Gods of Perseverance, Systematicness and Conscientiousness have me in your keep
 
 - `netcat`
-- Finish DNS notes
-- configure `DNS`, `DHCP`, `SMB`, `NFS` & `ssh` (on Linux & Win)
+- Finish DNS notes Q_Q
+- configure `DNS`, `DHCP`, `SMB`, `NFS` & `ssh` (on Linux & Win) - that's a big one, I tell you what
   
 - remeber to `uniq` your dictionaries
 - It would be good to first look for users to enumerate (ftp, ssh, telnet...)
