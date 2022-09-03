@@ -6,10 +6,24 @@
       {
         "id": "3c3454708e4593f8",
         "type": "leaf",
+        "dimension": 79.91189427312776,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "commands/index.md",
+            "file": "tools/connection/netcat.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "2541c737d5b5514f",
+        "type": "leaf",
+        "dimension": 20.08810572687225,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "tools/basic b17(h/tar.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "metasplo",
+                "query": "dirbu",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,7 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 160.5
+    "width": 171.5
   },
   "right": {
     "id": "b0188bef62c66fbc",
@@ -69,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "commands/index.md",
+                "file": "tools/connection/netcat.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +101,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "3c3454708e4593f8",
+  "active": "aaca3460efce8d16",
   "lastOpenFiles": [
-    "link'o'nado.md",
-    "not sorted yet.md",
-    "note to self.md",
-    "README.md",
-    "The big plans after tomorrow.md",
-    "supplementary.md",
-    "commands/index.md",
-    "tools/Untitled.md",
-    "tools/metasploit.md",
-    "4-enumeration/escalation.md"
+    "tools/enumeration/gobuster.md",
+    "tools/enumeration/dirbuster.md",
+    "tools/scanning/nmap.md",
+    "labs/bolt/bolt.md",
+    "tools/OSINT/recon-ng.md",
+    "theory/1-recon/burdel.md",
+    "tools/0-index.md",
+    "theory/4-enumeration/escalation.md",
+    "theory/6-system-hacking/tools.md",
+    "tools/basic b17(h/tar.md"
   ]
 }

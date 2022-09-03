@@ -3,6 +3,8 @@ framework for building and performing exploit attacks.
 Paid version has also: OWASP Top 10 tools, dynamic payloads for anti-virus evasion and a web interface.  
 [Armitage](https://github.com/rsmudge/armitage) is an open source graphical cyber attack management tool for Metasploit. I've seen infos that it has comparable functionality to paid MSF  
 
+you can use `postgresql.service` - better performance and you can save info about infrastructure
+
 `msfconsole` metasploit shell wrapper. Most features and most stable from MSF interfaces  
 tools are categorised into modules:  
 `**aux**iliary` i.a. scanners. e.g. `search aux ftp`  

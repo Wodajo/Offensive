@@ -53,6 +53,9 @@ therefore:
 
 #### bandit5
 `find . \( -type f -size 1033c \) ! \( -perm /111 \) -print0 2> /dev/null | xargs -0 file | grep ASCII`
+
+`find . -print0 | xargs -0 file` -> good thing
+
 #### bandit 12
 
 `xxd -r data.txt > data2`
