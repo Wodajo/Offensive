@@ -574,3 +574,388 @@ Better to use `cmd` for that one. `ps` did a strange thing and appended unknown 
 
 `schtasks /run /tn vulntask`
 
+#### AD enum
+
+For DNS resolution:
+
+`sudo nvim /etc/systemd/resolved.conf`
+add
+```
+DNS=IP_OF_AD_DC
+```
+`sudo systemctl restart systemd-resolved.conf`
+without this some applications won't be able to resolve (e.g. browser, ssh). Why? I have no idea yet-.-
+ArchWiki suggest it should work with only changing the `/etc/resolv.conf` via `NetworkManager` options
+
+Add `AD DC` IP as `DNS` via `NetworkManager GUI` OR directly append
+```
+nameserver IP_OF_AD_DC
+```
+to `/etc/resolv.conf`
+`sudo systemctl restart NetworkManager`
+
+##### net command
+[Net Doc](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/net-commands-on-operating-systems)
+
+Used to set the `policy settings` on local computer, such as `account policies` and `password policies`
+This command is ONLY used on local computer
+(CAN'T be used on domain controller)
+BUT
+if `/DOMAIN` condition -operation performed on a `domain controller` of the current domain. (otherwise, the operation is performed on the `local computer`)
+
+
+`net user /domain` - list all AD users
+```
+vincent.brooks           vincent.price            vincent.wood
+vincent.young            wayne.bentley            wayne.harrison
+wayne.henderson          wayne.walker             wayne.whitehouse
+wendy.carpenter          wendy.evans              wendy.mills
+wendy.roberts            wendy.taylor             wendy.whittaker
+william.bailey           william.holmes           william.little
+william.miah             william.payne            william.williams
+yvonne.baker             yvonne.black             yvonne.craig
+yvonne.grant             yvonne.johnson           yvonne.smith
+zoe.barnes               zoe.ellis                zoe.fleming
+zoe.hopkins              zoe.humphreys            zoe.lane
+zoe.marshall             zoe.watson
+```
+
+`net user natasha.howells /domain` - user details
+```
+The request will be processed at a domain controller for domain za.tryhackme.com.
+
+User name                    natasha.howells
+Full Name                    Natasha Howells
+Comment
+User's comment
+Country/region code          000 (System Default)
+Account active               Yes
+Account expires              Never
+
+Password last set            2/24/2022 11:04:43 PM
+Password expires             Never
+Password changeable          2/24/2022 11:04:43 PM
+Password required            Yes
+User may change password     Yes
+
+Workstations allowed         All
+Logon script
+User profile
+Home directory
+Last logon                   Never
+
+Logon hours allowed          All
+
+Local Group Memberships
+Global Group memberships     *HR Share RW          *Domain Users
+                             *Internet Access
+The command completed successfully.
+```
+
+`net group /domain` - list all AD groups
+```
+Group Accounts for \\THMDC.za.tryhackme.com
+
+-------------------------------------------------------------------------------
+*Cloneable Domain Controllers
+*DnsUpdateProxy
+*Domain Admins
+*Domain Computers
+*Domain Controllers
+*Domain Guests
+*Domain Users
+*Enterprise Admins
+*Enterprise Key Admins
+*Enterprise Read-only Domain Controllers
+*Group Policy Creator Owners
+*HR Share RW
+*Internet Access
+*Key Admins
+*Protected Users
+*Read-only Domain Controllers
+*Schema Admins
+*Server Admins
+*Tier 0 Admins
+*Tier 1 Admins
+*Tier 2 Admins
+The command completed successfully.
+```
+
+`net group "Tier 1 Admins" /domain` - group details
+```
+Group name     Tier 1 Admins
+Comment
+
+Members
+
+-------------------------------------------------------------------------------
+t1_arthur.tyler          t1_gary.moss             t1_henry.miller
+t1_jill.wallis           t1_joel.stephenson       t1_marian.yates
+t1_rosie.bryant
+The command completed successfully.
+```
+
+`net accounts /domain` - passwd policy
+```
+Force user logoff how long after time expires?:       Never
+Minimum password age (days):                          0
+Maximum password age (days):                          Unlimited
+Minimum password length:                              0
+Length of password history maintained:                None
+Lockout threshold:                                    Never
+Lockout duration (minutes):                           30
+Lockout observation window (minutes):                 30
+Computer role:                                        PRIMARY
+The command completed successfully.
+```
+
+##### powershell
+
+`[System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain()` - properties of current domain
+```
+Forest                  : za.tryhackme.com
+DomainControllers       : {THMDC.za.tryhackme.com}
+Children                : {}
+DomainMode              : Windows2012R2Domain
+DomainModeLevel         : 6
+Parent                  :
+PdcRoleOwner            : THMDC.za.tryhackme.com
+RidRoleOwner            : THMDC.za.tryhackme.com
+InfrastructureRoleOwner : THMDC.za.tryhackme.com
+Name                    : za.tryhackme.com
+```
+
+`Get-ADUser -Identity gordon.stevens -Server za.tryhackme.com -Properties *` - list all properties of user
+```
+AccountExpirationDate                :
+accountExpires                       : 9223372036854775807
+AccountLockoutTime                   :
+AccountNotDelegated                  : False
+AllowReversiblePasswordEncryption    : False
+AuthenticationPolicy                 : {}
+AuthenticationPolicySilo             : {}
+BadLogonCount                        : 0
+badPasswordTime                      : 0
+badPwdCount                          : 0
+CannotChangePassword                 : False
+CanonicalName                        : za.tryhackme.com/People/Consulting/gordon.stevens
+Certificates                         : {}
+City                                 :
+CN                                   : gordon.stevens
+codePage                             : 0
+Company                              :
+CompoundIdentitySupported            : {}
+Country                              :
+countryCode                          : 0
+Created                              : 2/24/2022 10:06:44 PM
+createTimeStamp                      : 2/24/2022 10:06:44 PM
+Deleted                              :
+Department                           : Consulting
+Description                          :
+DisplayName                          : Gordon Stevens
+DistinguishedName                    : CN=gordon.stevens,OU=Consulting,OU=People,DC=za,DC=tryhackme,DC=com
+Division                             :
+DoesNotRequirePreAuth                : False
+dSCorePropagationData                : {1/1/1601 12:00:00 AM}
+EmailAddress                         :
+EmployeeID                           :
+EmployeeNumber                       :
+Enabled                              : True
+Fax                                  :
+GivenName                            : Gordon
+HomeDirectory                        :
+HomedirRequired                      : False
+HomeDrive                            :
+HomePage                             :
+HomePhone                            :
+Initials                             :
+instanceType                         : 4
+isDeleted                            :
+KerberosEncryptionType               : {}
+LastBadPasswordAttempt               :
+LastKnownParent                      :
+lastLogoff                           : 0
+lastLogon                            : 132908987618422496
+LastLogonDate                        : 4/29/2022 11:13:07 PM
+lastLogonTimestamp                   : 132957439878817675
+LockedOut                            : False
+logonCount                           : 4
+LogonWorkstations                    :
+Manager                              :
+MemberOf                             : {CN=Internet Access,OU=Groups,DC=za,DC=tryhackme,DC=com}
+MNSLogonAccount                      : False
+MobilePhone                          :
+Modified                             : 4/29/2022 11:13:07 PM
+modifyTimeStamp                      : 4/29/2022 11:13:07 PM
+msDS-User-Account-Control-Computed   : 0
+Name                                 : gordon.stevens
+nTSecurityDescriptor                 : System.DirectoryServices.ActiveDirectorySecurity
+ObjectCategory                       : CN=Person,CN=Schema,CN=Configuration,DC=za,DC=tryhackme,DC=com
+ObjectClass                          : user
+ObjectGUID                           : 48ddd5f1-37ae-4040-a281-47dd58313fcb
+objectSid                            : S-1-5-21-3330634377-1326264276-632209373-3058
+Office                               :
+OfficePhone                          :
+Organization                         :
+OtherName                            :
+PasswordExpired                      : False
+PasswordLastSet                      : 2/24/2022 10:06:44 PM
+PasswordNeverExpires                 : False
+PasswordNotRequired                  : False
+POBox                                :
+PostalCode                           :
+primaryGroupID                       : 513
+PrincipalsAllowedToDelegateToAccount : {}
+ProfilePath                          :
+ProtectedFromAccidentalDeletion      : False
+pwdLastSet                           : 132902140043901058
+SamAccountName                       : gordon.stevens
+sAMAccountType                       : 805306368
+ScriptPath                           :
+sDRightsEffective                    : 0
+ServicePrincipalNames                : {}
+SID                                  : S-1-5-21-3330634377-1326264276-632209373-3058
+SIDHistory                           : {}
+SmartcardLogonRequired               : False
+sn                                   : Stevens
+State                                :
+Title                                : Mid-level
+TrustedForDelegation                 : False
+TrustedToAuthForDelegation           : False
+UseDESKeyOnly                        : False
+userAccountControl                   : 512
+userCertificate                      : {}
+UserPrincipalName                    :
+uSNChanged                           : 103860
+uSNCreated                           : 30825
+whenChanged                          : 4/29/2022 11:13:07 PM
+whenCreated                          : 2/24/2022 10:06:44 PM
+```
+
+`Get-ADUser -Filter 'Name -like "*stevens"' -Server za.tryhackme.com | Format-Table Name,SamAccountName -A` - find users with string "stevens" in username
+```
+Name             SamAccountName
+----             --------------
+chloe.stevens    chloe.stevens
+samantha.stevens samantha.stevens
+mohammed.stevens mohammed.stevens
+jacob.stevens    jacob.stevens
+timothy.stevens  timothy.stevens
+trevor.stevens   trevor.stevens
+owen.stevens     owen.stevens
+jane.stevens     jane.stevens
+janice.stevens   janice.stevens
+gordon.stevens   gordon.stevens
+```
+
+`Get-ADGroup -Identity Administrators -Server za.tryhackme.com` - list properties of `Administrators` group
+```
+DistinguishedName : CN=Administrators,CN=Builtin,DC=za,DC=tryhackme,DC=com
+GroupCategory     : Security
+GroupScope        : DomainLocal
+Name              : Administrators
+ObjectClass       : group
+ObjectGUID        : f4d1cbcd-4a6f-4531-8550-0394c3273c4f
+SamAccountName    : Administrators
+SID               : S-1-5-32-544
+```
+
+`Get-ADGroup -Identity Administrators -Server za.tryhackme.com -Properties *` - all properties of `Administrators` group
+```
+adminCount                      : 1
+CanonicalName                   : za.tryhackme.com/Builtin/Administrators
+CN                              : Administrators
+Created                         : 2/24/2022 9:57:34 PM
+createTimeStamp                 : 2/24/2022 9:57:34 PM
+Deleted                         :
+Description                     : Administrators have complete and unrestricted access to the computer/domain
+DisplayName                     :
+DistinguishedName               : CN=Administrators,CN=Builtin,DC=za,DC=tryhackme,DC=com
+dSCorePropagationData           : {2/24/2022 10:13:48 PM, 2/24/2022 9:58:38 PM, 1/1/1601 12:04:16 AM}
+GroupCategory                   : Security
+GroupScope                      : DomainLocal
+groupType                       : -2147483643
+HomePage                        :
+instanceType                    : 4
+isCriticalSystemObject          : True
+isDeleted                       :
+LastKnownParent                 :
+ManagedBy                       :
+member                          : {CN=Domain Admins,CN=Users,DC=za,DC=tryhackme,DC=com, CN=Enterprise
+                                  Admins,CN=Users,DC=za,DC=tryhackme,DC=com, CN=vagrant,CN=Users,DC=za,DC=tryhackme,DC=com,
+                                  CN=Administrator,CN=Users,DC=za,DC=tryhackme,DC=com}
+MemberOf                        : {}
+Members                         : {CN=Domain Admins,CN=Users,DC=za,DC=tryhackme,DC=com, CN=Enterprise
+                                  Admins,CN=Users,DC=za,DC=tryhackme,DC=com, CN=vagrant,CN=Users,DC=za,DC=tryhackme,DC=com,
+                                  CN=Administrator,CN=Users,DC=za,DC=tryhackme,DC=com}
+Modified                        : 2/24/2022 10:13:48 PM
+modifyTimeStamp                 : 2/24/2022 10:13:48 PM
+Name                            : Administrators
+nTSecurityDescriptor            : System.DirectoryServices.ActiveDirectorySecurity
+ObjectCategory                  : CN=Group,CN=Schema,CN=Configuration,DC=za,DC=tryhackme,DC=com
+ObjectClass                     : group
+ObjectGUID                      : f4d1cbcd-4a6f-4531-8550-0394c3273c4f
+objectSid                       : S-1-5-32-544
+ProtectedFromAccidentalDeletion : False
+SamAccountName                  : Administrators
+sAMAccountType                  : 536870912
+sDRightsEffective               : 0
+SID                             : S-1-5-32-544
+SIDHistory                      : {}
+systemFlags                     : -1946157056
+uSNChanged                      : 31686
+uSNCreated                      : 8200
+whenChanged                     : 2/24/2022 10:13:48 PM
+whenCreated                     : 2/24/2022 9:57:34 PM
+```
+
+`Get-ADGroupMember -Identity Administrators -Server za.tryhackme.com` - list memebers of `Administrators` group
+```
+distinguishedName : CN=Domain Admins,CN=Users,DC=za,DC=tryhackme,DC=com
+name              : Domain Admins
+objectClass       : group
+objectGUID        : 8a6186e5-e20f-4f13-b1b0-067f3326f67c
+SamAccountName    : Domain Admins
+SID               : S-1-5-21-3330634377-1326264276-632209373-512
+
+distinguishedName : CN=Enterprise Admins,CN=Users,DC=za,DC=tryhackme,DC=com
+name              : Enterprise Admins
+objectClass       : group
+objectGUID        : 93846b04-25b9-4915-baca-e98cce4541c6
+SamAccountName    : Enterprise Admins
+SID               : S-1-5-21-3330634377-1326264276-632209373-519
+
+distinguishedName : CN=vagrant,CN=Users,DC=za,DC=tryhackme,DC=com
+name              : vagrant
+objectClass       : user
+objectGUID        : ed901eff-9ec0-4851-ba32-7a26a8f0858f
+SamAccountName    : vagrant
+SID               : S-1-5-21-3330634377-1326264276-632209373-1000
+
+distinguishedName : CN=Administrator,CN=Users,DC=za,DC=tryhackme,DC=com
+name              : Administrator
+objectClass       : user
+objectGUID        : b10fe384-bcce-450b-85c8-218e3c79b30f
+SamAccountName    : Administrator
+SID               : S-1-5-21-3330634377-1326264276-632209373-500
+```
+
+#### Bloodhound
+GUI for using `Sharphound` as input to visualise it into attack paths
+
+uses `Neo4j` as its `backend database` and `graphing system`
+(`Neo4j` is a graph database management system)
+
+`Sharphound` is a tool for AD enumeration (aka `collector`)
+There are other collectors like `AzureHound.ps1` for `Azure` enumeration
+run `SharpHound` on targeted Windows
+`.\SharpHound.exe --CollectionMethods All --Domain za.tryhackme.com --ExcludeDCs`
+
+move created zip to Kali, e.g.
+`scp <AD Username>@THMJMP1.za.tryhackme.com:C:/Users/<AD Username>/Documents/<Sharphound ZIP> .`
+
+`sudo pacman -S bloodhound` - blackarch install neo4j as dependency (nicely done)
+`sudo systemctl start neo4j` - this might be wrong (I did this, and than `neo4j` start - seems redundant but I'm not sure)
+`sudo neo4j start`
+`http://localhost:7474` - browser interface
+
