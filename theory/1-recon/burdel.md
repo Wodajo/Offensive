@@ -1,9 +1,3 @@
-Please
-- buy a notebook (dump your plans and write calendar)
-- re-organise this repo
-- focus on your way of doing things. You have quite limited time
-
-
 ##### WHOIS
 `domain registrar` is responsible for maintaining the `WHOIS records` for the `domain names` it is leasing
 

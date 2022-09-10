@@ -6,11 +6,11 @@
       {
         "id": "3c3454708e4593f8",
         "type": "leaf",
-        "dimension": 80.08810572687224,
+        "dimension": 79.91189427312776,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "theory/4-enumeration/escalation.md",
+            "file": "note to self.md",
             "mode": "source",
             "source": false
           }
@@ -19,7 +19,7 @@
       {
         "id": "2541c737d5b5514f",
         "type": "leaf",
-        "dimension": 19.911894273127754,
+        "dimension": 20.08810572687225,
         "state": {
           "type": "markdown",
           "state": {
@@ -67,7 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 171.5
+    "width": 179.5
   },
   "right": {
     "id": "b0188bef62c66fbc",
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "theory/4-enumeration/escalation.md",
+                "file": "note to self.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,15 +103,15 @@
   },
   "active": "3c3454708e4593f8",
   "lastOpenFiles": [
-    "tools/scanning/nmap.md",
-    "tools/connection/netcat.md",
-    "tools/enumeration/gobuster.md",
-    "tools/enumeration/dirbuster.md",
-    "labs/bolt/bolt.md",
-    "tools/OSINT/recon-ng.md",
+    "theory/4-enumeration/overview.md",
+    "note to self.md",
     "theory/1-recon/burdel.md",
-    "tools/0-index.md",
-    "theory/4-enumeration/escalation.md",
-    "theory/6-system-hacking/tools.md"
+    "ports/23-tcp.md",
+    "ports/0.index.md",
+    "commands/0-index.md",
+    "link'o'nado.md",
+    "not sorted yet.md",
+    "README.md",
+    "supplementary.md"
   ]
 }

@@ -576,8 +576,7 @@ Better to use `cmd` for that one. `ps` did a strange thing and appended unknown 
 
 #### AD enum
 
-For DNS resolution:
-
+**For DNS resolution**:
 `sudo nvim /etc/systemd/resolved.conf`
 add
 ```
@@ -950,9 +949,10 @@ uses `Neo4j` as its `backend database` and `graphing system`
 There are other collectors like `AzureHound.ps1` for `Azure` enumeration
 run `SharpHound` on targeted Windows
 `.\SharpHound.exe --CollectionMethods All --Domain za.tryhackme.com --ExcludeDCs`
+Awfully noisy, but you can plan you next attack easier now
 
 move created zip to Kali, e.g.
-`scp <AD Username>@THMJMP1.za.tryhackme.com:C:/Users/<AD Username>/Documents/<Sharphound ZIP> .`
+`scp AD_USERNAME@THMJMP1.za.tryhackme.com:C:/Users/AD_USERNAME/Documents/<Sharphound ZIP> .`
 
 `sudo pacman -S bloodhound` - blackarch install neo4j as dependency (nicely done)
 `sudo systemctl start neo4j` - this might be wrong (I did this, and than `neo4j` start - seems redundant but I'm not sure)

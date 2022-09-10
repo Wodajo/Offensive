@@ -5,3 +5,7 @@ Common ports and services:
 
 DNS enumeration:
 - tools nslookup, dig, dnsrecon, host
+
+- remeber to `uniq` your dictionaries
+- It would be good to first look for users to enumerate (ftp, ssh, telnet...)
+otherwise - list is too long - aka recon
