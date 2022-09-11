@@ -39,7 +39,7 @@ check if you have access to `/etc/shadow` (not likely)
 
 [GTFObin](https://gtfobins.github.io/)
 
-[when only root-write permission](./example/root-write)
+[when only root-write permission](example/root-write.md)
 
 `getcap -r / 2>/dev/null` ??????
 

@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "note to self.md",
+            "file": "theory/0-index.md",
             "mode": "source",
             "source": false
           }
@@ -67,7 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 179.5
+    "width": 302.5
   },
   "right": {
     "id": "b0188bef62c66fbc",
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note to self.md",
+                "file": "theory/0-index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,15 +103,15 @@
   },
   "active": "3c3454708e4593f8",
   "lastOpenFiles": [
-    "theory/4-enumeration/overview.md",
-    "note to self.md",
-    "theory/1-recon/burdel.md",
-    "ports/23-tcp.md",
-    "ports/0.index.md",
-    "commands/0-index.md",
-    "link'o'nado.md",
-    "not sorted yet.md",
-    "README.md",
-    "supplementary.md"
+    "theory/3-initial access/wireless-networks/tools-wireless.md",
+    "theory/3-initial access/vulnerabilities/tools-exploitation.md",
+    "theory/3-initial access/system-hacking/tools.md",
+    "theory/3-initial access/enumeration/overview.md",
+    "theory/3-initial access/enumeration/escalation.md",
+    "theory/3-initial access/enumeration/tools-enumeration.md",
+    "theory/2-resource-development/0-index.md",
+    "theory/14-impact/0-index.md",
+    "theory/0-index.md",
+    "theory/13-exfiltration/0-index.md"
   ]
 }

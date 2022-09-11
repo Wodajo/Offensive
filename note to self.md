@@ -7,7 +7,8 @@ Gods of Perseverance, Systematicness and Conscientiousness have me in your keep
     e.g. `ecalation` note -> `id`, `whoami`, `groups`
   - labs - labs workspace (and walkthrough dump)
   - ports - service info & port-related commands
-  - theory
+  - theory - organised via MITRE ATT&CK matrix for enterprises.
+    Should cover attacking infrastructures. Single-machine hacking hidden inside
   - tools
 
 - `netcat`
