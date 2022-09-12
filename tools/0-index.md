@@ -10,7 +10,7 @@
 [netcat](connection/netcat.md)
 [tcpdump](escalation/tcpdump.md)
 [p0f](p0f.md)
-[cronjob?](./cronjob.md)
+[cronjob?](automation/cron.md)
 [dirbuster](enumeration/dirbuster.md)
 [gobuster](enumeration/gobuster.md)
 [hydra](./enumeration/hydra.md)

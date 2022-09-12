@@ -1,15 +1,6 @@
 Gods of Perseverance, Systematicness and Conscientiousness have me in your keep
 
 - buy a notebook (dump your plans and write calendar)
-  
-- re-organise this repo:
-  - commands - thematic notes containing dumps of usefull commands
-    e.g. `ecalation` note -> `id`, `whoami`, `groups`
-  - labs - labs workspace (and walkthrough dump)
-  - ports - service info & port-related commands
-  - theory - organised via MITRE ATT&CK matrix for enterprises.
-    Should cover attacking infrastructures. Single-machine hacking hidden inside
-  - tools
 
 - `netcat`
 - Finish DNS notes Q_Q

@@ -107,7 +107,8 @@ set up localhost:9999 SOCKS proxy on firefox (client) -> web requests are forwar
 `-J` jump, a chain of connections.
 
 
-#### "pushing" (sending to)
+#### scp - source -> dest
+##### "pushing" (sending to) 
 `scp *.html xubuntu@192.168.1.109:directory`
 copy files to a directory inside default directory we log into
 
@@ -115,7 +116,7 @@ copy files to a directory inside default directory we log into
 `-r` recursively send whole directory
 
 
-#### "pulling" (copying from)
+##### "pulling" (copying from)
 `scp xubuntu@192.168.1.109:webpage-ssh/index.html .`
 
 `scp -r xubuntu@192.168.1.109:webpage-ssh/ .`

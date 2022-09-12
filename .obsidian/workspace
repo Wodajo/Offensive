@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "theory/0-index.md",
+            "file": "tools/automation/cron.md",
             "mode": "source",
             "source": false
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "theory/0-index.md",
+                "file": "tools/automation/cron.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,15 +103,15 @@
   },
   "active": "3c3454708e4593f8",
   "lastOpenFiles": [
-    "theory/3-initial access/wireless-networks/tools-wireless.md",
-    "theory/3-initial access/vulnerabilities/tools-exploitation.md",
-    "theory/3-initial access/system-hacking/tools.md",
-    "theory/3-initial access/enumeration/overview.md",
-    "theory/3-initial access/enumeration/escalation.md",
-    "theory/3-initial access/enumeration/tools-enumeration.md",
-    "theory/2-resource-development/0-index.md",
-    "theory/14-impact/0-index.md",
-    "theory/0-index.md",
-    "theory/13-exfiltration/0-index.md"
+    "tools/automation/systemd-Timers.md",
+    "tools/automation/cron.md",
+    "tools/basic b17(h/kill.md",
+    "note to self.md",
+    "tools/basic b17(h/su.md",
+    "tools/connection/Openssh.md",
+    "supplementary.md",
+    "not sorted yet.md",
+    "tools/0-index.md",
+    "tools/1-Internet-tools.md"
   ]
 }
