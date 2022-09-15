@@ -7,4 +7,3 @@ forms of communications such as `wireless`, `wired`, `analog`, and `digital`
 
 This dir is organised via MITRE ATT&CK matrix for enterprises.
 It should cover attacking infrastructures
-Single-machine hacking hidden inside

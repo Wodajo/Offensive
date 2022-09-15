@@ -14,3 +14,5 @@ Does 0.0.0.0 make every network accessable, or only networks on a specified NIC?
 
 How to reverse shell while using vpn?
 (resources can be made accessable with ngrok server)
+
+why RDP (using xfreerdp) works fine between local administrator and user on virtual infrastructure (both accounts on same IP, Windows), but I have problems accessing user?

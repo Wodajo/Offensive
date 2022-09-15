@@ -9,8 +9,10 @@ e.g. `escalation` note -> `id`, `whoami`, `groups` and so on - in probable order
 
 - `ports` is similar to `commands`, but focused on what one can do with port x
 
-- `theory` - organised with `MITRE ATT&CK` matrix for enterprises  
-should cover attacking infrastructures. Single-machine hacking theory hidden accordingly inside
+- `theory` :  
+  - `infrastructures` (organised with `MITRE ATT&CK` matrix for enterprises),  
+  - `windows`  
+  - `linux`
 
 - `tools` is for tools manuals re-written in my way
 
