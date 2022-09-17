@@ -23,7 +23,7 @@ If `-sL -n` nmap will JUST print out IP addresses. `-sL` is NOT meant for direct
 `sudo nmap -sn 192.168.1.0/24`  use ICMP echo request, TCP SYN to port 443, TCP ACK to port 80, and an ICMP timestamp. Omits further ports scanning.
 
 `sudo nmap --disable-arp-ping -PM -PO -PY -sn 192.168.1.0/24` disables ARP and IPv6 Neighbor Discovery.  
-Some networks using proxy ARP, in which a router replies to all ARP requests making every target appear to be up according to ARP scan. (**Don't work on LAN**)  
+Some networks using proxy ARP, in which a router replies to all ARP requests making every target appear to be up according to ARP scan. (**Don't work outside LAN**)  
 `-PM` ICMP netmask, `-PO` IP scan, `-PY` SCTP scan  
 
 "Bruteforce" checking with blind port scanning:
@@ -39,7 +39,7 @@ Send UDP datagram on probably empty port (processes would most likely drop empty
 
 ### port scanning
 `sudo nmap -Pn -sS -sY -sO -sU -p U:53,67,68,161,162,T:1-65535 -iL list_of_targets_IP`
-`-Pn` assume passed targets online, `-sS` SYN scan, `-sY` SCTP scan, `-sO` IP scan, `-sU` UDP scan, `-iL` to pass list of targets  
+`-Pn` assume passed targets online, `-sS` SYN scan, `-sY` SCTP scan, `-sO` IP scan (sends IP packet headers and iterates through the eight-bit IP protocol field for given port), `-sU` UDP scan, `-iL` to pass list of targets  
 
 #### IDLE scan:
 for zombie search it might be good to use `ipidseq.nse`  (to check how IP ID increments)  

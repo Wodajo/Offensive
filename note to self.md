@@ -16,3 +16,6 @@ How to reverse shell while using vpn?
 (resources can be made accessable with ngrok server)
 
 why RDP (using xfreerdp) works fine between local administrator and user on virtual infrastructure (both accounts on same IP, Windows), but I have problems accessing user?
+
+check:
+`sudo unicornscan -mU 192.168.1.0/24` (seems like `unicornscan` is not UDP scanning anything else than gateway and broadcast. `wireshark` filter `(udp) && (ip.src == 192.168.1.180)`

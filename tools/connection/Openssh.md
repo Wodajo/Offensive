@@ -62,6 +62,8 @@ Host MyServer
 ```
 That way I can ssh usint `ssh MyServer` instead `ssh -p 2222 kali@192.168.1.109`
 
+public key has username of its owner:>
+
 #### tunneling
 `ssh -L 127.0.0.1:8888:192.168.1.3:8080 kali@44.11.22.33`
 `-L` local forward

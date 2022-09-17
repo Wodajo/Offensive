@@ -123,6 +123,8 @@ Bypass many firewalls BUT pretty fking long (Linux kernel limits ICMP responses 
 ### ARP scan
 send regular ARP requests looking for MAC addresses  
 usefull on LAN  
+You can't use layer 2 protocol to scan e.g. other subnet  
+e.g. VPN interface is a 3rd layer entity so no arp scanning here
 `sudo nmap -PR -sn '192.168.0.*'` -PR ARP discovery  
 `sudo arp-scan -I wlan0 <addressIP/24>` -I interface  
 `sudo netdiscover -r 10.0.2.1/24` -r range (not autoscan)  
