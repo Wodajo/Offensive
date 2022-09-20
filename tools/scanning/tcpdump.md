@@ -2,8 +2,9 @@
 `EXPRESSION` in `pcap-filter` syntax
 
 #### examples:
-`tcpdump -i tun0`
+`tcpdump -v -i tun0`
 `-i` interface
+`-v` verbose
 
 `tcpdump src 1.1.1.1`
 `tcpdump dst 1.1.1.1`

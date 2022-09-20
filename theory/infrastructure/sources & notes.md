@@ -7,3 +7,8 @@ forms of communications such as `wireless`, `wired`, `analog`, and `digital`
 
 This dir is organised via MITRE ATT&CK matrix for enterprises.
 It should cover attacking infrastructures
+
+[Hakc Tricks has nice overviews](https://book.hacktricks.xyz/generic-methodologies-and-resources/pentesting-methodology)
+
+
+made notes as if you are trying to make external test - internal portion will still be there in case you'd have init access by default

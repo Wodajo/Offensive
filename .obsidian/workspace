@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "tools/scanning/tcpdump.md",
+            "file": "labs/dump/THM/Source/T1/T1-10.10.79.206.md",
             "mode": "source",
             "source": false
           }
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "tools/scanning/nmap.md",
+            "file": "tools/connection/curl.md",
             "mode": "source",
             "source": false
           }
@@ -65,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 196.5
+    "width": 199.5
   },
   "right": {
     "id": "b0188bef62c66fbc",
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tools/scanning/tcpdump.md",
+                "file": "labs/dump/THM/Source/T1/T1-10.10.79.206.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "d211d6b27ab039e5",
   "lastOpenFiles": [
-    "tools/scanning/p0f.md",
-    "commands/scanning.md",
-    "tools/connection/Openssh.md",
-    "tools/scanning/nmap.md",
-    "theory/infrastructure/1-reconnaissance/1.2-active-scanning/workflow.md",
-    "theory/infrastructure/1-reconnaissance/1.2-active-scanning/scan-by-protocol.md",
-    "tools/connection/telnet.md",
-    "theory/windows/SMB.md",
-    "tools/connection/ngrok.md",
-    "tools/enumeration/enum4linux-ng.md"
+    "labs/dump/THM/Source/T1/T1-Endgame.md",
+    "labs/dump/THM/Source/T1/T1-10.10.79.206.md",
+    "labs/dump/THM/Source/T1/log-T1-10000.md",
+    "labs/dump/THM/Source/T1/log-T1-exploit-10000.md",
+    "tools/connection/curl.md",
+    "tools/connection/nc.md",
+    "commands/exploit.md",
+    "tools/escalation/searchsploit.md",
+    "labs/dump/THM/Source/T1/log-T1-source&browser_inspector.md",
+    "tools/escalation/sploitctl.md"
   ]
 }

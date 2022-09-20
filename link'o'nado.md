@@ -11,6 +11,7 @@ Mimikatz, Rubeus, Impacket, Empire
 General:
 [Read Team methods](https://www.ired.team/offensive-security/privilege-escalation/t1134-access-token-manipulation)
 [Hack Tricks](https://book.hacktricks.xyz/welcome/readme)
+[RedTeam guide](https://redteam.guide/docs/Concepts/mitre_attack)
 
 Not analysed soft:
 [LinPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)

@@ -1,3 +1,4 @@
+Doesn't support SSL. For that - `ncat`
 
 ### sending files
 Listener:

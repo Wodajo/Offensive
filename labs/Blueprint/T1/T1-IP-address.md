@@ -1,13 +1,23 @@
 IP:
 MAC:
-OS:
-[log-of-command]() - logs listed after extracted info
+OS: 
+
+extracted usefull info (like creds)
+****
+users list
 
 ports list - each port has it's own "investigation" page
-[log-of-command]() - or lists of logs used for extracting this info
 
-e.g. users
-[log-of-command]() list to create users list
-
+commands list for T1 (chronologically)
+e.g.
+[log-T1-ping](./log-T1-ping)
+[log-T1-tcp-scans](./log-T1-tcp-scans)
+[log-T1-sctp-scans](./log-T1-sctp-scans)
+[log-T1-udp-scans](./log-T1-udp-scans)
+log-T1-
+log-T1-
+log-T1-
+log-T1-
+log-T1-
 
 Notes:

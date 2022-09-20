@@ -62,7 +62,7 @@ port is needed only if not default
 login:pass format  
 
 `-e nsr` additional checks  
-`n` null passwd, `s` login as pass, `r` reverse login as pass
+`n` null passwd, `s` login as pass, `r` reverted login as pass
 
 `-x min:max:charset` generate passwds  
 min length, max length,  
@@ -100,3 +100,20 @@ Only make sense when low `-t`
 `-4/-6` prefere IPv4 or IPv6
 
 `-v` show login+pass combination for each attempt
+### modules
+#### http-post-form, https-post-form, http-get-form, https-get-form
+
+either `www.example.com module optional_module_parameters`
+or `module://www.example.com/optional-module-parameters`
+(I have no idea how to properly use former)
+
+`[url]:[form parameters]:[condition string][:(optional)[:(optional)]`
+`[url]` - page on the server to GET or POST
+`[form parameters]` - POST/GET variables (taken from either the browser, proxy, etc. with usernames and passwords being replaced in the “`^USER^`” and “`^PASS^`”
+`[condition string]` - checks for success or failure of logon
+Invalid condition login check can be preceded by “`F=`”, successful condition login check must be preceded by “`S=`”
+
+e.g.
+`sudo hydra -l admin -P rockyou.txt 10.10.141.47 -s 80 http-post-form "/admin:user=^USER^&pass=^PASS^:F=<p>Username or password invalid</p>" -o output_hydra`
+or
+`sudo hydra -l admin -P rockyou.txt 10.10.42.179 -s 10000 https-post-form "/:user=^USER^&pass=^PASS^:F=Login failed. Please try again." -o output_hydra2`

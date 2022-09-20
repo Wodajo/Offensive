@@ -36,6 +36,7 @@ therefore:
 OR
 
 `ls -d $PWD/*` - display absolute path (for later)
+`-d` seems unnecessary
 ```
 /home/bandit4/inhere/-file00  /home/bandit4/inhere/-file04  /home/bandit4/inhere/-file08
 /home/bandit4/inhere/-file01  /home/bandit4/inhere/-file05  /home/bandit4/inhere/-file09

@@ -26,8 +26,15 @@ you might want to change `DEFAULT_UDP_PROBE_PORT_SPEC` in `nmap.h`
 you might want to omit host discovery and blind port-scan every possible host
 
 
-#### port scanning
+#### if inside LAN
+passive sniffing (type of traffic, creds) - TO DO
 
+`TTL` for `ICMP` echo reply :
+`64` linux (some kernels - `255`)
+`128` windows
+`255` solaris and networking dev
+
+#### port scanning
 `sudo nmap -Pn -sS -sY -sU -p U:53,67,68,161,162,T:1-65535 -iL list`
 `-Pn` assume passed targets online, `-sS` SYN scan, `-sY` SCTP scan, `-sO` IP scan, `-sU` UDP scan, `-iL` to pass list of targets
 

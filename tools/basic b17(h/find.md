@@ -71,7 +71,11 @@ check if expression1 is true -> if expression is true - stops, if expression is 
 file name can contain any character except `\0` (null) and `/`
 
 `-print0` creates null-separated output
-(if output is going to a terminal it **can be dangerous!**)
+```man
+print the full file name on the standard output, followed by a null character (instead of the newline  character
+that  -print uses
+```
+(if output is going to a terminal it **can be dangerous!** - WHY)
 name can have i.a. `\n`
 e.g.
 `find . -iname "*.jpg" --print0 | xargs --null ls -la`
