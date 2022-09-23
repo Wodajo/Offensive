@@ -1,5 +1,6 @@
-`System Configuration` - for advanced troubleshooting, mainly to help diagnose startup issues
+`System Configuration` - for advanced troubleshooting, build mainly to help diagnose startup issues
 
+Usefull for e.g. looking for windows tools
 
 NOT for startup-management,  for this use `taskmgr`
 

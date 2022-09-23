@@ -9,19 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "labs/dump/THM/Source/Penetration Test Report.md",
+            "file": "labs/dump/THM/Bruteit/T1/T1-80-tcp.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "d5dc84f90f01b327",
+        "id": "e3d2bb946cd437c8",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "labs/dump/THM/Source/T1/T1-Endgame.md",
+            "file": "tools/enumeration/ncrack.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labs/dump/THM/Source/Penetration Test Report.md",
+                "file": "tools/enumeration/ncrack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,17 +99,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "60c9500c7b6ba7ef",
+  "active": "e3d2bb946cd437c8",
   "lastOpenFiles": [
-    "labs/dump/THM/Source/T1/T1-Endgame.md",
-    "labs/dump/THM/Source/Penetration Test Report.md",
-    "labs/Blueprint/Report.md",
-    "labs/dump/THM/Source/T1/T1-10.10.79.206.md",
-    "labs/dump/THM/Source/T1/log-T1-10000.md",
-    "labs/dump/THM/Source/T1/log-T1-exploit-10000.md",
-    "commands/exploit.md",
-    "tools/enumeration/hydra.md",
-    "tools/1-Internet-tools.md",
-    "link'o'nado.md"
+    "labs/dump/THM/Bruteit/T1/T1-80-tcp.md",
+    "labs/dump/THM/Bruteit/T1/T1-10.10.13.234.md",
+    "labs/dump/THM/Bruteit/T1/().md",
+    "theory/windows/UAC.md",
+    "tools/enumeration/ncrack.md",
+    "theory/infrastructure/1-reconnaissance/1.2-active-scanning/scan-by-protocol.md",
+    "tools/scanning/nmap.md",
+    "tools/windows/WF.msc.md",
+    "theory/infrastructure/12-C2/0-index.md",
+    "tools/windows/regedit.md"
   ]
 }

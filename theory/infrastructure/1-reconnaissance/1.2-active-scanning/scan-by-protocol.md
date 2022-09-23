@@ -56,14 +56,14 @@ if `TTL` < 64 while other packets have higher TTL. As I understand TTL can be go
 ##### according to RFC 793...
 segment not containing `SYN`, `RST`, or `ACK` bits will result in `RST` (if the port is closed) or no reponse (if port open)  
 Very stealthy but modern IDS can be configured to detect it.  
-Unfotunately many devices don't follow RFC. Some send `RST` responses to the probes regardless of whether the port is open or not. This causes all of the ports to be labeled `closed`. Windows and many CISCO and IBM devises doeas it.  
+Unfotunately many devices don't follow RFC. Some send `RST` responses to the probes regardless of whether the port is open or not. This causes all of the ports to be labeled `closed`. Windows and many CISCO and IBM devises does it.  
 There could also be false positives:D  
 You can check manually e.g. nmap `--scanflags` (2^3 = 8 permutations) or use most popular combinations - XMAS, NULL scan and FIN scan
 ###### XMAS
 send segments with `FIN`, `URG` and `PUSH` flags. Xmas bcos segment is decorated like christmas tree  
 If response `RST` - closed  
-if ICMP unreachable - open/**filtered**  
-if timeout - filtered  
+if ICMP unreachable - filtered  
+if timeout - open/filtered  
 `sudo nmap -sX`  
 `sudo hping -8 <ports> -F -U -P <ip address> -V` -F for FIN, -P for PUSH, -U for URG  
 ###### Null scan

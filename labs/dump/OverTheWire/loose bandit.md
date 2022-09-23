@@ -36,7 +36,10 @@ therefore:
 OR
 
 `ls -d $PWD/*` - display absolute path (for later)
-`-d` seems unnecessary
+`-d` only dirs. Necessary bcos otherwise ls will show contents of dirs in `$PWD`
+e.g.
+`ls -lad $PWD/*` - in `$PWD`, without - in dirs level deeper
+`ls -lad $PWD/.*` - to view dotfiles
 ```
 /home/bandit4/inhere/-file00  /home/bandit4/inhere/-file04  /home/bandit4/inhere/-file08
 /home/bandit4/inhere/-file01  /home/bandit4/inhere/-file05  /home/bandit4/inhere/-file09

@@ -1,3 +1,5 @@
+`-vv` the more verbosity the better!
+
 Allow host detection, port scanning with service and OS specification, firewall info and detecting/exploiting vulnerabilities (NSE - nmap script engine)  
 include: 
 - `ncat` - improved netcat (i.a. supports SSL, IPv6, SOCKS, http proxies and connection brokering)  
@@ -9,6 +11,7 @@ include:
 If `-sL -n` nmap will JUST print out IP addresses. `-sL` is NOT meant for direct passing IPs. (`-iL` passes list of hosts). It only return a list of to-be-targeted hosts. `-n` disables reverse-DNS resolution. 
 - **host discovery (ping scans)** i.a. ARPrequests (MASSIVE broadcasting), TCP scans, ICMP scans and so on. Used to make sure hosts are online for futher scanning. To skip `-Pn` (no ping, all hosts assumed online). To close just after `-sn -n` (-n for no reverse-DNS resolution)  
 - **reverse-DNS resolution** of all hosts believed to be online so as to gain additional info that may be stored in DNS (e.g. firewalls are often named `fw`). `-n` to skip, `-R` to resolve all hosts (even down ones)  
+  It is done parallely for many host for speed sake, thus "Parallel DNS resolution" in verbose mode  
 - **port scanning** by default performed `-sS`. To skip `-sn`  
 - **version detection** `-sV` to enable. Used if any ports are open  
 - **OS detection** `-O` to enable  
@@ -41,6 +44,8 @@ Send UDP datagram on probably empty port (processes would most likely drop empty
 `sudo nmap -Pn -sS -sY -sO -sU -p U:53,67,68,161,162,T:1-65535 -iL list_of_targets_IP`
 `-Pn` assume passed targets online, `-sS` SYN scan, `-sY` SCTP scan, `-sO` IP scan (sends IP packet headers and iterates through the eight-bit IP protocol field for given port), `-sU` UDP scan, `-iL` to pass list of targets  
 
+`--top-ports <number>` - only first `<number>` of ports (UDP scan)
+
 #### IDLE scan:
 for zombie search it might be good to use `ipidseq.nse`  (to check how IP ID increments)  
 `sudo nmap -Pn -p- -sI <zombie IP/hostname:sendingport> <target IP/hostname>`  
@@ -69,7 +74,17 @@ Categories: *auth*, *broadcast*, *brute*, *default*. *discovery*, *dos*, *exploi
 `sudo nmap -sS -p- --packet-trace 192.168.1.128`  
 show all sent and received packets (and standard output)
 
-### packet fragmentation
+### FW bypass
+`--scan-delay <time>ms` - between sent packets
+
+`--badsum` - any  real TCP/IP stack would drop this. Response determine `fw`/`IDS`
+
+`-sA` Ack scan
+if unfiltered - `open` and `closed` ports will both return `RST`. That also means that host is alive  
+if timeout or ICMP ureachable - filtered. Firewall doesn't allow `ACK` without session - that is stateful firewall)  
+Relies mostely on timeouts - slow
+
+#### packet fragmentation
 **Why data must be a multiple of 8 bytes??**
 `--mtu SizeInBytes-MultiplicationOf8`
 works for raw packet features (TCP&UDP scans [except FTP bounce and -sT], OS detection)  
@@ -80,3 +95,4 @@ NOT for NSE (like `-sV`, `-sC`) - depend on TCP stack
 carefull - check with `wireshark` if your OS is truly fragmenting them (might be problems with kernel)  
 
  `--send-eth` if kernel cause problems (bypass IP layer and directly send ethernet frames)
+ 

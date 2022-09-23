@@ -10,7 +10,7 @@ or
 	`NetBIOS-NS` (`name service`) - on `UDP/137` for broadcast and directed lookups of workstation, server and domain names
 	`NetBIOS-DGM` (`datagram distribution service`) - on `UDP/138` for `error detection` and `recovery` of `connectionless` communication
 	and
-	`NetBIOS-SSN` (`session service`) - on `TCP/139` - for session management. "main" port in that setup
+	`NetBIOS-SSN` (`session service`) - on **`TCP/139`** - for session management. "main" port in that setup
 or rarely
 - `NetBEUI` (`NetBIOS Extended User Interface`) - heavily rely on broadcasting - good only on small `LAN`s
 or rarely
