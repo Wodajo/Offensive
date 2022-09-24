@@ -8,7 +8,7 @@ If no mode specified - single -> wordlist -> incremental
 
 finded passwd -> `~/.john/john.pot` - on restart john reads it, so it doesn't try to crack already done passwd  
 
-`john -show passwd`  **same directory where the password was cracked**  
+`john -show cracked_file`  **same directory where the password was cracked**  
 (if cronjob -`/var/lib/john`)  
 
 If `ctr+c` - save point into `~/.john/john.rec` (saves also every 10 min)  
@@ -24,7 +24,10 @@ In manual options are prepended with one `-`, but most people (including some de
 `-format:NAME` - override ciphertext format detection  
 (`john --list=formats` - supported formats)  
 u can pass many hashes **of the same type**  
-`john -format=RAW-MD5 -wordlist=/usr/share/wordlists/seclists/Passwords/Leaked-Databases/rockyou-50.txt hashestocrack.txt`  
+**You can always make it try to guess the format!!**
+`john -format=RAW-MD5 --wordlist=/usr/share/wordlists/seclists/Passwords/Leaked-Databases/rockyou-50.txt hashestocrack.txt`  
+
+(flag `-w` for passing wordlists NOT working)
 
 `-groups:[-]GID[,..]` - load users of this group only  
 eg.  

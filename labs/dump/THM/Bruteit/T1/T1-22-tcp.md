@@ -6,3 +6,5 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 
 [log-T1-nmap-sV-22](./log-T1-nmap-sV-22)
+[log-T1-ssh-john](./log-T1-ssh-john)
+[log-T1-john-privesc](./log-T1-john-privesc)

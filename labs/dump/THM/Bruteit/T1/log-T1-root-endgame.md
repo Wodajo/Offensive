@@ -1,0 +1,1 @@
+`cat /root/root.txt` -> `root.txt` flag

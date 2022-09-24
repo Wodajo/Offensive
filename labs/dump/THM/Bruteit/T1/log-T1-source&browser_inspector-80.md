@@ -2,7 +2,9 @@
 
 <!-- Hey john, if you do not remember, the username is admin -->
 
+after logging with hydra creds -> password protected id_rsa private key -> for john
 
+****
 HTTP body
 ```Response
 <!DOCTYPE html>

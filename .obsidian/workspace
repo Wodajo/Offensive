@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "labs/dump/THM/Bruteit/T1/T1-80-tcp.md",
+            "file": "labs/dump/THM/Cat_pictures/T1/T1-10.10.166.136.md",
             "mode": "source",
             "source": false
           }
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "tools/enumeration/ncrack.md",
+            "file": "tools/scanning/nmap.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tools/enumeration/ncrack.md",
+                "file": "labs/dump/THM/Cat_pictures/T1/T1-10.10.166.136.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,17 +99,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e3d2bb946cd437c8",
+  "active": "60c9500c7b6ba7ef",
   "lastOpenFiles": [
-    "labs/dump/THM/Bruteit/T1/T1-80-tcp.md",
-    "labs/dump/THM/Bruteit/T1/T1-10.10.13.234.md",
-    "labs/dump/THM/Bruteit/T1/().md",
-    "theory/windows/UAC.md",
-    "tools/enumeration/ncrack.md",
-    "theory/infrastructure/1-reconnaissance/1.2-active-scanning/scan-by-protocol.md",
     "tools/scanning/nmap.md",
-    "tools/windows/WF.msc.md",
-    "theory/infrastructure/12-C2/0-index.md",
-    "tools/windows/regedit.md"
+    "labs/dump/THM/Bruteit/T1/log-T1-john-privesc.md",
+    "labs/dump/THM/Cat_pictures/T1/T1-10.10.166.136.md",
+    "labs/Blueprint/Report.md",
+    "labs/dump/THM/Bruteit/T1/T1-10.10.13.234.md",
+    "labs/dump/THM/Bruteit/T1/log-T1-ssh-john.md",
+    "labs/dump/THM/Bruteit/T1/log-T1-john-id_rsa.md",
+    "labs/dump/THM/Bruteit/T1/log-T1-hydra-80.md",
+    "labs/dump/THM/Bruteit/T1/T1-80-tcp.md",
+    "labs/dump/THM/Bruteit/T1/log-T1-gobuster-80.md"
   ]
 }

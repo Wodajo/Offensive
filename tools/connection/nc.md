@@ -9,7 +9,7 @@ Common users usually don't have access to ports under 1000
 `v` verbose `p` port 
 
 Sender: 
-`nc -nv 10.0.2.5 4444 < exploit.sh`  
+`nc -vn 10.0.2.5 4444 < exploit.sh`  
 `n` no DNS resolution  
 
 
