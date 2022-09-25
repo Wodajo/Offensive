@@ -5,7 +5,7 @@ Cisco AAA, Cisco auth, Cisco enable, CVS, FTP, HTTP(S)-FORM-GET, HTTP(S)-FORM-PO
 ```
 list may differ (depending on libraries found during compile time) - `hydra` to check  
 
-hydra [options]  [-s PORT]  [TARGET PROTOCOL]  [MODULE OPTIONS]
+hydra [options]  [IP] [-s PORT]  [TARGET PROTOCOL]  [MODULE OPTIONS]
 
 ### examples
 `sudo hydra -l admin -P common_passwd.txt ftp://192.168.1.103`
@@ -15,6 +15,7 @@ hydra [options]  [-s PORT]  [TARGET PROTOCOL]  [MODULE OPTIONS]
 
 `sudo hydra -e snr ftp://192.168.1.103`
 
+`sudo hydra -l admin -P rockyou.txt 10.10.141.47 -s 80 http-post-form "/admin:user=^USER^&pass=^PASS^:F=invalid" -o output_hydra`
 
 ### contains:
 - `dpl4hydra` - generates dpl (default passwd list) of main vendors of network devices (aka brand)  
@@ -114,6 +115,4 @@ or `module://www.example.com/optional-module-parameters`
 Invalid condition login check can be preceded by “`F=`”, successful condition login check must be preceded by “`S=`”
 
 e.g.
-`sudo hydra -l admin -P rockyou.txt 10.10.141.47 -s 80 http-post-form "/admin:user=^USER^&pass=^PASS^:F=<p>Username or password invalid</p>" -o output_hydra`
-or
-`sudo hydra -l admin -P rockyou.txt 10.10.42.179 -s 10000 https-post-form "/:user=^USER^&pass=^PASS^:F=Login failed. Please try again." -o output_hydra2`
+`sudo hydra -l admin -P rockyou.txt 10.10.141.47 -s 80 http-post-form "/admin:user=^USER^&pass=^PASS^:F=invalid" -o output_hydra`

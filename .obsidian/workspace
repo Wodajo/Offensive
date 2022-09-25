@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "labs/dump/THM/Cat_pictures/T1/T1-10.10.166.136.md",
+            "file": "theory/protocols/SMTP, POP & IMAP.md",
             "mode": "source",
             "source": false
           }
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "tools/scanning/nmap.md",
+            "file": "tools/web/burp.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labs/dump/THM/Cat_pictures/T1/T1-10.10.166.136.md",
+                "file": "tools/web/burp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,17 +99,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "60c9500c7b6ba7ef",
+  "active": "e3d2bb946cd437c8",
   "lastOpenFiles": [
+    "tools/scanning/traceroute.md",
+    "tools/0-index.md",
+    "tools/windows/WF.msc.md",
+    "ports/25,465,587.md",
+    "theory/protocols/SMTP, POP & IMAP.md",
     "tools/scanning/nmap.md",
-    "labs/dump/THM/Bruteit/T1/log-T1-john-privesc.md",
-    "labs/dump/THM/Cat_pictures/T1/T1-10.10.166.136.md",
-    "labs/Blueprint/Report.md",
-    "labs/dump/THM/Bruteit/T1/T1-10.10.13.234.md",
-    "labs/dump/THM/Bruteit/T1/log-T1-ssh-john.md",
-    "labs/dump/THM/Bruteit/T1/log-T1-john-id_rsa.md",
-    "labs/dump/THM/Bruteit/T1/log-T1-hydra-80.md",
-    "labs/dump/THM/Bruteit/T1/T1-80-tcp.md",
-    "labs/dump/THM/Bruteit/T1/log-T1-gobuster-80.md"
+    "ports/23.md",
+    "note to self.md",
+    "theory/protocols/NFS.md",
+    "tools/connection/xfreerdp.md"
   ]
 }

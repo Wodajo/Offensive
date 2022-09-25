@@ -40,7 +40,7 @@ Users:
 [[21-tcp]] ProFTPD 1.3.1
 [[22-tcp]] ssh
 [[23-tcp]] Linux telnetd
-[[25-tcp]] smtp
+[[../../../../ports/25,465,587]] smtp
 [[53-tcp&udp]] domain
 [[80-tcp]] http
 [[137-udp]] netbios-ns
