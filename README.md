@@ -13,6 +13,7 @@ e.g. `escalation` note -> `id`, `whoami`, `groups` and so on - in probable order
   - `infrastructures` (organised with `MITRE ATT&CK` matrix for enterprises),  
   - `windows`  
   - `linux`
+  - `protocols`
 
 - `tools` is for tools manuals re-written in my way
 
