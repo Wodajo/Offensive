@@ -3,7 +3,7 @@ This repo will slowly transform into personal penetration testing notes
 Current vision of how things should be arranged here:
 
 - `commands dir` is meant for thematic notes containing dumps of usefull commands.  
-e.g. `escalation` note -> `id`, `whoami`, `groups` and so on - in probable order of use
+e.g. `escalation` note -> `id`, `whoami`, `uname -a` and so on - in probable order of use
 
 - `labs dir` is meant for labs ofc
 

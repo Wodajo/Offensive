@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "theory/protocols/SMTP, POP & IMAP.md",
+            "file": "theory/linux/initial.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "theory/protocols/SMTP, POP & IMAP.md",
+                "file": "theory/linux/initial.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "60c9500c7b6ba7ef",
   "lastOpenFiles": [
-    "tools/basic b17(h/find.md",
-    "theory/windows/permissions.md",
-    "theory/windows/UAC.md",
-    "theory/windows/file system.md",
-    "theory/windows/dump.md",
-    "theory/protocols/SMTP, POP & IMAP.md",
-    "theory/protocols/SMB.md",
     "theory/protocols/NFS.md",
-    "theory/protocols/FTP.md",
-    "theory/linux/initial.md"
+    "README.md",
+    "supplementary.md",
+    "not sorted yet.md",
+    "note to self.md",
+    "commands/0-index.md",
+    "commands/exploit.md",
+    "commands/scanning.md",
+    "theory/linux/dump.md",
+    "theory/linux/escalation.md"
   ]
 }
