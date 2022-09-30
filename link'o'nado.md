@@ -16,3 +16,6 @@ General:
 Not analysed soft:
 [LinPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
 [AutoRecon](https://github.com/Tib3rius/AutoRecon)
+
+
+[Cool programming tutorials & exercises](https://www.w3schools.com/html/default.asp)
