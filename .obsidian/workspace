@@ -9,7 +9,11 @@
         "state": {
           "type": "markdown",
           "state": {
+<<<<<<< HEAD
             "file": "link'o'nado.md",
+=======
+            "file": "theory/linux/initial.md",
+>>>>>>> 2205907d3897c55c6b23bd276d0f74d904058f80
             "mode": "source",
             "source": false
           }
@@ -81,7 +85,11 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "link'o'nado.md",
+=======
+                "file": "theory/linux/initial.md",
+>>>>>>> 2205907d3897c55c6b23bd276d0f74d904058f80
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,6 +109,7 @@
   },
   "active": "60c9500c7b6ba7ef",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "note to self.md",
     "not sorted yet.md",
     "link'o'nado.md",
@@ -111,5 +120,17 @@
     "theory/windows/UAC.md",
     "theory/windows/file system.md",
     "theory/windows/dump.md"
+=======
+    "theory/protocols/NFS.md",
+    "README.md",
+    "supplementary.md",
+    "not sorted yet.md",
+    "note to self.md",
+    "commands/0-index.md",
+    "commands/exploit.md",
+    "commands/scanning.md",
+    "theory/linux/dump.md",
+    "theory/linux/escalation.md"
+>>>>>>> 2205907d3897c55c6b23bd276d0f74d904058f80
   ]
 }
