@@ -16,6 +16,7 @@ e.g. `escalation` note -> `id`, `whoami`, `uname -a` and so on - in probable ord
   - `protocols`
 
 - `tools` is for tools manuals re-written in my way
+  also programming-languages - related sidenotes
 
 ## Sources
 inter alia  
