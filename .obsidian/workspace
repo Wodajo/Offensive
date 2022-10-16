@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "tools/programming/html.md",
+            "file": "theory/linux/initial.md",
             "mode": "source",
             "source": false
           }
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "tools/basic b17(h/tar.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tools/programming/html.md",
+                "file": "tools/basic b17(h/tar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,17 +99,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d06085f235fae415",
+  "active": "9aaddd80456a0a95",
   "lastOpenFiles": [
+    "theory/linux/initial.md",
+    "tools/programming/html.md",
+    "tools/basic b17(h/tar.md",
     "README.md",
     "tools/metasploit.md",
     "tools/bloodhound.md",
     "tools/1-Internet-tools.md",
     "tools/0-index.md",
     "theory/protocols/http.md",
-    "theory/protocols/FTP.md",
-    "link'o'nado.md",
-    "not sorted yet.md",
-    "note to self.md"
+    "theory/protocols/FTP.md"
   ]
 }
