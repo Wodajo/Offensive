@@ -40,8 +40,11 @@ HTTP/2 - this is important babe https://www.rfc-editor.org/rfc/rfc8740
 How to markdown:  
 [gen. rules](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)  
 [markdown tables](https://tableconvert.com/excel-to-markdown)
+
 ``` test
 The syntax is ![[Your Note]] put these into an index file, then export and you can have a lot of notes combined into one PDF
+
+developer mode in Obsidian: ctl-shift-i
 ```
 
 More exhaustive sources added wtih topic-specific note  
