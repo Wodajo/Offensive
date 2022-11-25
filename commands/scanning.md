@@ -29,7 +29,7 @@ you might want to omit host discovery and blind port-scan every possible host
 #### if inside LAN
 passive sniffing (type of traffic, creds) - TO DO
 
-`TTL` for `ICMP` echo reply :
+`TTL` (header field of IP packet) for `ICMP` echo reply:
 `64` linux (some kernels - `255`)
 `128` windows
 `255` solaris and networking dev

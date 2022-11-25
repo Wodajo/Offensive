@@ -1,9 +1,10 @@
 Gods of Perseverance, Systematicness and Conscientiousness have me in your keep
 
+- practice `cut`, `tr`, `awk` and `sed` with bash scripting (linux-fu needs recap) -> complete tools note
 
 - configure `DNS`, `DHCP`, `SMB`, `NFS` & `ssh` (end them when Jeremy materials) - that's a big one, I tell you what
-
-
+  
+- 
 
 
 check:

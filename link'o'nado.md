@@ -19,3 +19,6 @@ Not analysed soft:
 
 
 [Cool programming tutorials & exercises](https://www.w3schools.com/html/default.asp)
+
+
+[For new kali VMs](https://github.com/Dewalt-arch/pimpmykali)
