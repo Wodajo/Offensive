@@ -1,8 +1,9 @@
-[OWASP web security testing guide](https://owasp.org/www-project-web-security-testing-guide/) - make a checklist as you learn
+[OWASP web security testing guide](https://owasp.org/www-project-web-security-testing-guide/) - newest stable now is v4.2
 [OWASP cheat sheet series](https://cheatsheetseries.owasp.org/)
-[OWASP testing checklist](https://github.com/tanprathan/OWASP-Testing-Checklist) - from 2019
+[OWASP wstg checklist v4.2](https://github.com/OWASP/wstg/blob/master/checklists/WSTG-Checklist_v4.2.xlsx)
 
 Web Apps are quite overwhelming - stick to OWASP guide & try stuff step-by-step with given labs
+
 
 - labs:
 	- introduction to owasp zap
@@ -17,7 +18,8 @@ Web Apps are quite overwhelming - stick to OWASP guide & try stuff step-by-step 
 
 - portswigger materials
 
-#### misc
+
+
 
 `domain` - unique identifier of a webserver e.g. google.com
 `subdomain` - unique identifier of a website operating within the main domain e.g. news.google.com

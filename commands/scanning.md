@@ -1,5 +1,6 @@
 `ip a`
-`ip r`
+`ip n` ARP table
+`ip r` routing table
 
 #### host discovery
 `sudo arp-scan 192.168.1.0/24` - ofc only LAN

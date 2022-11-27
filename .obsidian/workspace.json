@@ -8,24 +8,60 @@
         "type": "tabs",
         "children": [
           {
-            "id": "baeddae18b25164d",
+            "id": "289d9796c9b4d432",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theory/web app/notes.md",
+                "file": "tools/automation/initial_scan.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "98ff08366fa594a3",
+            "id": "7fb7322da5508bce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theory/linux/initial.md",
+                "file": "labs/Vulnhub/Kioptrix/00-General.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bef5f70e32bd5f1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "commands/scanning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "62c29c841c04c0f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tools/recon&scan/nmap.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "323746ee33db29ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "theory/infrastructure/1-reconnaissance/active-scanning/scan-by-protocol.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "SMB",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +122,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 262.5
+    "width": 245.5
   },
   "right": {
     "id": "da0d4f6e2ba8bc0f",
@@ -102,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "theory/linux/initial.md",
+                "file": "labs/Vulnhub/Kioptrix/00-General.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,17 +156,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "98ff08366fa594a3",
+  "active": "7fb7322da5508bce",
   "lastOpenFiles": [
-    "tools/web/burp.md",
-    "theory/web app/OWASP top 10/A01 2021 Broken Access Control.md",
-    "theory/web app/notes.md",
-    "theory/web app/enumeration.md",
-    "not sorted yet.md",
-    "note to self.md",
-    "The big plans after tomorrow.md",
-    "supplementary.md",
-    "tools/basic b17(h/tar.md",
-    "theory/web app/OWASP top 10.md"
+    "labs/Vulnhub/Kioptrix/T1/log-T1-ping.md",
+    "labs/Vulnhub/Kioptrix/T1/T1-IP-address.md",
+    "labs/Vulnhub/Kioptrix/T1/log-T1-udp-scans.md",
+    "labs/Vulnhub/Kioptrix/T1/log-T1-tcp-scans.md",
+    "labs/Vulnhub/Kioptrix/T1/log-T1-sctp-scans.md",
+    "tools/automation/initial_scan.md",
+    "tools/programming/bash scripting.md",
+    "commands/scanning.md",
+    "tools/recon&scan/nmap.md",
+    "tools/recon&scan/inital_scan.md"
   ]
 }
