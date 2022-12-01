@@ -12,5 +12,15 @@ default timing template is `T3`, trainer likes to use `T4`
 
 - create a vault for a box
 scripts should automate basic commands and make pretty output for Obsidian
-	host_discovery.sh - host discovery. From fast&easy to loong&desperate
-	initial_scan.sh - script for basic scans of 1 target
+	- `host_discovery.sh`:
+		ARP scan
+		ICMP echo request, timestamp, netmask, IP scan, SCTP scan, TCP SYN to 443, TCP ACK to 80, reverse resolution
+		UDP scan
+	- `initial_scan.sh` - script for 1 target:
+		ping
+		SYN scan
+		SCTP scan
+		IP scan
+		UDP scan
+	- `banner_grab.sh `- branner grabbing for 1 target, use `initial_scan.sh` output!
+		

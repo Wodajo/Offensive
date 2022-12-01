@@ -17,7 +17,7 @@ omits further port scanning
 `-PO` IP scan
 `-PY` SCTP scan
 `-R` reverse-DNS-resolution for all hosts (even down ones)
-
+nesu
 `sudo nmap -PU 192.168.1.0/24`
 Send UDP datagram on probably empty port (40125)
 you might want to change `DEFAULT_UDP_PROBE_PORT_SPEC` in `nmap.h`
