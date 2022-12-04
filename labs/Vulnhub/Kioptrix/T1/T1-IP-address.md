@@ -24,3 +24,6 @@ e.g.
 log-T1-
 
 Notes:
+
+- All commands will have it's own .md log files
+- 

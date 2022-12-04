@@ -86,10 +86,6 @@ INT=-5
 tests - `-a`, `-o`, `!`
 `[[ ]]` and `(( ))` - `&&`, `||`, `!`
 
-```
-
-```
-
 ### here document 
 I/O redirection in which we embed a body of text into our script and feed it into the stdin of a command
 single&double quotes lose their special meaning
@@ -143,6 +139,208 @@ uppercase for constans
 lowercase for variables
 
 
+### resource utility
+```bash
+#!/usr/bin/env bash
+
+# Program to output sys info page
+
+TITLE="System Information Report For $HOSTNAME"  # constants in uppercase
+CURRENT_TIME="$(date +"%x %r %Z")"
+TIMESTAMP="Generated $CURRENT_TIME, by $USER"
+
+report_uptime () {
+	cat <<- _EOF_
+		<h2>System Uptime</h2>
+		<pre>$(uptime)</pre>
+		_EOF_
+return
+}
+
+report_disk_space () {
+	cat <<- _EOF_
+		<h2>Disc Space Utilization</h2>
+		<pre>$(df -h)</pre>
+		_EOF_
+return
+}
+
+report_home_space () {
+	if [[ "$(id -u)" -eq 0 ]]; then  # id -u outputs numeric UID of effective user. Always 0 for root
+		cat <<- _EOF_
+			<h2>Home Space Utilization (All Users)</h2>
+			<pre>$(du -sh /home/*)</pre>
+			_EOF_
+	else
+		cat <<- _EOF_
+			<h2>Home Space Utilization ($User)</h2>
+			<pre>$(du -sh $HOME)</pre>
+			_EOF_
+	fi
+
+return
+}
+
+# in "here documents" single & double quotes lose their special meaning
+# you can use command like netcat (e.g. send script text to command and retrieve some files)
+# if <<- instead of << shell will ignore leading tab characters
+cat << _EOF_
+<html>
+	<head>
+		<title>$title</title>
+	</head>
+	<body>
+		<h1>$title</h1>
+		<p>$TIMESTAMP</p>
+		$(report_uptime)
+		$(report_disk_space)
+		$(report_home_space)
+	</body>
+</html>
+_EOF_
+
+```
+### expressions.sh
+```bash
+#!/usr/bin/env bash
+
+
+# Lists the expressions used to evaluate    files
+FILE=~/costam
+
+if [ -e "$FILE" ]; then
+	if [ -f "$FILE" ]; then
+		echo "$FILE is a regular file."
+	fi
+	if [ -d "$FILE" ]; then
+		echo "$FILE is a directory."
+	fi
+	if [ -r "$FILE" ]; then
+		echo "$FILE is readible."
+	fi
+	if [ -w "$FILE" ]; then
+		echo "$FILE is writable"
+	fi
+	if [ -x "$FILE" ]; then
+		echo "$FILE is execuatble/searchable"
+	fi
+else
+	echo "$FILE does not exist"
+	exit 1
+fi
+
+# Lists the expressions used to evaluate    strings
+$STRING="string-costam"
+
+
+if [ $STRING ];then
+	if [ -z $STRING ]; then
+		echo "$STRING length == 0"
+	fi
+	if [ -n $STRING ]; then
+		echo "$STRING length > 0"
+	fi
+	if [ $STRING == "string" ]; then
+		echo "$STRING is \"string\""
+	fi
+	if [ $STRING != "string" ]; then
+		echo "$STRING is not \"string\""
+	fi
+	if [ $STRING \> "string" ]; then  # > and < expressions must be escaped or shell wil interpret them as redirections. But still    WHAT IS THIS DOING??
+		echo "$STRING sorts after \"string\""
+	fi
+
+else
+	echo "$STRING is null"
+fi
+
+# Lists the expressions used to evaluate    integers
+INT=-5
+
+# Without using (( ))
+if [[ "$INT" =~ ^-?[0-9]+$ ]];then  # regex checking if it's and integer, and if it's not empty
+	
+	if [ -z "$INT" ];then  # this check is useless due to above
+		echo "$INT is empty" >&2
+		exit 1
+	fi
+	if [ "$INT" -eq 3 ]; then   # -ne not equal, -le less than or equal, -lt less than, -ge greater equal, -gt greater than
+		echo "$INT is equal 3"
+	fi
+	if [ "$INT" -eq 0 ]; then
+		echo "$INT is zero"
+	else
+		if [ "$INT" -lt o ]; then
+			echo "$INT is negative"
+		else
+			echo "$INT is positive"
+		fi
+		if [ $((INT % 2)) -eq 0 ]; then  # $(()) is a part of shell syntax (not an ordinary command) - recognize variables by name -  doesnt require expansion
+			echo "$INT is even"
+		else
+			echo "$NIT is odd"
+		fi
+	fi
+else
+	echo "$INT is not an integer" >&2
+	exit 1
+
+fi
+
+# Using (( ))
+if [[ "$INT" =~ ^-?[0-9]+$ ]];then
+	
+	if ((INT == 0)) ;then   # (()) is a part of shell syntax - recognize variables by name -  doesnt require expansion
+
+		echo "$INT is zero"
+	else
+		if ((INT < 0)); then
+			echo "$INT is negative"
+		else
+			echo "$INT is positive"
+		fi
+		if (( ((INT % 2)) == 0)); then
+			echo "$INT is even"
+		else
+			echo "$NIT is odd"
+		fi
+	fi
+else
+	echo "$INT is not an integer" >&2
+	exit 1
+
+fi
+
+
+# Combining expressions  - test use -a, -o, !,   [[ ]] and (( )) use &&, ||, !
+
+MIN_VAL=1
+MAX_VAL=100
+INT=50
+
+MIN_VAL=1
+MAX_VAL=100
+INT=50
+
+if [[ "$INT" =~ ^-?[0-9]+$ ]]; then
+	if [[ ! ("$INT" -ge "$MIN_VAL" && "$INT" -le "$MAX_VAL") ]]; then
+		echo "$INT is outside $MIN_VAL to $MAX_VAL."
+	else
+		echo "$INT is in range."
+	fi
+else
+	echo "INT is not an integer." >&2
+	exit 1
+fi
+
+if [ ! \( "$INT" -ge "$MIN_VAL" -a "$INT" -le "$MAX_VAL" \) ]; then  # expressions and operators treated as comman arguments by shell - characters with special meaning must be quoted/scaped
+	echo "$INT is outside $MIN_VAL to $MAX_VAL."
+else
+	echo "$INT is in range."
+fi
+
+
+```
 ### ping sweep
 
 ```shell
