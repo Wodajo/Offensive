@@ -115,7 +115,7 @@ com_name="unknown"
 		echo "[+] TCP ports investigation page updates"
 		ports=$(cat "$LOGS_DIR/log-$T-nmap-sS-O.md" | grep "open" | awk -F"/" '{print $1" "}' | sort -u | tr -d "\n" | sed 's|.$||')  # local var redefinition
 		for port in $ports; do
-			cat <<- _EOF_ >> $T/$T-$port-tcp
+			cat <<- _EOF_ >> $T/$T-$port-tcp.md
 				$(cat "$LOGS_DIR/log-$T-$com_name.md" | grep -m 1 "$port/tcp")
 				
 				[log-$T-$com_name.md](./logs-$T/log-$T-$com_name.md)
@@ -139,7 +139,7 @@ com_name="unknown"
 		echo "[+] SCTP ports investigation page updates"
 		ports=$(cat "$LOGS_DIR/log-$T-nmap-sY.md" | grep "open" | awk -F"/" '{print $1" "}' | sort -u | tr -d "\n" | sed 's|.$||')  # local var redefinition
 		for port in $ports; do
-			cat <<- _EOF_ >> $T/$T-$port-sctp
+			cat <<- _EOF_ >> $T/$T-$port-sctp.md
 				$(cat "$LOGS_DIR/log-$T-$com_name.md" | grep -m 1 "$port/sctp")
 				
 				[log-$T-$com_name.md](./logs-$T/log-$T-$com_name.md)
@@ -164,7 +164,7 @@ com_name="unknown"
 		echo "[+] USP ports investigation page updates"
 		ports=$(cat "$LOGS_DIR/log-$T-nmap-sU.md" | grep "open" | awk -F"/" '{print $1" "}' | sort -u | tr -d "\n" | sed 's|.$||')  # local var redefinition
 		for port in $ports; do
-			cat <<- _EOF_ >> $T/$T-$port-udp
+			cat <<- _EOF_ >> $T/$T-$port-udp.md
 				$(cat "$LOGS_DIR/log-$T-$com_name.md" | grep -m 1 "$port/udp")
 				
 				[log-$T-$com_name.md](./logs-$T/log-$T-$com_name.md)

@@ -1,3 +1,0 @@
-138/udp   open|filtered netbios-dgm
-
-(log-T1-nmap-udp-sV.md)[./logs-T1/log-T1-nmap-udp-sV.md]

@@ -3,19 +3,11 @@
 # 					AUTOMATE INITIAL SCANS FOR A TARGET
 # - create log files
 # - updates "chronologically.md" file (containing markdown links to commands logs in chronological manner)
+# - create main target page - IP, MAC, OS
+# - banner grabbing -> log files
+# - create general investigation pages for ports
+# - populate investigation page & main taget page with links to log
 
-# TO DO:
-#
-# create main target page - IP, MAC, OS
-# regex-out ports for banner grabbing
-# create general investigation pages for ports
-# pass ports to nmap sV
-# create log file for output
-# populate chronologically.md
-# populate investigation page with link to log
-
-
-# populate main target page with links to main investigation pages WITH nmap -sV titles
 
 # divide it into modules - more interactive in what you want to do
 # maybe somehow objects? It would be easier to manage target-module relations
@@ -31,7 +23,7 @@ com_name="unknown"
 		local generic_log  # local for later portability of this function
 		local link
 		generic_log="log-$T-$com_name"
-		link="($generic_log)[./$generic_log.md]"
+		link="[$generic_log](./$generic_log.md)"
 		echo "$link" >> $CHRON_LOG
 		return
 	}
@@ -108,70 +100,74 @@ com_name="unknown"
 	}
 
 
-	tcp_banners () {  # banner grab & creation of port investigation pages (it will be linked later)
-		echo "[+] TCP ports banner grabbing"
-		local com_name="nmap-tcp-sV"  # for chron_add & output log 
+	tcp_banners () {  # version, script scan & taceroute + investigation page creation
+		echo "[+] TCP ports version detection & default script scan"
+		local com_name="nmap-tcp-A"  # for chron_add & output log 
 		local ports="$(cat "$LOGS_DIR/log-$T-nmap-sS-O.md" | grep "open" | awk -F"/" '{print $1","}' | sort -u | tr -d "\n" | sed 's|.$||')"
 		cat <<- _EOF_ >> "$LOGS_DIR/log-$T-$com_name.md"
 			\`\`\`
-			sudo nmap -Pn -sS -pT:$ports -sV $IP
-			$(sudo nmap -Pn -sS -pT:$ports -sV $IP)
+			sudo nmap -Pn -sS -pT:$ports -A $IP
+			$(sudo nmap -Pn -sS -pT:$ports -A $IP)
 			\`\`\`
 			_EOF_
 		chron_add
-# ports investigation pages creation 
+
+		echo "[+] TCP ports investigation page updates"
 		ports=$(cat "$LOGS_DIR/log-$T-nmap-sS-O.md" | grep "open" | awk -F"/" '{print $1" "}' | sort -u | tr -d "\n" | sed 's|.$||')  # local var redefinition
 		for port in $ports; do
-			cat <<- _EOF_ >> $T/$T-$port-tcp
+			cat <<- _EOF_ >> $T/$T-$port-tcp.md
 				$(cat "$LOGS_DIR/log-$T-$com_name.md" | grep -m 1 "$port/tcp")
 				
-				(log-$T-$com_name.md)[./logs-$T/log-$T-$com_name.md]
+				[log-$T-$com_name.md](./logs-$T/log-$T-$com_name.md)
 			_EOF_
 		done
 	return
 	}
 
 	sctp_banners () {
-			echo "[+] SCTP ports banner grabbing"
-		local com_name="nmap-sctp-sV"
+			echo "[+] SCTP ports version detection & default script scan"
+		local com_name="nmap-sctp-A"
 		local ports="$(cat "$LOGS_DIR/log-$T-nmap-sY.md" | grep "open" | awk -F"/" '{print $1","}' | sort -u | tr -d "\n" | sed 's|.$||')"
 		cat <<- _EOF_ >> "$LOGS_DIR/log-$T-$com_name.md"
 			\`\`\`
-			sudo nmap -Pn -sY -pS:$ports -sV $IP
-			$(sudo nmap -Pn -sY -pS:$ports -sV $IP)
+			sudo nmap -Pn -sY -pS:$ports -A $IP
+			$(sudo nmap -Pn -sY -pS:$ports -A $IP)
 			\`\`\`
 			_EOF_
 		chron_add
-# ports investigation pages creation 
+# ports investigation pages creation
+		echo "[+] SCTP ports investigation page updates"
 		ports=$(cat "$LOGS_DIR/log-$T-nmap-sY.md" | grep "open" | awk -F"/" '{print $1" "}' | sort -u | tr -d "\n" | sed 's|.$||')  # local var redefinition
 		for port in $ports; do
-			cat <<- _EOF_ >> $T/$T-$port-sctp
+			cat <<- _EOF_ >> $T/$T-$port-sctp.md
 				$(cat "$LOGS_DIR/log-$T-$com_name.md" | grep -m 1 "$port/sctp")
 				
-				(log-$T-$com_name.md)[./logs-$T/log-$T-$com_name.md]
+				[log-$T-$com_name.md](./logs-$T/log-$T-$com_name.md)
+
 			_EOF_
 		done
 	return
 	}
 
 	udp_banners () {
-			echo "[+] UDP ports banner grabbing"
-		local com_name="nmap-udp-sV"
+			echo "[+] UDP ports vesrion detection & default script scan"
+		local com_name="nmap-udp-A"
 		local ports="$(cat "$LOGS_DIR/log-$T-nmap-sU.md" | grep "open" | awk -F"/" '{print $1","}' | sort -u | tr -d "\n" | sed 's|.$||')"
 		cat <<- _EOF_ >> "$LOGS_DIR/log-$T-$com_name.md"
 			\`\`\`
-			sudo nmap -Pn -sU -pU:$ports -sV $IP
-			$(sudo nmap -Pn -sU -pU:$ports -sV $IP)
+			sudo nmap -Pn -sU -pU:$ports -A $IP
+			$(sudo nmap -Pn -sU -pU:$ports -A $IP)
 			\`\`\`
 			_EOF_
 		chron_add
 # ports investigation pages creation 
+		echo "[+] USP ports investigation page updates"
 		ports=$(cat "$LOGS_DIR/log-$T-nmap-sU.md" | grep "open" | awk -F"/" '{print $1" "}' | sort -u | tr -d "\n" | sed 's|.$||')  # local var redefinition
 		for port in $ports; do
-			cat <<- _EOF_ >> $T/$T-$port-udp
+			cat <<- _EOF_ >> $T/$T-$port-udp.md
 				$(cat "$LOGS_DIR/log-$T-$com_name.md" | grep -m 1 "$port/udp")
 				
-				(log-$T-$com_name.md)[./logs-$T/log-$T-$com_name.md]
+				[log-$T-$com_name.md](./logs-$T/log-$T-$com_name.md)
 			_EOF_
 		done
 	return
@@ -203,28 +199,28 @@ com_name="unknown"
 
 			_EOF_
 # investigation pages links
-		local com_name="nmap-tcp-sV" 
+		local com_name="nmap-tcp-A" 
 		local ports=$(cat "$LOGS_DIR/log-$T-nmap-sS-O.md" | grep "open" | awk -F"/" '{print $1" "}' | sort -u | tr -d "\n" | sed 's|.$||')
 		for port in $ports; do
 			cat <<- _EOF_ >> $MAIN_PAGE
-				($port/tcp)[./$T-$port-tcp] $(cat "$LOGS_DIR/log-$T-$com_name.md" | grep -m 1 "$port/tcp" | cut -f 2- -d " ")
+				[$port/tcp](./$T-$port-tcp) $(cat "$LOGS_DIR/log-$T-$com_name.md" | grep -m 1 "$port/tcp" | cut -f 2- -d " ")
 			_EOF_
 		done
 
 
- 		local com_name="nmap-sctp-sV" 
+ 		local com_name="nmap-sctp-A" 
 		local ports=$(cat "$LOGS_DIR/log-$T-nmap-sY.md" | grep "open" | awk -F"/" '{print $1" "}' | sort -u | tr -d "\n" | sed 's|.$||')
 		for port in $ports; do
 			cat <<- _EOF_ >> $MAIN_PAGE
-				($port/sctp)[./$T-$port-sctp] $(cat "$LOGS_DIR/log-$T-$com_name.md" | grep -m 1 "$port/sctp" | cut -f 2- -d " ")
+				[$port/sctp](./$T-$port-sctp) $(cat "$LOGS_DIR/log-$T-$com_name.md" | grep -m 1 "$port/sctp" | cut -f 2- -d " ")
 			_EOF_
 		done
 
- 		local com_name="nmap-udp-sV" 
+ 		local com_name="nmap-udp-A" 
 		local ports=$(cat "$LOGS_DIR/log-$T-nmap-sU.md" | grep "open" | awk -F"/" '{print $1" "}' | sort -u | tr -d "\n" | sed 's|.$||')
 		for port in $ports; do
 			cat <<- _EOF_ >> $MAIN_PAGE
-				($port/udp)[./$T-$port-udp] $(cat "$LOGS_DIR/log-$T-$com_name.md" | grep -m 1 "$port/udp" | cut -f 2- -d " ")
+				[$port/udp](./$T-$port-udp) $(cat "$LOGS_DIR/log-$T-$com_name.md" | grep -m 1 "$port/udp" | cut -f 2- -d " ")
 			_EOF_
 		done
 

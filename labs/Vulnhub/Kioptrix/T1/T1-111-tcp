@@ -1,3 +1,0 @@
-111/tcp   open  rpcbind     2 (RPC #100000)
-
-(log-T1-nmap-tcp-sV.md)[./logs-T1/log-T1-nmap-tcp-sV.md]

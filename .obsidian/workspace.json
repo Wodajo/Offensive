@@ -6,19 +6,52 @@
       {
         "id": "78a1ed31c7216a05",
         "type": "tabs",
+        "dimension": 52.6813880126183,
         "children": [
           {
-            "id": "4f38c461635096a1",
+            "id": "43d145ad0d159d5c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tools/recon&scan/hping3.md",
+                "file": "theory/infrastructure/1-reconnaissance/active-scanning/workflow.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
+          {
+            "id": "b08a9127dee42e7a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "labs/Vulnhub/Kioptrix/T1/T1-192.168.1.107.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4ad0129ee679de20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "labs/Vulnhub/Kioptrix/T1/logs-T1/log-T1-enum4linux.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "cb71f0682449826a",
+        "type": "tabs",
+        "dimension": 47.3186119873817,
+        "children": [
           {
             "id": "4c59994ef26d73e7",
             "type": "leaf",
@@ -32,43 +65,12 @@
             }
           },
           {
-            "id": "8e023656336a7d93",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "tools/automation/initial_scan.sh.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "cb71f0682449826a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "43d145ad0d159d5c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "labs/Vulnhub/Kioptrix/T1/log-T1-nmap-A.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "fb7677712b60f504",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tools/basic b17(h/git.md",
+                "file": "tools/enumeration/gobuster.md",
                 "mode": "source",
                 "source": false
               }
@@ -145,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tools/basic b17(h/git.md",
+                "file": "labs/Vulnhub/Kioptrix/T1/T1-192.168.1.107.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,17 +165,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "fb7677712b60f504",
+  "active": "b08a9127dee42e7a",
   "lastOpenFiles": [
-    "tools/recon&scan/nmap.md",
-    "labs/Vulnhub/Kioptrix/T1/log-T1-nmap-A.md",
+    "tools/enumeration/gobuster.md",
+    "theory/infrastructure/3-initial access/enumeration/SMB enumeration.md",
     "labs/Vulnhub/Kioptrix/T1/T1-192.168.1.107.md",
-    "labs/Vulnhub/Kioptrix/00-General.md",
-    "tools/automation/initial_scan.sh.md",
-    "labs/Vulnhub/Kioptrix/Report.md",
-    "labs/Vulnhub/Kioptrix/log-host_discovery.md",
-    "labs/Vulnhub/Kioptrix/2-Targets.md",
-    "labs/Vulnhub/Kioptrix/1-Network.md",
-    "labs/Vulnhub/Kioptrix/0-index.md"
+    "labs/Vulnhub/Kioptrix/T1/T1-22-tcp.md",
+    "labs/Vulnhub/Kioptrix/T1/T1-80-tcp.md",
+    "labs/Vulnhub/Kioptrix/T1/T1-111-tcp.md",
+    "labs/Vulnhub/Kioptrix/T1/T1-139-tcp.md",
+    "labs/Vulnhub/Kioptrix/T1/T1-137-udp.md",
+    "labs/Vulnhub/Kioptrix/T1/T1-111-udp.md",
+    "labs/Vulnhub/Kioptrix/T1/T1-32768-tcp.md"
   ]
 }

@@ -12,3 +12,4 @@ extract MX records -> contact email server via SMTP (some servers behave unexpec
 [email-checker](https://email-checker.net/)
 
 gmail psswd recovery:
+not only we know that email exist - we sometimes know what is the corellated email address or last nrs. of telephone nr.

@@ -37,3 +37,5 @@ PORT    STATE         SERVICE
 137/udp open          netbios-ns
 138/udp open|filtered netbios-dgm
 ```
+
+- check for read & write permissions
