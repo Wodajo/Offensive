@@ -12,3 +12,9 @@ encode payload (e.g. in `base64`) - output shouldn't have any troublesome charac
 ```
 <somexml><message>Hello World</message></somexml>
 ```
+
+copy repo -> initial_scan.sh
+install obsidian
+new git token
+
+enumerate smb (too manmy notes, too many palces)

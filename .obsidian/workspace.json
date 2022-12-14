@@ -8,6 +8,30 @@
         "type": "tabs",
         "children": [
           {
+            "id": "e95df8d635c305b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "theory/infrastructure/3-initial access/enumeration/SMB enumeration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9a9cd62d8ec2e226",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ports/23.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "4c59994ef26d73e7",
             "type": "leaf",
             "state": {
@@ -18,33 +42,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "62c29c841c04c0f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "labs/THM/Bruteit/0-index.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6a55e0082cd50b21",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "tools/programming/bash scripting.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "cb71f0682449826a",
@@ -56,13 +55,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tools/automation/initial_scan.sh.md",
+                "file": "theory/web app/webapp_enumeration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9d88ed2dd5f8bab7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tools/basic b17(h/xclip.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -132,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tools/automation/initial_scan.sh.md",
+                "file": "tools/basic b17(h/xclip.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,17 +162,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "43d145ad0d159d5c",
+  "active": "9d88ed2dd5f8bab7",
   "lastOpenFiles": [
-    "labs/THM/Bruteit/T1/T1-10.10.13.234.md",
-    "labs/THM/Bruteit/T1/T1-22-tcp.md",
-    "labs/THM/Bruteit/0-index.md",
-    "labs/THM/Bruteit/00-General.md",
-    "labs/THM/Bruteit/2-Targets.md",
-    "labs/THM/Bruteit/1-Network.md",
-    "tools/recon&scan/nmap.md",
+    "theory/infrastructure/1-reconnaissance/burdel.md",
+    "theory/web app/webapp_enumeration.md",
+    "theory/infrastructure/3-initial access/enumeration/SMB enumeration.md",
+    "ports/23.md",
     "tools/automation/host_discovery.sh.md",
-    "labs/THM/Bruteit/T1/log-T1-nmap-sV-80.md",
-    "labs/THM/Bruteit/T1/log-T1-nmap-sV-22.md"
+    "tools/programming/bash scripting.md",
+    "ports/25,465,587.md",
+    "commands/exploit_dbs.md",
+    "labs/PortSwigger/notes.md",
+    "theory/web app/notes.md"
   ]
 }
