@@ -7,6 +7,6 @@ if no flags - **all** simple enumeration options assumed
 
 
 
-`smbclient -L //10.10.237.28/` ? - list shares    TEST ME
+`smbclient -L //10.10.237.28/` ? - list shares 
 `smbclient //10.10.237.28/sharename -U username -p port` - access share
 default port is 138 (sure it's not 139???)

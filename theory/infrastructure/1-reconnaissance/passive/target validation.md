@@ -1,5 +1,4 @@
 dnsrecon?
-whois tools?
 
 ##### WHOIS
 `domain registrar` is responsible for maintaining the `WHOIS records` for the `domain names` it is leasing

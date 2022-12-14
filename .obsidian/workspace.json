@@ -6,8 +6,10 @@
       {
         "id": "78a1ed31c7216a05",
         "type": "tabs",
+        "dimension": 52.6813880126183,
         "children": [
           {
+<<<<<<< HEAD
             "id": "e95df8d635c305b5",
             "type": "leaf",
             "state": {
@@ -33,41 +35,84 @@
           },
           {
             "id": "4c59994ef26d73e7",
+=======
+            "id": "43d145ad0d159d5c",
+>>>>>>> 17d7cc4530c82d3b2979875286ee33c131d56a50
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tools/automation/host_discovery.sh.md",
+                "file": "theory/infrastructure/1-reconnaissance/active-scanning/workflow.md",
                 "mode": "source",
                 "source": false
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "cb71f0682449826a",
-        "type": "tabs",
-        "children": [
+<<<<<<< HEAD
+=======
+          },
           {
-            "id": "43d145ad0d159d5c",
+            "id": "b08a9127dee42e7a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theory/web app/webapp_enumeration.md",
+                "file": "labs/Vulnhub/Kioptrix/T1/T1-192.168.1.107.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "9d88ed2dd5f8bab7",
+            "id": "4ad0129ee679de20",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
+                "file": "labs/Vulnhub/Kioptrix/T1/logs-T1/log-T1-enum4linux.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+>>>>>>> 17d7cc4530c82d3b2979875286ee33c131d56a50
+          }
+        ]
+      },
+      {
+        "id": "cb71f0682449826a",
+        "type": "tabs",
+        "dimension": 47.3186119873817,
+        "children": [
+          {
+            "id": "4c59994ef26d73e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+<<<<<<< HEAD
+                "file": "theory/web app/webapp_enumeration.md",
+=======
+                "file": "tools/recon&scan/nmap.md",
+>>>>>>> 17d7cc4530c82d3b2979875286ee33c131d56a50
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+<<<<<<< HEAD
+            "id": "9d88ed2dd5f8bab7",
+=======
+            "id": "fb7677712b60f504",
+>>>>>>> 17d7cc4530c82d3b2979875286ee33c131d56a50
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+<<<<<<< HEAD
                 "file": "tools/basic b17(h/xclip.md",
+=======
+                "file": "tools/enumeration/gobuster.md",
+>>>>>>> 17d7cc4530c82d3b2979875286ee33c131d56a50
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +148,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "SMB",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -128,7 +173,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5
+    "width": 291.5
   },
   "right": {
     "id": "da0d4f6e2ba8bc0f",
@@ -144,7 +189,11 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "tools/basic b17(h/xclip.md",
+=======
+                "file": "labs/Vulnhub/Kioptrix/T1/T1-192.168.1.107.md",
+>>>>>>> 17d7cc4530c82d3b2979875286ee33c131d56a50
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,6 +211,7 @@
     "width": 300,
     "collapsed": true
   },
+<<<<<<< HEAD
   "active": "9d88ed2dd5f8bab7",
   "lastOpenFiles": [
     "theory/infrastructure/1-reconnaissance/burdel.md",
@@ -174,5 +224,19 @@
     "commands/exploit_dbs.md",
     "labs/PortSwigger/notes.md",
     "theory/web app/notes.md"
+=======
+  "active": "b08a9127dee42e7a",
+  "lastOpenFiles": [
+    "tools/enumeration/gobuster.md",
+    "theory/infrastructure/3-initial access/enumeration/SMB enumeration.md",
+    "labs/Vulnhub/Kioptrix/T1/T1-192.168.1.107.md",
+    "labs/Vulnhub/Kioptrix/T1/T1-22-tcp.md",
+    "labs/Vulnhub/Kioptrix/T1/T1-80-tcp.md",
+    "labs/Vulnhub/Kioptrix/T1/T1-111-tcp.md",
+    "labs/Vulnhub/Kioptrix/T1/T1-139-tcp.md",
+    "labs/Vulnhub/Kioptrix/T1/T1-137-udp.md",
+    "labs/Vulnhub/Kioptrix/T1/T1-111-udp.md",
+    "labs/Vulnhub/Kioptrix/T1/T1-32768-tcp.md"
+>>>>>>> 17d7cc4530c82d3b2979875286ee33c131d56a50
   ]
 }
